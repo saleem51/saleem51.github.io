@@ -1,0 +1,750 @@
+@charset "UTF-8";
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+/*background vert du header, du button et du footer $color-primary: #529180;*/
+/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/
+/*background color du menu la note enchantée $section1-color: #FADBD6;*/
+/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+/* affichage pour les ordinateurs et grands écrans*/
+@media screen and (min-width: 1025px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    /*display grid utilisé pour la mise en page des éléments avec le système de grille*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 13% 55% 55% 50%;
+    grid-column-gap: 4%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.6em;
+    bottom: 18%;
+    padding-top: 0.7%;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #art1, #art3 {
+    margin-left: 60%; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #5e9ef4; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 40%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 40%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 40%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 40%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  #icon {
+    font-size: 2.4em;
+    margin-left: 43%;
+    margin-top: 40%;
+    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #E79A3F, #E64F2A); }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2b, #h2c, #h2d {
+    /*ajustement du padding-top des tous les h2 sauf h2a à cause de l'icône qui abaisse les h2a et h3a*/
+    padding-top: 45%; }
+  #h2b {
+    padding-top: 50%; }
+  #h2a {
+    margin-top: 0%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.9em; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2.2em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 2em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    font-weight: lighter; }
+  #h3c {
+    color: #5e9ef4; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.2em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    /*display block pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 10%;
+    width: 35%;
+    margin: 0% 0% 70% 87%;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; }
+  #ctn {
+    margin-left: 72%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; } }
+
+/*affiche pour les smartphones*/
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    /*display grid utilisé pour la mise en page des éléments avec le système de grille*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 55% 55% 55% 55% 35%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+    /* tiré de la moitié de sa propre hauteur */ }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  article {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* contexte sur le parent */
+    flex-direction: column;
+    /* direction d'affichage verticale */
+    justify-content: center;
+    /* alignement vertical */ }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #5e9ef4; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 65%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 65%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 65%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    width: 65%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  #icon {
+    font-size: 2.3em;
+    margin-left: 43%;
+    margin-top: 0%;
+    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #E79A3F, #E64F2A);
+    vertical-align: middle; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2b, #h2c, #h2d {
+    vertical-align: middle; }
+  #h2a {
+    margin-top: 0%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.8em; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 1.7em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    font-weight: lighter; }
+  #h3c {
+    color: #5e9ef4; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.9em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    /*display block pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: flex;
+    /* contexte sur le parent */
+    flex-direction: column;
+    /* direction d'affichage verticale */
+    justify-content: center;
+    /* alignement vertical */
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    height: 12%;
+    width: 57%;
+    margin: auto;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.1em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; } }
+
+/*affiche pour les tablettes*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    /*display grid utilisé pour la mise en page des éléments avec le système de grille*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 8% 40% 40% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.4em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+    /* tiré de la moitié de sa propre hauteur */ }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #art1, #art3 {
+    margin-left: auto; }
+  #art2, #art4 {
+    margin-right: auto; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #5e9ef4; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 60%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 60%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  #icon {
+    font-size: 2.4em;
+    margin-left: 43%;
+    margin-top: 0%;
+    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #E79A3F, #E64F2A); }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2b, #h2c, #h2d {
+    /*ajustement du padding-top des tous les h2 sauf h2a à cause de l'icône qui abaisse les h2a et h3a*/ }
+  #h2a {
+    margin-top: 2%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.8em;
+    line-height: 0.4; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2.1em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 1.9em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h3c {
+    color: #5e9ef4; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.7em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.1em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    /*display block pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 10%;
+    width: 55%;
+    margin: 0% 0% 70% 87%;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; } }
