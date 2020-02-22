@@ -15,7 +15,7 @@
 /*mixin pour les menus "le chic à la française" et "la palette du goût"*/
 /*mixin pour l'icône note de musique*/
 /* affichage pour les ordinateurs et grands écrans*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1113px) {
   html, body {
     /* margin, padding et border à 0 pour le reset css*/
     margin: 0;
@@ -983,7 +983,7 @@
     background-color: #559c84; } }
 
 /* affichage pour les tablettes en mode paysage (à partir de 993px)*/
-@media (orientation: landscape) and (min-width: 993px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 993px) and (max-width: 1112px) {
   html, body {
     /* margin, padding et border à 0 pour le reset css*/
     margin: 0;
@@ -1215,7 +1215,8 @@
     background-color: #559c84;
     text-decoration: none; }
   #ctn {
-    margin-right: 3%;
+    margin-left: auto;
+    margin-right: 13%;
     -webkit-appearance: button;
     -moz-appearance: button;
     background-color: #559c84;
