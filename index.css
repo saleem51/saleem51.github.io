@@ -766,6 +766,7 @@
   h1 {
     font-size: 2.4em;
     font-family: 'Hind Siliguri', sans-serif;
+    bottom: 3%;
     text-align: center;
     position: relative;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
@@ -887,7 +888,7 @@
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.6em;
+    font-size: 1.5em;
     white-space: nowrap; }
   #h3d {
     color: #1DAF29; }
