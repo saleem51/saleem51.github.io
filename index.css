@@ -13,7 +13,6 @@
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
 /*mixin pour les menus "la note enchantée" et "les délices des papilles"*/
 /*mixin pour les menus "le chic à la française" et "la palette du goût"*/
-/*mixin pour l'icône note de musique*/
 /* affichage pour les ordinateurs et grands écrans*/
 @media screen and (min-width: 1113px) {
   html, body {
@@ -57,6 +56,11 @@
     color: #F7C528; }
   #art1, #art3 {
     margin-left: 60%; }
+  #noteindex {
+    position: relative;
+    height: 40px;
+    top: 100px;
+    left: 115px; }
   h2 {
     text-align: center;
     line-height: 1.5; }
@@ -70,7 +74,7 @@
   #h3b :visited {
     color: #CA7A0F; }
   #h2c, #h3c :visited {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d, #h3d :visited {
     color: #168720; }
   #art1 {
@@ -108,35 +112,23 @@
   #art1, #art2, #art3, #art4 {
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px 1px #ECECEC; }
-  #icon {
-    font-size: 2.4em;
-    margin-left: 43%;
-    margin-top: 0%;
-    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
-    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #E79A3F, #E64F2A); }
   a, h2, h3, #btnml, #btnct {
     text-decoration: none; }
   #h2a {
-    margin-top: 0%;
     /*police de caractère pour "la note enchantée"*/
     font-family: 'Devonshire', cursive;
     font-weight: lighter;
-    font-size: 1.9em; }
+    position: relative;
+    font-size: 1.9em;
+    bottom: 9%; }
   #h3a {
     /*police de caractère de "MENU" de "la note enchantée"*/
     font-family: 'Kalam', cursive;
     color: black;
     font-size: 2.2em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    position: relative;
+    bottom: 15%; }
   #h2b {
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
@@ -154,7 +146,7 @@
     font-size: 1.8em;
     font-weight: lighter; }
   #h3c {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
@@ -182,17 +174,17 @@
     -o-text-fill-color: transparent;
     background: -linear-gradient(to right, #995EFF, #CA7A0F); }
   #h2c {
-    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
@@ -237,21 +229,18 @@
     footer a {
       background-color: #559c84;
       color: #F7C528;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      background-image: url("green.jpg"); }
   #ml {
     grid-column-start: 1;
     grid-column-end: 1;
     margin-left: 3%;
     -webkit-appearance: button;
-    -moz-appearance: button;
-    background-color: #559c84;
-    text-decoration: none; }
+    -moz-appearance: button; }
   #ctn {
     margin-left: 72%;
     -webkit-appearance: button;
-    -moz-appearance: button;
-    background-color: #559c84;
-    text-decoration: none; } }
+    -moz-appearance: button; } }
 
 /*affiche pour les smartphones*/
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -313,7 +302,7 @@
   #h3b :visited {
     color: #CA7A0F; }
   #h2c, #h3c :visited {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d, #h3d :visited {
     color: #168720; }
   #art1 {
@@ -351,22 +340,6 @@
   #art1, #art2, #art3, #art4 {
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px 1px #ECECEC; }
-  #icon {
-    font-size: 2.3em;
-    margin-left: 43%;
-    margin-top: 0%;
-    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
-    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #E79A3F, #E64F2A);
-    vertical-align: middle; }
   a, h2, h3, #btnml, #btnct {
     text-decoration: none; }
   #h2b, #h2c, #h2d {
@@ -400,7 +373,7 @@
     font-size: 1.6em;
     font-weight: lighter; }
   #h3c {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
@@ -428,17 +401,17 @@
     -o-text-fill-color: transparent;
     background: -linear-gradient(to right, #995EFF, #CA7A0F); }
   #h2c {
-    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
@@ -554,7 +527,7 @@
   #h3b :visited {
     color: #CA7A0F; }
   #h2c, #h3c :visited {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d, #h3d :visited {
     color: #168720; }
   #art1 {
@@ -592,22 +565,6 @@
   #art1, #art2, #art3, #art4 {
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px 1px #ECECEC; }
-  #icon {
-    font-size: 2.4em;
-    margin-left: 43%;
-    margin-top: 0%;
-    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
-    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #E79A3F, #E64F2A);
-    padding-bottom: 2%; }
   a, h2, h3, #btnml, #btnct {
     text-decoration: none; }
   #h2a {
@@ -640,7 +597,7 @@
     font-size: 1.7em;
     font-weight: lighter; }
   #h3c {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
@@ -668,17 +625,17 @@
     -o-text-fill-color: transparent;
     background: -linear-gradient(to right, #995EFF, #CA7A0F); }
   #h2c {
-    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
@@ -795,7 +752,7 @@
   #h3b :visited {
     color: #CA7A0F; }
   #h2c, #h3c :visited {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d, #h3d :visited {
     color: #168720; }
   #art1 {
@@ -833,23 +790,6 @@
   #art1, #art2, #art3, #art4 {
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px 1px #ECECEC; }
-  #icon {
-    font-size: 2.3em;
-    margin-left: 43%;
-    margin-top: 0%;
-    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
-    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #E79A3F, #E64F2A);
-    vertical-align: middle;
-    padding-bottom: 3%; }
   a, h2, h3, #btnml, #btnct {
     text-decoration: none; }
   #h2b, #h2c, #h2d {
@@ -884,11 +824,11 @@
     font-size: 1.7em;
     font-weight: lighter; }
   #h3c {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.4em;
+    font-size: 1.5em;
     white-space: nowrap; }
   #h3d {
     color: #1DAF29; }
@@ -913,17 +853,17 @@
     -o-text-fill-color: transparent;
     background: -linear-gradient(to right, #995EFF, #CA7A0F); }
   #h2c {
-    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
@@ -1039,7 +979,7 @@
   #h3b :visited {
     color: #CA7A0F; }
   #h2c, #h3c :visited {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d, #h3d :visited {
     color: #168720; }
   #art1 {
@@ -1077,23 +1017,6 @@
   #art1, #art2, #art3, #art4 {
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 1px 1px #ECECEC; }
-  #icon {
-    font-size: 2.3em;
-    margin-left: 43%;
-    margin-top: 0%;
-    /*utilisation des préfixes vendeurs pour un affichage de l'icône à l'identique sur tous les navigateurs*/
-    background: -moz-linear-gradient(right, #E79A3F, #E64F2A);
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #E79A3F, #E64F2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #E79A3F, #E64F2A);
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #E79A3F, #E64F2A);
-    vertical-align: middle;
-    padding-bottom: 3%; }
   a, h2, h3, #btnml, #btnct {
     text-decoration: none; }
   #h2a {
@@ -1125,7 +1048,7 @@
     font-size: 1.8em;
     font-weight: lighter; }
   #h3c {
-    color: #5e9ef4; }
+    color: #4192FF; }
   #h2d {
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
@@ -1153,17 +1076,17 @@
     -o-text-fill-color: transparent;
     background: -linear-gradient(to right, #995EFF, #CA7A0F); }
   #h2c {
-    background: -moz-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background: -webkit-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(right, #5e9ef4 30%, #2025B6);
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -o-text-fill-color: transparent;
-    background: -linear-gradient(to right, #5e9ef4 30%, #2025B6);
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     -webkit-background-clip: text; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
