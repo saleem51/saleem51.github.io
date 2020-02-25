@@ -11,6 +11,11 @@
 /*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
 /*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+/*l 325 media smartphone
+ *l 621 media tablette
+ *l 766 media paysage
+ * l 998 media paysage grande tablette
+ **/
 /*mixin pour les menus "la note enchantée" et "les délices des papilles"*/
 /*mixin pour les menus "le chic à la française" et "la palette du goût"*/
 /* affichage pour les ordinateurs et grands écrans*/
@@ -61,6 +66,8 @@
     height: 40px;
     top: 100px;
     left: 115px; }
+  #noteindex2 {
+    display: none; }
   h2 {
     text-align: center;
     line-height: 1.5; }
@@ -251,7 +258,7 @@
     border: 0;
     width: 100%;
     height: 100%; }
-  /*cmodification du display grid avec une seule colonne pour un affichage vertical du site sur smartphone*/
+  /*modification du display grid avec une seule colonne pour un affichage vertical du site sur smartphone*/
   #container {
     display: grid;
     margin: 0;
@@ -275,13 +282,18 @@
     text-align: center;
     position: relative;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
-    letter-spacing: -2px;
-    transform: translateY(-50%);
-    /* tiré de la moitié de sa propre hauteur */ }
+    letter-spacing: -2px; }
   a, h2, h3, #ml, #ctn {
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
     color: #F7C528; }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 28%; }
+  #noteindex2 {
+    display: none; }
   article {
     /*centrage des éléments verticalement et horizontalement*/
     margin-left: auto;
@@ -471,7 +483,7 @@
     -webkit-background-color: #559c84;
     background-color: #559c84; } }
 
-/*affiche pour les tablettes*/
+/*affichage pour les tablettes*/
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   html, body {
     /* margin, padding et border à 0 pour le reset css*/
@@ -510,6 +522,13 @@
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
     color: #F7C528; }
+  #noteindex {
+    display: none; }
+  #noteindex2 {
+    width: 30px;
+    position: relative;
+    top: 26%;
+    left: 40%; }
   #art1, #art3 {
     margin-left: auto; }
   #art2, #art4 {
@@ -729,6 +748,11 @@
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px;
     transform: translateY(-50%); }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 26%; }
   a, h2, h3, #ml, #ctn {
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
@@ -960,6 +984,11 @@
     position: relative;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px; }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 48%; }
   a, h2, h3, #ml, #ctn {
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
