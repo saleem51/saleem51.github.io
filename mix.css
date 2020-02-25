@@ -1,0 +1,3294 @@
+@charset "UTF-8";
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+/*background vert du header, du button et du footer $color-primary: #529180;*/
+/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/
+/*background color du menu la note enchantée $section1-color: #FADBD6;*/
+/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+/*l 325 media smartphone
+ *l 621 media tablette
+ *l 766 media paysage
+ * l 998 media paysage grande tablette
+ **/
+/*mixin pour les menus "la note enchantée" et "les délices des papilles"*/
+/*mixin pour les menus "le chic à la française" et "la palette du goût"*/
+/* affichage pour les ordinateurs et grands écrans*/
+@media screen and (min-width: 1113px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    /*display grid utilisé pour la mise en page des éléments avec le système de grille*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 13% 55% 55% 50%;
+    grid-column-gap: 4%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.6em;
+    bottom: 18%;
+    padding-top: 0.7%;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #art1, #art3 {
+    margin-left: 60%; }
+  #noteindex {
+    position: relative;
+    height: 40px;
+    top: 100px;
+    left: 115px; }
+  #noteindex2 {
+    display: none; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #4192FF; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 40%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 40%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 40%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 40%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2a {
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    position: relative;
+    font-size: 1.9em;
+    bottom: 9%; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2.2em;
+    font-weight: lighter;
+    position: relative;
+    bottom: 15%; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 2em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    font-weight: lighter; }
+  #h3c {
+    color: #4192FF; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.2em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    /*display flex pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 10%;
+    width: 35%;
+    margin: 0% 0% 70% 87%;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.5em;
+      background-image: url("https://zupimages.net/up/20/09/i24c.jpg"); }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button; }
+  #ctn {
+    margin-left: 72%;
+    -webkit-appearance: button;
+    -moz-appearance: button; } }
+
+/*affiche pour les smartphones*/
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  /*modification du display grid avec une seule colonne pour un affichage vertical du site sur smartphone*/
+  #container {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 55% 55% 55% 55% 35%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 28%; }
+  #noteindex2 {
+    display: none; }
+  article {
+    /*centrage des éléments verticalement et horizontalement*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #4192FF; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 65%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 65%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 65%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    width: 65%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2b, #h2c, #h2d {
+    vertical-align: middle; }
+  #h2a {
+    margin-top: 0%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.8em; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 1.7em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    font-weight: lighter; }
+  #h3c {
+    color: #4192FF; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.9em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    height: 16%;
+    width: 57%;
+    margin: auto;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.1em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; } }
+
+/*affichage pour les tablettes*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 7% 40% 40% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.4em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    transform: translateY(-50%); }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #noteindex {
+    display: none; }
+  #noteindex2 {
+    width: 30px;
+    position: relative;
+    top: 26%;
+    left: 40%; }
+  #art1, #art3 {
+    margin-left: auto; }
+  #art2, #art4 {
+    margin-right: auto; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #4192FF; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 60%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 60%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2a {
+    margin-top: 2%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.8em;
+    line-height: 0.4; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2.1em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 1.9em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h3c {
+    color: #4192FF; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.1em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 16%;
+    width: 55%;
+    margin: 0% 0% 70% 78%;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; } }
+
+/* affichage pour les smartphones et tablettes en mode paysage*/
+@media (orientation: landscape) and (min-width: 450px) and (max-width: 992px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 17% 95% 95% 95% 95% 55%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.4em;
+    font-family: 'Hind Siliguri', sans-serif;
+    bottom: 10%;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    transform: translateY(-50%); }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 26%; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  article {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #4192FF; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 30%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 30%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 30%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    width: 30%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2b, #h2c, #h2d {
+    vertical-align: middle; }
+  #h2a {
+    margin-top: 0%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.8em; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter;
+    white-space: nowrap; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 1.7em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h3c {
+    color: #4192FF; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    white-space: nowrap; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.9em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    /*display flex pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    height: 20%;
+    width: 30%;
+    margin: auto;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.3em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; } }
+
+/* affichage pour les tablettes en mode paysage (à partir de 993px)*/
+@media (orientation: landscape) and (min-width: 993px) and (max-width: 1112px) {
+  html, body {
+    /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: grid;
+    /*display grid utilisé pour la mise en page des éléments avec le système de grille*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 10% 55% 55% 50%;
+    grid-column-gap: 4%;
+    grid-row-gap: 5%;
+    overflow-x: hidden; }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  header, #btnpro, footer {
+    background-color: #559c84; }
+  h1 {
+    font-size: 2.6em;
+    transform: translateY(-50%);
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px; }
+  #noteindex {
+    position: relative;
+    width: 30px;
+    margin: auto;
+    top: 48%; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, #btnpro, #ml, #ctn {
+    color: #F7C528; }
+  #art1, #art3 {
+    margin-left: 50%; }
+  h2 {
+    text-align: center;
+    line-height: 1.5; }
+  h3 {
+    text-align: center;
+    line-height: 0.7; }
+  #h2a, #h3a:visited {
+    color: black; }
+  #h2b :visited {
+    color: #CA7A0F; }
+  #h3b :visited {
+    color: #CA7A0F; }
+  #h2c, #h3c :visited {
+    color: #4192FF; }
+  #h2d, #h3d :visited {
+    color: #168720; }
+  #art1 {
+    background-color: #f9dfde;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 50%;
+    height: 100%; }
+  #art2 {
+    background-color: #faf2fa;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 50%;
+    height: 100%; }
+  #art3 {
+    background-color: #FCFAFA;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 50%;
+    height: 100%; }
+  #art4 {
+    background-color: #FFF;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 50%;
+    height: 100%; }
+  #art1, #art2, #art3, #art4 {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  a, h2, h3, #btnml, #btnct {
+    text-decoration: none; }
+  #h2a {
+    margin-top: 0%;
+    /*police de caractère pour "la note enchantée"*/
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.9em; }
+  #h3a {
+    /*police de caractère de "MENU" de "la note enchantée"*/
+    font-family: 'Kalam', cursive;
+    color: black;
+    font-size: 2.2em;
+    font-weight: lighter; }
+  #h2b {
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  #h3b {
+    /*police de caractère de "Menu" de "Le chic à la françasise"*/
+    font-family: 'Noto Serif', serif;
+    color: #CA7A0F;
+    font-size: 2em;
+    font-weight: bolder; }
+  #h2c {
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    font-weight: lighter; }
+  #h3c {
+    color: #4192FF; }
+  #h2d {
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6em; }
+  #h3d {
+    color: #1DAF29; }
+  #h3c, #h3d {
+    /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.2em; }
+  #ml, #ctn, #btnpro {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720); }
+  article a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #btnpro {
+    font-size: 1.5em;
+    border-radius: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 12%;
+    width: 45%;
+    margin: 0% 0% 70% 82%;
+    background-color: #559c84; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; }
+  #ctn {
+    margin-left: auto;
+    margin-right: 13%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #559c84;
+    text-decoration: none; } }
+
+
+@media screen and (min-width: 1113px) {
+  #sec1M1, #sec1M2, #sec1M3, #sec1M4 {
+    /*extension pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 45%;
+    margin: 2% auto 6% auto; }
+  .menu1, .menu2, .menu3, .menu4 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  html, body, div, h1, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%; }
+  #container {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8;
+    display: grid;
+    grid-template-rows: 13% 10% 145%;
+    grid-template-columns: 100%;
+    overflow-x: hidden; }
+  header, footer {
+    background-color: #559c84; }
+  a, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, a:visited {
+    font-size: 2.6em;
+    top: 4%;
+    padding-top: 0.7%;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    color: #F7C528; }
+  h2 {
+    margin-left: 1%;
+    position: relative;
+    font-size: 1.7em;
+    margin-top: 50px; }
+  h2, h3 {
+    text-align: center; }
+  #sec1M1 {
+    background-color: #f9dfde; }
+  #sec1M2 {
+    background-color: #faf2fa; }
+  #sec1M3 {
+    background-color: #F2F7FA; }
+  #sec1M4 {
+    background-color: #F8FBF8;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2.5%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: 72%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  /*mise ne page de "La note enchantée"*/
+  #noteh2 {
+    height: 50px;
+    position: relative;
+    top: 30px;
+    left: 295px;
+    padding-bottom: 10px; }
+  .préludegauche {
+    position: relative;
+    width: 170px;
+    top: 38px;
+    left: 48px; }
+  .préludedroit {
+    position: relative;
+    width: 175px;
+    top: 38px;
+    left: 230px; }
+  #noteh4 {
+    height: 30px;
+    position: relative;
+    top: 80px;
+    left: 210px; }
+  #h3m1, #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter; }
+  #h3m1 {
+    font-size: 2em;
+    line-height: 0px; }
+  #h4m1c {
+    font-size: 1.7em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap; }
+  .sp1 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Annie Use Your Telescope";
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold; }
+  #h4m1, #h4m1a, #h4m1b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 1.3em; }
+  /*mise en page du menu chic à la française*/
+  #h3m2, #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.7em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    font-size: 1.5em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #chic1g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 25px; }
+  #chic1d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 255px; }
+  #chic2g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 25px; }
+  #chic2d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 255px; }
+  #chic3g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 25px; }
+  #chic3d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 255px; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Playfair Display:400";
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 1.3em; }
+  /*mise en page du "délice des papilles"*/
+  #h3m3 {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center; }
+  #délice1g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 35px; }
+  #délice1d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 280px; }
+  #délice2g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 35px; }
+  #délice2d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 280px; }
+  #délice3g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 35px; }
+  #délice3d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 280px; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Chilanka";
+    white-space: nowrap; }
+  .sp3 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Chilanka";
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-weight: lighter; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.9em;
+    font-weight: lighter;
+    text-align: center; }
+  /* mise en page de la palette du goût*/
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2.8em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .paletteg {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 50px; }
+  .paletted {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 200px; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.9em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.9em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .sp4 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4%;
+    font-weight: lighter; }
+  .sp4a {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; }
+  .sp4b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; } }
+
+/*affichage pour les smartphones*/
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  html, body, div, h1, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%; }
+  #container {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8;
+    display: grid;
+    grid-template-rows: 8% 3% 95%;
+    grid-template-columns: 100%;
+    overflow-x: hidden; }
+  header, footer {
+    background-color: #559c84; }
+  a, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, a:visited {
+    font-size: 2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    color: #F7C528; }
+  h2 {
+    position: relative;
+    font-size: 1.2em; }
+  h2, h3 {
+    text-align: center; }
+  #sec1M1 {
+    background-color: #f9dfde;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M2 {
+    background-color: #faf2fa;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M3 {
+    background-color: #F2F7FA;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M4 {
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto;
+    background-color: #F8FBF8;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 3%;
+    width: 100%;
+    height: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 0.95em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: 30%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  /*mise ne page de "La note enchantée"*/
+  #noteh2 {
+    width: 30px;
+    position: relative;
+    left: 43%; }
+  .préludegauche {
+    display: none; }
+  .préludedroit {
+    display: none; }
+  #noteh4 {
+    left: 43%;
+    width: 30px;
+    position: relative; }
+  #h3m1, #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter; }
+  #h3m1 {
+    font-size: 1.6em;
+    line-height: 0px;
+    position: relative; }
+  #h4m1c {
+    font-size: 1.7em;
+    text-align: center;
+    position: relative;
+    margin-top: 0%; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  .menu1 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.6em;
+    position: relative;
+    right: 15%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap; }
+  .sp1 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Annie Use Your Telescope";
+    text-align: right;
+    font-size: 0.6em;
+    font-weight: bold; }
+  #h4m1, #h4m1a, #h4m1b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    margin-top: 0%;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 1%;
+    margin-top: 15%; }
+  /*mise en page du menu chic à la française*/
+  #h3m2, #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.2em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    font-size: 1em;
+    text-align: center; }
+  #sec1M2 img {
+    display: none; }
+  .menu2 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.6em;
+    position: relative;
+    right: 15%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Playfair Display:400";
+    text-align: right;
+    font-size: 0.7em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 1em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 1em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 1em; }
+  /*mise en page du "délice des papilles"*/
+  #sec1M3 img {
+    display: none; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    line-height: 2;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: lighter; }
+  .menu3 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.54em;
+    position: relative;
+    right: 15%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Chilanka";
+    white-space: nowrap; }
+  .sp3 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Chilanka";
+    text-align: right;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-weight: lighter; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-align: center; }
+  /* mise en page de la palette du goût*/
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #sec1M4 img {
+    display: none; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2.3em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.4em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .menu4 {
+    display: grid;
+    list-style: none; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.52em;
+    position: relative;
+    right: 15%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap;
+    font-weight: lighter;
+    right: 12%;
+    position: relative;
+    white-space: nowrap; }
+  .sp4 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 4%;
+    position: relative;
+    white-space: nowrap; }
+  .sp4a {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 16%;
+    padding-top: 7%;
+    white-space: nowrap; }
+  .sp4b {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 18%;
+    white-space: nowrap; } }
+
+/*affiche pour les tablettes*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  html, body, div, h1, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%; }
+  #container {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8;
+    display: grid;
+    grid-template-rows: 8% 3% 110%;
+    grid-template-columns: 100%;
+    overflow-x: hidden; }
+  header, footer {
+    background-color: #559c84; }
+  a, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, a:visited {
+    font-size: 2.4em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    color: #F7C528; }
+  h2 {
+    position: relative;
+    font-size: 1.8em; }
+  h2, h3 {
+    text-align: center; }
+  #sec1M1 {
+    background-color: #f9dfde;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M2 {
+    background-color: #faf2fa;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M3 {
+    background-color: #F2F7FA;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto; }
+  #sec1M4 {
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 95%;
+    margin: 10% auto 5% auto;
+    background-color: #F8FBF8;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2%;
+    width: 100%;
+    height: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.2em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: 63%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  /*mise ne page de "La note enchantée"*/
+  #noteh2 {
+    width: 40px;
+    position: relative;
+    left: 48%; }
+  .préludegauche {
+    display: none; }
+  .préludedroit {
+    display: none; }
+  #noteh4 {
+    left: 48%;
+    width: 40px;
+    position: relative; }
+  #h3m1, #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter; }
+  #h3m1 {
+    font-size: 2.2em;
+    line-height: 0px;
+    position: relative; }
+  #h4m1c {
+    font-size: 1.8em;
+    text-align: center;
+    position: relative;
+    margin-top: 0%; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  .menu1 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    position: relative;
+    right: 5%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap; }
+  .sp1 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Annie Use Your Telescope";
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold; }
+  #h4m1, #h4m1a, #h4m1b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    margin-top: 0%;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 0.8em;
+    position: relative;
+    font-size: 1.6em;
+    bottom: 1%;
+    margin-top: 10%; }
+  /*mise en page du menu chic à la française*/
+  #h3m2, #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.5em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    font-size: 1.5em;
+    text-align: center; }
+  #sec1M2 img {
+    display: none; }
+  .menu2 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    position: relative;
+    right: 5%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Playfair Display:400";
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 1.3em; }
+  /*mise en page du "délice des papilles"*/
+  #sec1M3 img {
+    display: none; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  .menu3 {
+    /*mixin pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    position: relative;
+    right: 5%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Chilanka";
+    white-space: nowrap; }
+  .sp3 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Chilanka";
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-weight: lighter; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.7em;
+    font-weight: lighter;
+    text-align: center; }
+  #h3m3 {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 2.4em;
+    font-weight: lighter;
+    text-align: center; }
+  /* mise en page de la palette du goût*/
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #sec1M4 img {
+    display: none; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2.3em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.7em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .menu4 {
+    display: grid;
+    list-style: none; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    position: relative;
+    right: 5%;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap;
+    font-weight: lighter;
+    right: 6%;
+    position: relative;
+    white-space: nowrap; }
+  .sp4 {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 4%;
+    position: relative;
+    white-space: nowrap; }
+  .sp4a {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 16%;
+    padding-top: 7%;
+    white-space: nowrap; }
+  .sp4b {
+    margin-right: 20%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-right: 18%;
+    white-space: nowrap; } }
+
+@media (orientation: landscape) and (min-width: 813px) and (max-width: 1112px) {
+  html, body, div, h1, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%; }
+  #container {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8;
+    display: grid;
+    grid-template-rows: 13% 10% 145%;
+    grid-template-columns: 100%;
+    overflow-x: hidden; }
+  header, footer {
+    background-color: #559c84; }
+  a, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, a:visited {
+    font-size: 2.6em;
+    top: 4%;
+    padding-top: 0.7%;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    color: #F7C528; }
+  h2 {
+    margin-left: 1%;
+    position: relative;
+    font-size: 1.7em;
+    margin-top: 50px; }
+  h2, h3 {
+    text-align: center; }
+  #sec1M1 {
+    background-color: #f9dfde;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    margin: 2% auto 6% auto; }
+  #sec1M2 {
+    background-color: #faf2fa;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    margin: 2% auto 6% auto; }
+  #sec1M3 {
+    background-color: #F2F7FA;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    margin: 2% auto 6% auto; }
+  #sec1M4 {
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    margin: 2% auto 6% auto;
+    background-color: #F8FBF8;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 4%;
+    width: 100%;
+    height: 0.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.5em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: 65%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  /*mise ne page de "La note enchantée"*/
+  #noteh2 {
+    height: 50px;
+    position: relative;
+    top: 30px;
+    left: 410px;
+    padding-bottom: 10px; }
+  .préludegauche {
+    position: relative;
+    width: 170px;
+    top: 38px;
+    left: 170px; }
+  .préludedroit {
+    position: relative;
+    width: 175px;
+    top: 38px;
+    left: 350px; }
+  #noteh4 {
+    height: 30px;
+    position: relative;
+    top: 80px;
+    left: 320px; }
+  #h3m1, #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter; }
+  #h3m1 {
+    font-size: 2em;
+    line-height: 0px; }
+  #h4m1c {
+    font-size: 1.7em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  .menu1 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap; }
+  .sp1 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Annie Use Your Telescope";
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold; }
+  #h4m1, #h4m1a, #h4m1b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 1.3em; }
+  /*mise en page du menu chic à la française*/
+  #h3m2, #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.7em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    font-size: 1.5em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #chic1g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic1d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  #chic2g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic2d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  #chic3g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic3d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  .menu2 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Playfair Display:400";
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 1.3em; }
+  /*mise en page du "délice des papilles"*/
+  #h3m3 {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center; }
+  #délice1g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice1d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #délice2g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice2d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #délice3g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice3d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  .menu3 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Chilanka";
+    white-space: nowrap; }
+  .sp3 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Chilanka";
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-weight: lighter; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.9em;
+    font-weight: lighter;
+    text-align: center; }
+  /* mise en page de la palette du goût*/
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2.8em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .paletteg {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 150px; }
+  .paletted {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 320px; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.9em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .menu4 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.9em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .sp4 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4%;
+    font-weight: lighter; }
+  .sp4a {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; }
+  .sp4b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; } }
+
+@media (orientation: landscape) and (min-width: 667px) and (max-width: 812px) {
+  html, body, div, h1, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%; }
+  #container {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8;
+    display: grid;
+    grid-template-rows: 13% 10% 145%;
+    grid-template-columns: 100%;
+    overflow-x: hidden; }
+  header, footer {
+    background-color: #559c84; }
+  a, h3, #ml, #ctn {
+    text-decoration: none; }
+  h1, a:visited {
+    font-size: 2.4em;
+    bottom: 25%;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px;
+    color: #F7C528; }
+  h2 {
+    margin-left: 1%;
+    position: relative;
+    font-size: 1.7em;
+    margin-top: 50px; }
+  h2, h3 {
+    text-align: center; }
+  #sec1M1 {
+    background-color: #f9dfde;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    height: 160%;
+    margin: 2% auto 6% auto; }
+  #sec1M2 {
+    background-color: #faf2fa;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    height: 160%;
+    margin: 2% auto 6% auto; }
+  #sec1M3 {
+    background-color: #F2F7FA;
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    height: 160%;
+    margin: 2% auto 6% auto; }
+  #sec1M4 {
+    /*mixin pour la mise en page des 4 menu, dont la taille du cadre la position et la largeur*/
+    position: relative;
+    width: 85%;
+    height: 160%;
+    margin: 2% auto 6% auto;
+    background-color: #F8FBF8;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 4%;
+    width: 100%;
+    height: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer a {
+      text-decoration: none;
+      color: #F7C528;
+      font-size: 1.1em; }
+  #ml {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 3%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  #ctn {
+    margin-left: 60%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    -webkit-background-color: #559c84;
+    background-color: #559c84; }
+  /*mise ne page de "La note enchantée"*/
+  #noteh2 {
+    height: 30px;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    padding-bottom: 10px; }
+  .préludegauche {
+    position: relative;
+    width: 170px;
+    top: 38px;
+    left: 170px; }
+  .préludedroit {
+    position: relative;
+    width: 175px;
+    top: 38px;
+    left: 350px; }
+  #noteh4 {
+    height: 30px;
+    position: relative;
+    top: 45px;
+    left: 200px; }
+  #h3m1, #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter; }
+  #h3m1 {
+    font-size: 2em;
+    line-height: 0px; }
+  #h4m1c {
+    font-size: 1.7em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  .menu1 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 8%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap; }
+  .sp1 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Annie Use Your Telescope";
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold; }
+  #h4m1, #h4m1a, #h4m1b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 1.3em; }
+  /*mise en page du menu chic à la française*/
+  #h3m2, #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.7em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    font-size: 1.5em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  #chic1g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic1d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  #chic2g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic2d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  #chic3g {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 105px; }
+  #chic3d {
+    width: 180px;
+    position: relative;
+    top: 60px;
+    left: 370px; }
+  .menu2 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Playfair Display:400";
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 1.3em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 1.3em; }
+  /*mise en page du "délice des papilles"*/
+  #h3m3 {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center; }
+  #délice1g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice1d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #délice2g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice2d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #délice3g {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 135px; }
+  #délice3d {
+    position: relative;
+    width: 160px;
+    top: 55px;
+    left: 380px; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter; }
+  .menu3 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 1em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Chilanka";
+    white-space: nowrap; }
+  .sp3 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Chilanka";
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-weight: lighter; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.9em;
+    font-weight: lighter;
+    text-align: center; }
+  /* mise en page de la palette du goût*/
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2.8em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .paletteg {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 150px; }
+  .paletted {
+    position: relative;
+    width: 190px;
+    top: 50px;
+    left: 320px; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.9em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .menu4 {
+    /*extension pour pour agencer les 4 menus avec le display grid*/
+    list-style: none;
+    display: grid;
+    grid-template-columns: 70% 15% 15%; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    margin-left: 12%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 0.9em;
+    margin-top: 1.5%;
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Kalam";
+    white-space: nowrap;
+    font-weight: lighter; }
+  .sp4 {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4%;
+    font-weight: lighter; }
+  .sp4a {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; }
+  .sp4b {
+    margin-right: 100%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-family: "Kalam";
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 10%;
+    font-weight: lighter; } }
