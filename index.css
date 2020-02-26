@@ -219,10 +219,25 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
-    height: 10%;
+    height: 13%;
     width: 35%;
     margin: 0% 0% 70% 87%;
     background-color: #559c84; }
+  #btnpro:after {
+    display: inline-block;
+    animation: dotty steps(1, end) 1000ms infinite;
+    content: ''; }
+  @keyframes dotty {
+    0% {
+      content: ''; }
+    25% {
+      content: '.'; }
+    50% {
+      content: '..'; }
+    75% {
+      content: '...'; }
+    100% {
+      content: ''; } }
   footer {
     /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
     padding-top: 1%;
@@ -281,7 +296,7 @@
     font-family: 'Hind Siliguri', sans-serif;
     text-align: center;
     position: relative;
-    bottom: 20%;
+    bottom: 25px;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px; }
   a, h2, h3, #ml, #ctn {
@@ -292,9 +307,7 @@
     position: relative;
     width: 30px;
     margin: auto;
-    top: 28%; }
-  #noteindex2 {
-    display: none; }
+    top: 25%; }
   article {
     /*centrage des éléments verticalement et horizontalement*/
     margin-left: auto;
@@ -450,9 +463,24 @@
     grid-row-start: 6;
     grid-row-end: 6;
     height: 16%;
-    width: 57%;
+    width: 65%;
     margin: auto;
     background-color: #559c84; }
+  #btnpro:after {
+    display: inline-block;
+    animation: dotty steps(1, end) 1000ms infinite;
+    content: ''; }
+  @keyframes dotty {
+    0% {
+      content: ''; }
+    25% {
+      content: '.'; }
+    50% {
+      content: '..'; }
+    75% {
+      content: '...'; }
+    100% {
+      content: ''; } }
   footer {
     /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
     padding-top: 1%;
@@ -679,6 +707,21 @@
     width: 55%;
     margin: 0% 0% 70% 78%;
     background-color: #559c84; }
+  #btnpro:after {
+    display: inline-block;
+    animation: dotty steps(1, end) 1000ms infinite;
+    content: ''; }
+  @keyframes dotty {
+    0% {
+      content: ''; }
+    25% {
+      content: '.'; }
+    50% {
+      content: '..'; }
+    75% {
+      content: '...'; }
+    100% {
+      content: ''; } }
   footer {
     /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
     padding-top: 1%;
@@ -710,7 +753,7 @@
     text-decoration: none; } }
 
 /*affichage de la note de musique sur les différents écrans*/
-@media (min-width: 767px) and (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 767px) {
   #noteindex {
     position: relative;
     height: 30px;
@@ -719,6 +762,13 @@
   #noteindex2 {
     display: none; } }
 
+@media (min-width: 768px) and (max-width: 768px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 130px;
+    left: 10px; } }
+
 @media (min-width: 1023px) and (max-width: 1025px) {
   #noteindex {
     position: relative;
@@ -726,27 +776,26 @@
     top: 200px;
     left: 125px; } }
 
-@media (min-width: 1023px) and (max-width: 1025px) and (orientation: landscape) and (min-width: 1023px) and (max-width: 1025px) {
+@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1025px) {
   #noteindex {
     position: relative;
     height: 30px;
     top: 135px;
-    left: 100px; }
-  #noteindex2 {
-    display: none; } }
-
-@media (min-width: 1023px) and (max-width: 1025px) {
-  #noteindex2 {
-    display: none; } }
+    left: 100px; } }
 
 @media (orientation: landscape) and (min-width: 1365px) and (max-width: 1366px) {
   #noteindex {
     position: relative;
     height: 30px;
     top: 170px;
-    left: 110px; }
-  #noteindex2 {
-    display: none; } }
+    left: 110px; } }
+
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1930px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 110px;
+    left: 110px; } }
 
 @media (orientation: landscape) and (min-width: 800px) and (max-width: 811px) {
   #noteindex {
@@ -757,14 +806,12 @@
   #noteindex2 {
     display: none; } }
 
-@media (orientation: landscape) and (min-width: 812px) and (max-width: 824px) {
+@media (orientation: landscape) and (min-width: 812px) and (max-width: 896px) {
   #noteindex {
     position: relative;
     width: 30px;
     top: 100px;
-    left: 100px; }
-  #noteindex2 {
-    display: none; } }
+    left: 100px; } }
 
 /* affichage pour les smartphones et tablettes en mode paysage*/
 @media (orientation: landscape) and (min-width: 450px) and (max-width: 992px) {
@@ -963,6 +1010,21 @@
     width: 30%;
     margin: auto;
     background-color: #559c84; }
+  #btnpro:after {
+    display: inline-block;
+    animation: dotty steps(1, end) 1000ms infinite;
+    content: ''; }
+  @keyframes dotty {
+    0% {
+      content: ''; }
+    25% {
+      content: '.'; }
+    50% {
+      content: '..'; }
+    75% {
+      content: '...'; }
+    100% {
+      content: ''; } }
   footer {
     /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
     padding-top: 1%;
@@ -1187,6 +1249,21 @@
     width: 45%;
     margin: 0% 0% 70% 82%;
     background-color: #559c84; }
+  #btnpro:after {
+    display: inline-block;
+    animation: dotty steps(1, end) 1000ms infinite;
+    content: ''; }
+  @keyframes dotty {
+    0% {
+      content: ''; }
+    25% {
+      content: '.'; }
+    50% {
+      content: '..'; }
+    75% {
+      content: '...'; }
+    100% {
+      content: ''; } }
   footer {
     /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
     padding-top: 1%;
@@ -1211,7 +1288,7 @@
     text-decoration: none; }
   #ctn {
     margin-left: auto;
-    margin-right: 13%;
+    margin-right: 4%;
     -webkit-appearance: button;
     -moz-appearance: button;
     background-color: #559c84;
