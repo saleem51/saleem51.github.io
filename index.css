@@ -281,6 +281,7 @@
     font-family: 'Hind Siliguri', sans-serif;
     text-align: center;
     position: relative;
+    bottom: 20%;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px; }
   a, h2, h3, #ml, #ctn {
@@ -522,13 +523,6 @@
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
     color: #F7C528; }
-  #noteindex {
-    display: none; }
-  #noteindex2 {
-    width: 30px;
-    position: relative;
-    top: 26%;
-    left: 40%; }
   #art1, #art3 {
     margin-left: auto; }
   #art2, #art4 {
@@ -715,6 +709,63 @@
     background-color: #559c84;
     text-decoration: none; } }
 
+/*affichage de la note de musique sur les différents écrans*/
+@media (min-width: 767px) and (max-width: 768px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 130px;
+    left: 90px; }
+  #noteindex2 {
+    display: none; } }
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 200px;
+    left: 125px; } }
+
+@media (min-width: 1023px) and (max-width: 1025px) and (orientation: landscape) and (min-width: 1023px) and (max-width: 1025px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 135px;
+    left: 100px; }
+  #noteindex2 {
+    display: none; } }
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  #noteindex2 {
+    display: none; } }
+
+@media (orientation: landscape) and (min-width: 1365px) and (max-width: 1366px) {
+  #noteindex {
+    position: relative;
+    height: 30px;
+    top: 170px;
+    left: 110px; }
+  #noteindex2 {
+    display: none; } }
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 811px) {
+  #noteindex {
+    position: relative;
+    width: 30px;
+    top: 65px;
+    left: 100px; }
+  #noteindex2 {
+    display: none; } }
+
+@media (orientation: landscape) and (min-width: 812px) and (max-width: 824px) {
+  #noteindex {
+    position: relative;
+    width: 30px;
+    top: 100px;
+    left: 100px; }
+  #noteindex2 {
+    display: none; } }
+
 /* affichage pour les smartphones et tablettes en mode paysage*/
 @media (orientation: landscape) and (min-width: 450px) and (max-width: 992px) {
   html, body {
@@ -748,11 +799,6 @@
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px;
     transform: translateY(-50%); }
-  #noteindex {
-    position: relative;
-    width: 30px;
-    margin: auto;
-    top: 26%; }
   a, h2, h3, #ml, #ctn {
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
@@ -984,11 +1030,6 @@
     position: relative;
     /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
     letter-spacing: -2px; }
-  #noteindex {
-    position: relative;
-    width: 30px;
-    margin: auto;
-    top: 48%; }
   a, h2, h3, #ml, #ctn {
     text-decoration: none; }
   h1, #btnpro, #ml, #ctn {
