@@ -249,7 +249,7 @@
     padding-bottom: 10px;
     padding-left: 25px;
     position: relative;
-    margin-top: 400px; }
+    margin-top: 450px; }
   #ml {
     margin-left: 2%; }
   #ctn {
@@ -417,7 +417,7 @@
     padding-right: 25px;
     padding-bottom: 10px;
     padding-left: 25px; }
-  margin-top: 400px; }
+  margin-top: 450px; }
 
 @media screen and (orientation: landscape) and (min-width: 667px) {
   #art1 {
