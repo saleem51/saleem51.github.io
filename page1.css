@@ -249,7 +249,7 @@
     padding-bottom: 10px;
     padding-left: 25px;
     position: relative;
-    margin-top: 350px; }
+    margin-top: 400px; }
   #ml {
     margin-left: 2%; }
   #ctn {
@@ -406,9 +406,18 @@
     width: 45%;
     height: 300px;
     margin: 5% auto 5% auto; }
-  /*#btnpro{
-@include btn(1em,100px,10px,25px,10px,25px);
-}*/ }
+  #btnpro {
+    font-size: 1em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px; }
+  margin-top: 400px; }
 
 @media screen and (orientation: landscape) and (min-width: 667px) {
   #art1 {
@@ -431,9 +440,17 @@
     width: 45%;
     height: 300px;
     margin: 5% auto 5% auto; }
-  /*#btnpro{
-@include btn(2em,200px,10px,25px,10px,25px);
-}*/
+  #btnpro {
+    font-size: 2em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px; }
   footer {
     padding-bottom: 3%; }
     footer a {
