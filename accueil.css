@@ -1,0 +1,1250 @@
+@charset "UTF-8";
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+/*background vert du header, du button et du footer $color-primary: #529180;*/
+/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/
+/*background color du menu la note enchantée $section1-color: #FADBD6;*/
+/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+@media screen and (min-width: 300px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; } }
+
+html, body {
+  /* margin, padding et border à 0 pour le reset css*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%; }
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+header {
+  width: 100%; }
+
+h1 {
+  font-size: 2.4em;
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+  letter-spacing: -2px; }
+
+a, h2, h3, #ml, #ctn {
+  text-decoration: none;
+  white-space: nowrap; }
+
+#h2a, img, h3 {
+  line-height: 0.1; }
+
+h1, #btnpro, #ml, #ctn {
+  color: #F7C528; }
+
+article div {
+  text-align: center;
+  vertical-align: middle; }
+
+header, #btnpro, footer {
+  background-color: #559c84; }
+
+#noteindex {
+  position: relative;
+  height: 30px; }
+
+.a1 {
+  transform: scale(1);
+  transition: transform 2000ms; }
+
+.a1:hover {
+  opacity: 0.4;
+  transition: opacity;
+  transform: scale(1.5);
+  transition: transform 2000ms; }
+
+#art1 {
+  background-color: #f9dfde;
+  width: 60%;
+  height: 50%;
+  margin: 5% auto 5% auto; }
+
+#art2 {
+  background-color: #faf2fa;
+  width: 60%;
+  height: 50%;
+  margin: 5% auto 5% auto; }
+
+#art3 {
+  background-color: #FCFAFA;
+  width: 60%;
+  height: 50%;
+  margin: 5% auto 5% auto; }
+
+#art4 {
+  background-color: #FFF;
+  width: 60%;
+  height: 50%;
+  margin: 5% auto 5% auto; }
+
+#h2a, #h3a {
+  color: black; }
+
+#h2a {
+  /*police de caractère pour "la note enchantée"*/
+  font-family: 'Devonshire', cursive;
+  font-weight: lighter;
+  position: relative;
+  font-size: 1.5em; }
+
+#h3a {
+  /*police de caractère de "MENU" de "la note enchantée"*/
+  font-family: 'Kalam', cursive;
+  color: black;
+  font-weight: lighter;
+  position: relative;
+  font-size: 1.5em;
+  /*bottom: 55%;*/ }
+
+article {
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 1px 1px #ECECEC; }
+
+#h3b {
+  font-size: 1.5em; }
+
+#h3c, #h3d {
+  /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.5em; }
+
+#ml, #ctn, #btnpro {
+  /*police de caratère de "button" et de "footer"*/
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter; }
+
+#h2a, #h3a:visited {
+  color: black; }
+
+#h2b {
+  /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+  background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #995EFF, #CA7A0F);
+  /*police de caractère pour "Le chic à la française"*/
+  font-family: 'Croissant One', cursive;
+  font-size: 1em;
+  font-weight: lighter; }
+
+#h2b:visited {
+  /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+  background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #995EFF, #CA7A0F);
+  /*police de caractère pour "Le chic à la française"*/
+  font-family: 'Croissant One', cursive;
+  font-size: 1em;
+  font-weight: lighter; }
+
+#h3b {
+  color: #CA7A0F; }
+
+#h3b:visited {
+  color: #CA7A0F; }
+
+#h2c {
+  background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+  /*police de caractère de "Le délice des papilles"*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  font-weight: lighter; }
+
+#h2c:visited {
+  background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+  /*police de caractère de "Le délice des papilles"*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  font-weight: lighter; }
+
+#h3c {
+  color: #4192FF; }
+
+#h3c:visited {
+  color: #4192FF; }
+
+#h2d {
+  background: -moz-linear-gradient(right, #C7FF66, #168720);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #C7FF66, #168720);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #C7FF66, #168720);
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #C7FF66, #168720);
+  /*police de caractère de "La palette du goût"*/
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em; }
+
+#h2d:visited {
+  background: -moz-linear-gradient(right, #C7FF66, #168720);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #C7FF66, #168720);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(right, #C7FF66, #168720);
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background: -linear-gradient(to right, #C7FF66, #168720);
+  /*police de caractère de "La palette du goût"*/
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em; }
+
+#h3d {
+  color: #168720; }
+
+#h3d:visited {
+  color: #168720; }
+
+article a {
+  /*display flex pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97%;
+  height: 97%;
+  text-decoration: none; }
+
+footer {
+  /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+  padding-top: 1%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1%;
+  width: 100%;
+  height: 3%; }
+  footer a {
+    background-color: #559c84;
+    color: #F7C528;
+    font-size: 1.1em; }
+  footer div {
+    display: flex;
+    justify-content: space-between; }
+
+#ml {
+  margin-left: 3%; }
+
+#ctn {
+  margin-right: 3%; }
+
+#ml:hover {
+  -webkit-animation: thing 5s;
+  animation: thing 5s; }
+
+@-webkit-keyframes thing {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-4deg); }
+  4% {
+    transform: rotate(4deg); }
+  5% {
+    transform: rotate(-4deg); }
+  6% {
+    transform: rotate(4deg); }
+  7% {
+    transform: rotate(4deg); }
+  8% {
+    transform: rotate(-4deg); }
+  9% {
+    transform: rotate(4deg); }
+  10% {
+    transform: rotate(-4deg); }
+  11% {
+    transform: rotate(4deg); }
+  12% {
+    transform: rotate(-4deg); }
+  13% {
+    transform: rotate(-4deg); }
+  14% {
+    transform: rotate(4deg); }
+  15% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes thing {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-4deg); }
+  4% {
+    transform: rotate(4deg); }
+  5% {
+    transform: rotate(-4deg); }
+  6% {
+    transform: rotate(4deg); }
+  7% {
+    transform: rotate(4deg); }
+  8% {
+    transform: rotate(-4deg); }
+  9% {
+    transform: rotate(4deg); }
+  10% {
+    transform: rotate(-4deg); }
+  11% {
+    transform: rotate(4deg); }
+  12% {
+    transform: rotate(-4deg); }
+  13% {
+    transform: rotate(-4deg); }
+  14% {
+    transform: rotate(4deg); }
+  15% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+#ctn:hover {
+  -webkit-animation: thing 5s;
+  animation: thing 5s; }
+
+@-webkit-keyframes thing {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-4deg); }
+  4% {
+    transform: rotate(4deg); }
+  5% {
+    transform: rotate(-4deg); }
+  6% {
+    transform: rotate(4deg); }
+  7% {
+    transform: rotate(4deg); }
+  8% {
+    transform: rotate(-4deg); }
+  9% {
+    transform: rotate(4deg); }
+  10% {
+    transform: rotate(-4deg); }
+  11% {
+    transform: rotate(4deg); }
+  12% {
+    transform: rotate(-4deg); }
+  13% {
+    transform: rotate(-4deg); }
+  14% {
+    transform: rotate(4deg); }
+  15% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes thing {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-4deg); }
+  4% {
+    transform: rotate(4deg); }
+  5% {
+    transform: rotate(-4deg); }
+  6% {
+    transform: rotate(4deg); }
+  7% {
+    transform: rotate(4deg); }
+  8% {
+    transform: rotate(-4deg); }
+  9% {
+    transform: rotate(4deg); }
+  10% {
+    transform: rotate(-4deg); }
+  11% {
+    transform: rotate(4deg); }
+  12% {
+    transform: rotate(-4deg); }
+  13% {
+    transform: rotate(-4deg); }
+  14% {
+    transform: rotate(4deg); }
+  15% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+#btnpro {
+  font-size: 1.1em;
+  border-radius: 10%;
+  background-color: #559c84;
+  margin-bottom: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  padding-left: 10%; }
+
+@media screen and (min-width: 500px) {
+  #container {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  #art1 {
+    background-color: #f9dfde;
+    width: 36%;
+    height: 95%;
+    margin: 5% auto 5% auto; }
+  #art2 {
+    background-color: #faf2fa;
+    width: 36%;
+    height: 95%;
+    margin: 5% auto 5% auto; }
+  #art3 {
+    background-color: #FCFAFA;
+    width: 36%;
+    height: 95%;
+    margin: 5% auto 5% auto; }
+  #art4 {
+    background-color: #FFF;
+    width: 36%;
+    height: 95%;
+    margin: 5% auto 5% auto; }
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  h1 {
+    font-size: 4em; }
+  #noteindex {
+    height: 70px; }
+  #h2a {
+    font-size: 3.8em; }
+  #h3a {
+    font-size: 3.8em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 2.6em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 2.6em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em; }
+  #h3b, #h3c, #h3d {
+    font-size: 3.5em; }
+  #btnpro {
+    font-size: 2.6em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%; }
+  footer {
+    padding-bottom: 3%; }
+    footer a {
+      font-size: 3em; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 896px) {
+  #art1 {
+    background-color: #f9dfde;
+    width: 34%;
+    height: 100%;
+    margin: 5% auto 5% auto; }
+  #art2 {
+    background-color: #faf2fa;
+    width: 34%;
+    height: 100%;
+    margin: 5% auto 5% auto; }
+  #art3 {
+    background-color: #FCFAFA;
+    width: 34%;
+    height: 100%;
+    margin: 5% auto 5% auto; }
+  #art4 {
+    background-color: #FFF;
+    width: 34%;
+    height: 100%;
+    margin: 5% auto 5% auto; }
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  h1 {
+    font-size: 3em; }
+  #noteindex {
+    height: 45px; }
+  #h2a {
+    font-size: 1.8em; }
+  #h3a {
+    font-size: 1.3em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.1em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.7em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.7em; }
+  #h3b {
+    font-size: 1.3em; }
+  #h3c, #h3d {
+    font-size: 1.5em; }
+  #btnpro {
+    font-size: 1.2em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%; }
+  footer {
+    padding-bottom: 3%; }
+    footer a {
+      font-size: 1em; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 568px) {
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  h1 {
+    font-size: 3em; }
+  #noteindex {
+    height: 50px; }
+  #h2a {
+    font-size: 1.6em; }
+  #h3a {
+    font-size: 1.3em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 0.9em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 0.9em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.45em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.45em; }
+  #h3b {
+    font-size: 1.3em; }
+  #h3c, #h3d {
+    font-size: 1.5em; }
+  #btnpro {
+    font-size: 1.2em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%; }
+  footer {
+    padding-bottom: 3%; }
+    footer a {
+      font-size: 1em; } }
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
+  #art1 {
+    background-color: #f9dfde;
+    width: 45%;
+    height: 50%;
+    margin: 5% auto 5% auto; }
+  #art2 {
+    background-color: #faf2fa;
+    width: 45%;
+    height: 50%;
+    margin: 5% auto 5% auto; }
+  #art3 {
+    background-color: #FCFAFA;
+    width: 45%;
+    height: 50%;
+    margin: 5% auto 5% auto; }
+  #art4 {
+    background-color: #FFF;
+    width: 45%;
+    height: 50%;
+    margin: 5% auto 5% auto; }
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  h1 {
+    font-size: 3em; }
+  #noteindex {
+    height: 50px; }
+  #h2a {
+    font-size: 2.2em; }
+  #h3a {
+    font-size: 1.8em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.4em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.4em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.2em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.2em; }
+  #h3b {
+    font-size: 2.2em; }
+  #h3c, #h3d {
+    font-size: 2.5em; }
+  #btnpro {
+    font-size: 1.7em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%; }
+  footer {
+    padding-bottom: 2%; }
+    footer a {
+      font-size: 1.5em; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1024px) {
+  #noteindex {
+    height: 50px; }
+  #h2a {
+    font-size: 2.7em; }
+  #h3a {
+    font-size: 2.2em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.8em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 1.8em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.6em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.6em; }
+  #h3b {
+    font-size: 2.4em; }
+  #h3c, #h3d {
+    font-size: 2.7em; } }
+
+@media screen and (orientation: landscape) and (min-width: 900px) and (max-width: 1280px) {
+  #art1 {
+    background-color: #f9dfde;
+    width: 45%;
+    height: 80%;
+    margin: 5% auto 5% auto; }
+  #art2 {
+    background-color: #faf2fa;
+    width: 45%;
+    height: 80%;
+    margin: 5% auto 5% auto; }
+  #art3 {
+    background-color: #FCFAFA;
+    width: 45%;
+    height: 80%;
+    margin: 5% auto 5% auto; }
+  #art4 {
+    background-color: #FFF;
+    width: 45%;
+    height: 80%;
+    margin: 5% auto 5% auto; }
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  h1 {
+    font-size: 3em; }
+  #noteindex {
+    height: 60px; }
+  #h2a {
+    font-size: 3em; }
+  #h3a {
+    font-size: 2em; }
+  #h2b {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 2em;
+    font-weight: lighter; }
+  #h2b:visited {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    /*police de caractère pour "Le chic à la française"*/
+    font-family: 'Croissant One', cursive;
+    font-size: 2em;
+    font-weight: lighter; }
+  #h2c {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    font-weight: lighter; }
+  #h2c:visited {
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    /*police de caractère de "Le délice des papilles"*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    font-weight: lighter; }
+  #h2d {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.6em; }
+  #h2d:visited {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    /*police de caractère de "La palette du goût"*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.6em; }
+  #h3b {
+    font-size: 2.5em; }
+  #h3c, #h3d {
+    font-size: 2.5em; }
+  #btnpro {
+    font-size: 1.2em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%; }
+  footer {
+    padding-bottom: 2%; }
+    footer a {
+      font-size: 1.7em; } }
+
+@media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
+  #h2b {
+    font-size: 2.2em; } }
