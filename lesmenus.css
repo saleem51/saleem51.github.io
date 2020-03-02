@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+/*background vert du header, du button et du footer $color-primary: #529180;*/
+/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/
+/*background color du menu la note enchantée $section1-color: #FADBD6;*/
+/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+/*background color du menu la palette du goût $section4-color: #F0FFF2;*/
+/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+@media screen and (min-width: 300px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  header, footer {
+    background-color: #559c84;
+    width: 100%; }
+  section {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC; }
+  h1 {
+    font-size: 2.4em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+    letter-spacing: -2px; }
+  a, h2, h3, #ml, #ctn {
+    text-decoration: none;
+    white-space: nowrap; }
+  h1, #ml, #ctn {
+    color: #F7C528; }
+  #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+    /*police de caratère de "footer"*/
+    font-family: 'Lato', sans-serif; }
+  h2, h3, h4 {
+    text-align: center; }
+  #ml, #ctn {
+    /*police de caratère de "button" et de "footer"*/
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter; }
+  footer {
+    /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1%;
+    width: 100%;
+    height: 3%; }
+    footer a {
+      background-color: #559c84;
+      color: #F7C528;
+      font-size: 1.1em; }
+    footer div {
+      display: flex;
+      justify-content: space-between; }
+  #ml {
+    margin-left: 3%; }
+  #ctn {
+    margin-right: 3%; }
+  #ml:hover {
+    -webkit-animation: thing 5s;
+    animation: thing 5s; }
+  @-webkit-keyframes thing {
+    0% {
+      transform: rotate(0deg); }
+    3% {
+      transform: rotate(-4deg); }
+    4% {
+      transform: rotate(4deg); }
+    5% {
+      transform: rotate(-4deg); }
+    6% {
+      transform: rotate(4deg); }
+    7% {
+      transform: rotate(4deg); }
+    8% {
+      transform: rotate(-4deg); }
+    9% {
+      transform: rotate(4deg); }
+    10% {
+      transform: rotate(-4deg); }
+    11% {
+      transform: rotate(4deg); }
+    12% {
+      transform: rotate(-4deg); }
+    13% {
+      transform: rotate(-4deg); }
+    14% {
+      transform: rotate(4deg); }
+    15% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(0deg); } }
+  @keyframes thing {
+    0% {
+      transform: rotate(0deg); }
+    3% {
+      transform: rotate(-4deg); }
+    4% {
+      transform: rotate(4deg); }
+    5% {
+      transform: rotate(-4deg); }
+    6% {
+      transform: rotate(4deg); }
+    7% {
+      transform: rotate(4deg); }
+    8% {
+      transform: rotate(-4deg); }
+    9% {
+      transform: rotate(4deg); }
+    10% {
+      transform: rotate(-4deg); }
+    11% {
+      transform: rotate(4deg); }
+    12% {
+      transform: rotate(-4deg); }
+    13% {
+      transform: rotate(-4deg); }
+    14% {
+      transform: rotate(4deg); }
+    15% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(0deg); } }
+  #ctn:hover {
+    -webkit-animation: thing 5s;
+    animation: thing 5s; }
+  @-webkit-keyframes thing {
+    0% {
+      transform: rotate(0deg); }
+    3% {
+      transform: rotate(-4deg); }
+    4% {
+      transform: rotate(4deg); }
+    5% {
+      transform: rotate(-4deg); }
+    6% {
+      transform: rotate(4deg); }
+    7% {
+      transform: rotate(4deg); }
+    8% {
+      transform: rotate(-4deg); }
+    9% {
+      transform: rotate(4deg); }
+    10% {
+      transform: rotate(-4deg); }
+    11% {
+      transform: rotate(4deg); }
+    12% {
+      transform: rotate(-4deg); }
+    13% {
+      transform: rotate(-4deg); }
+    14% {
+      transform: rotate(4deg); }
+    15% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(0deg); } }
+  @keyframes thing {
+    0% {
+      transform: rotate(0deg); }
+    3% {
+      transform: rotate(-4deg); }
+    4% {
+      transform: rotate(4deg); }
+    5% {
+      transform: rotate(-4deg); }
+    6% {
+      transform: rotate(4deg); }
+    7% {
+      transform: rotate(4deg); }
+    8% {
+      transform: rotate(-4deg); }
+    9% {
+      transform: rotate(4deg); }
+    10% {
+      transform: rotate(-4deg); }
+    11% {
+      transform: rotate(4deg); }
+    12% {
+      transform: rotate(-4deg); }
+    13% {
+      transform: rotate(-4deg); }
+    14% {
+      transform: rotate(4deg); }
+    15% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(0deg); } }
+  /* la note enchantée*/
+  #sec1M1 {
+    background-color: #f9dfde;
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%; }
+  #img {
+    display: flex;
+    justify-content: center; }
+  #noteh2 {
+    position: relative;
+    height: 25px;
+    top: 35px;
+    margin-right: 5%; }
+  #h2m1 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+  #h3m1 {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.7em; }
+  .préludegauche, .préludedroit {
+    position: relative;
+    top: 37.5px;
+    width: 80px; }
+  .préludegauche {
+    left: 2%; }
+  .préludedroit {
+    left: 42%; }
+  #h4m1c {
+    font-family: 'Devonshire', cursive;
+    font-weight: lighter;
+    font-size: 1.3em;
+    position: relative; }
+  #img2 {
+    display: flex;
+    justify-content: center; }
+  #noteh4 {
+    position: relative;
+    height: 20px;
+    top: 30px;
+    margin-right: 5%; }
+  .texte {
+    /* mixin pour la mise en forme des textes des menus*/
+    font-weight: lighter;
+    font-family: "Kalam";
+    white-space: nowrap;
+    position: relative;
+    font-size: 0.55em;
+    margin-left: 2%; }
+  .sp1 {
+    font-family: "Annie Use Your Telescope";
+    font-weight: bold;
+    font-size: 0.55em;
+    margin-right: 2%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-family: "Kalam";
+    position: relative;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1em; }
+  .menu1 {
+    display: flex;
+    justify-content: space-between; } }
+
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 399px) {
+  .préludegauche, .préludedroit {
+    height: 2px; }
+  .préludedroit {
+    left: 45%; }
+  #noteh4 {
+    height: 25px;
+    top: 50px;
+    right: 20%; }
+  .texte {
+    font-size: 0.65em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 0.65em;
+    margin-right: 5%; } }
+
+@media screen and (orientation: portrait) and (min-width: 400px) {
+  .préludegauche, .préludedroit {
+    top: 45px;
+    width: 90px;
+    height: 2px; }
+  .préludegauche {
+    left: 4%; }
+  .préludedroit {
+    left: 45%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.2em; }
+  #h4m1c {
+    font-size: 1.5em; }
+  #noteh4 {
+    height: 25px;
+    top: 60px;
+    right: 20%; }
+  .texte {
+    font-size: 0.7em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 0.7em;
+    margin-right: 5%; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 800px) {
+  #noteh2 {
+    top: 35px;
+    margin-right: 3%;
+    height: 35px; }
+  #h3m1 {
+    font-size: 1.8em; }
+  .préludegauche, .préludedroit {
+    top: 45px;
+    width: 200px;
+    height: 2px; }
+  .préludegauche {
+    left: 2%; }
+  .préludedroit {
+    left: 31.5%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.2em; }
+  #h4m1c {
+    font-size: 1.5em; }
+  #noteh4 {
+    margin-right: 2%;
+    height: 25px;
+    top: 60px;
+    right: 12.5%; }
+  .texte {
+    font-size: 0.95em;
+    margin-left: 2%; }
+  .sp1 {
+    font-size: 0.95em;
+    margin-right: 2%; }
+  footer {
+    padding-bottom: 2%; } }
+
+@media screen and (orientation: landscape) and (min-width: 801px) and (max-width: 900px) {
+  #noteh2 {
+    top: 35px;
+    margin-right: 3%;
+    height: 35px; }
+  #h3m1 {
+    font-size: 1.8em; }
+  .préludegauche, .préludedroit {
+    top: 60px;
+    width: 240px;
+    height: 2px; }
+  .préludegauche {
+    left: 3.5%; }
+  .préludedroit {
+    left: 30%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.6em; }
+  #h4m1c {
+    font-size: 1.9em; }
+  #noteh4 {
+    height: 25px;
+    top: 73px;
+    right: 11.5%; }
+  .texte {
+    font-size: 1.1em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.1em;
+    margin-right: 5%; }
+  footer {
+    padding-bottom: 3%; } }
+
+@media screen and (orientation: landscape) and (min-width: 801px) and (max-width: 900px) {
+  #noteh2 {
+    top: 35px;
+    margin-right: 3%;
+    height: 35px; }
+  #h3m1 {
+    font-size: 1.8em; }
+  .préludegauche, .préludedroit {
+    top: 60px;
+    width: 240px;
+    height: 2px; }
+  .préludegauche {
+    left: 3.5%; }
+  .préludedroit {
+    left: 30%; }
+  #h3m1 {
+    font-size: 2em; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.6em; }
+  #h4m1c {
+    font-size: 1.9em; }
+  #noteh4 {
+    height: 25px;
+    top: 73px;
+    right: 11.5%; }
+  .texte {
+    font-size: 1.2em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.2em;
+    margin-right: 5%; }
+  footer {
+    padding-bottom: 3%;
+    font-size: 1.4em; } }
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 602px) {
+  .préludegauche, .préludedroit {
+    top: 45px;
+    width: 185px;
+    height: 2px; }
+  .préludegauche {
+    left: 2%; }
+  .préludedroit {
+    left: 30%; }
+  #noteh4 {
+    height: 30px;
+    top: 60px;
+    right: 14%; } }
+
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
+  #noteh2 {
+    top: 35px;
+    margin-right: 3%;
+    height: 40px; }
+  #h3m1 {
+    font-size: 2.3em; }
+  .préludegauche, .préludedroit {
+    top: 55px;
+    width: 200px;
+    height: 2px; }
+  .préludegauche {
+    left: 4%; }
+  .préludedroit {
+    left: 37%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.5em; }
+  #h4m1c {
+    font-size: 1.9em; }
+  #noteh4 {
+    margin-right: 2%;
+    height: 30px;
+    top: 72px;
+    right: 14%; }
+  .texte {
+    font-size: 1.1em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.1em;
+    margin-right: 5%; }
+  footer {
+    font-size: 1.4em;
+    padding-bottom: 1%; } }
+
+@media screen and (orientation: landscape) and (min-width: 901px) and (max-width: 1279px) {
+  h1 {
+    font-size: 3.5em; }
+  h2 {
+    font-size: 2.6em; }
+  #noteh2 {
+    top: 35px;
+    margin-right: 3%;
+    height: 35px; }
+  #h3m1 {
+    font-size: 2.2em; }
+  .préludegauche, .préludedroit {
+    top: 60px;
+    width: 270px;
+    height: 3px; }
+  .préludegauche {
+    left: 5%; }
+  .préludedroit {
+    left: 35%; }
+  #h3m1 {
+    font-size: 2em; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.6em; }
+  #h4m1c {
+    font-size: 2.2em; }
+  #noteh4 {
+    height: 35px;
+    top: 85px;
+    right: 11%; }
+  .texte {
+    font-size: 1.4em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.4em;
+    margin-right: 5%; }
+  footer {
+    padding-bottom: 3%;
+    font-size: 1.7em; } }
+
+@media screen and (orientation: landscape) and (min-width: 1280px) {
+  #noteh2 {
+    margin-right: 3%; }
+  #h3m1 {
+    font-size: 1.9em; }
+  .préludegauche, .préludedroit {
+    top: 50px;
+    width: 170px; }
+  .préludegauche {
+    left: 2%; }
+  .préludedroit {
+    left: 42%; }
+  #noteh4 {
+    top: 50px;
+    margin-left: 4%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.4em; }
+  .texte {
+    font-size: 1em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1em;
+    margin-right: 5%; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    font-size: 3.5em; }
+  h2 {
+    font-size: 2.5em; }
+  #noteh2 {
+    top: 50px;
+    margin-right: 3%;
+    height: 40px; }
+  #h3m1 {
+    font-size: 2.7em; }
+  .préludegauche, .préludedroit {
+    top: 55px;
+    width: 240px;
+    height: 2px; }
+  .préludegauche {
+    left: 5%; }
+  .préludedroit {
+    left: 42.5%; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 1.7em; }
+  #h4m1c {
+    font-size: 2.1em; }
+  #noteh4 {
+    margin-right: 2%;
+    height: 30px;
+    top: 80px;
+    right: 12%; }
+  .texte {
+    font-size: 1.3em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.3em;
+    margin-right: 5%; }
+  footer {
+    font-size: 1.8em;
+    padding-bottom: 1%; } }
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 3.8em;
+    padding-bottom: 0.9%;
+    margin-top: 3%; }
+  footer {
+    padding-bottom: 3%; }
+    footer a {
+      font-size: 2.4em; }
+  #ml {
+    margin-left: 2%; }
+  #ctn {
+    margin-right: 2%; }
+  #sec1M1 {
+    background-color: #f9dfde; }
+  #img {
+    display: flex;
+    justify-content: center; }
+  #noteh2 {
+    position: relative;
+    height: 70px;
+    margin-top: 2%;
+    line-height: 0.1;
+    top: 50px; }
+  .préludegauche, .préludedroit {
+    display: initial;
+    top: 90px;
+    position: relative;
+    width: 410px;
+    height: 6px; }
+  .préludegauche {
+    left: 5%; }
+  .préludedroit {
+    left: 30%; }
+  #h3m1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 2.4em; }
+  #h4m1, #h4m1a, #h4m1b {
+    font-size: 2.4em; }
+  #h4m1 {
+    margin-bottom: 3%; }
+  #h4m1c {
+    font-size: 3.5em;
+    padding-bottom: 2%; }
+  #img2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 30%; }
+  #noteh4 {
+    height: 60px;
+    line-height: 0.1;
+    top: 140px; }
+  .texte {
+    font-size: 1.7em;
+    margin-left: 5%; }
+  .sp1 {
+    font-size: 1.7em;
+    margin-right: 5%; }
+  .menu1 {
+    display: flex;
+    justify-content: space-between; } }
