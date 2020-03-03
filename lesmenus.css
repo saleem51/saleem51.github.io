@@ -621,3 +621,1090 @@
   .menu1 {
     display: flex;
     justify-content: space-between; } }
+
+/* Le chic à la française*/
+@media screen and (min-width: 300px) {
+  #sec1M2 {
+    background-color: #faf2fa;
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%; }
+  #h2m2 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+  .menu2 {
+    display: flex;
+    justify-content: space-between; }
+  #h3m2 {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.4em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F); }
+  #h4m2c {
+    /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+    font-family: 'Croissant One', cursive;
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 0.8em;
+    background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #995EFF, #CA7A0F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #995EFF, #CA7A0F);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #995EFF, #CA7A0F);
+    text-align: center; }
+  .texte2, .texte2a, .texte2b {
+    /* mixin pour la mise en forme des textes des menus*/
+    font-weight: lighter;
+    font-family: "Playfair Display:400";
+    white-space: nowrap;
+    position: relative;
+    font-weight: lighter;
+    font-size: 0.55em;
+    margin-left: 5%; }
+  .texte2 {
+    color: #CA7A0F; }
+  .texte2a {
+    color: #A165AF; }
+  .texte2b {
+    color: #6F39B8; }
+  .sp2a, .sp2b {
+    font-family: "Playfair Display:400";
+    font-weight: bold;
+    font-weight: lighter;
+    font-size: 0.55em;
+    margin-right: 5%; }
+  .sp2a {
+    color: #CA7A0F; }
+  .sp2b {
+    color: #A378AD; }
+  #h4m2 {
+    color: #CA7A0F;
+    text-align: center;
+    font-size: 0.8em; }
+  #h4m2a {
+    color: #A165AF;
+    text-align: center;
+    font-size: 0.8em; }
+  #h4m2b {
+    color: #6F39B8;
+    text-align: center;
+    font-size: 0.8em; }
+  #chic1g {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 4%; }
+  #chic1d {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 60%; }
+  #chic2g {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 4%; }
+  #chic2d {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 60%; }
+  #chic3g {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 4%; }
+  #chic3d {
+    width: 50px;
+    position: relative;
+    top: 31px;
+    left: 60%; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 809px) {
+  #h3m2 {
+    font-size: 1.6em; }
+  #h4m2c {
+    font-size: 1.1em; }
+  #chic1g {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 10%; }
+  #chic1d {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 55%; }
+  #chic2g {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 10%; }
+  #chic2d {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 55%; }
+  #chic3g {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 10%; }
+  #chic3d {
+    width: 100px;
+    position: relative;
+    top: 43px;
+    left: 55%; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 0.8em; }
+  .sp2a, .sp2b {
+    font-size: 0.8em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.1em; }
+  footer {
+    padding-bottom: 3%; } }
+
+@media screen and (orientation: landscape) and (min-width: 731px) and (max-width: 740px) {
+  #chic1g, #chic2g, #chic3g {
+    left: 15%; } }
+
+@media screen and (orientation: landscape) and (min-width: 810px) and (max-width: 1023px) {
+  h1 {
+    font-size: 3.1em; }
+  #h3m2 {
+    font-size: 1.8em; }
+  #h4m2c {
+    font-size: 1.4em; }
+  #chic1g {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 10%;
+    height: 6px; }
+  #chic1d {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 52%;
+    height: 6px; }
+  #chic2g {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 10%;
+    height: 6px; }
+  #chic2d {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 52%;
+    height: 6px; }
+  #chic3g {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 10%;
+    height: 6px; }
+  #chic3d {
+    width: 150px;
+    position: relative;
+    top: 48px;
+    left: 52%;
+    height: 6px; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 1em; }
+  .sp2a, .sp2b {
+    font-size: 1em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.3em; } }
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
+  #h3m2 {
+    font-size: 1.9em; }
+  #h4m2c {
+    font-size: 1.4em; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 1em; }
+  .sp2a, .sp2b {
+    font-size: 1em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.2em; }
+  #chic1g {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 4%;
+    height: 6px; }
+  #chic1d {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; }
+  #chic2g {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 4%;
+    height: 6px; }
+  #chic2d {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; }
+  #chic3g {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 4%;
+    height: 6px; }
+  #chic3d {
+    width: 170px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; } }
+
+@media screen and (orientation: portrait) and (min-width: 599px) and (max-width: 600px) {
+  #chic1g {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 2%;
+    height: 6px; }
+  #chic1d {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; }
+  #chic2g {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 2%;
+    height: 6px; }
+  #chic2d {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; }
+  #chic3g {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 2%;
+    height: 6px; }
+  #chic3d {
+    width: 140px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 6px; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.7em; }
+  #h3m2 {
+    font-size: 2.1em; }
+  #h4m2c {
+    font-size: 1.7em; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 1.2em; }
+  .sp2a, .sp2b {
+    font-size: 1.2em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.4em; }
+  #chic1g {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 10%;
+    height: 7px; }
+  #chic1d {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 7px; }
+  #chic2g {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 10%;
+    height: 7px; }
+  #chic2d {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 7px; }
+  #chic3g {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 10%;
+    height: 7px; }
+  #chic3d {
+    width: 190px;
+    position: relative;
+    top: 45px;
+    left: 45%;
+    height: 7px; }
+  footer {
+    padding-bottom: 2%; } }
+
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.7em; }
+  #h3m2 {
+    font-size: 2.3em; }
+  #h4m2c {
+    font-size: 1.9em; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 1.3em; }
+  .sp2a, .sp2b {
+    font-size: 1.3em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.6em; }
+  #chic1g {
+    width: 190px;
+    position: relative;
+    top: 57px;
+    left: 10%;
+    height: 7px; }
+  #chic1d {
+    width: 190px;
+    position: relative;
+    top: 55px;
+    left: 48%;
+    height: 7px; }
+  #chic2g {
+    width: 190px;
+    position: relative;
+    top: 57px;
+    left: 10%;
+    height: 7px; }
+  #chic2d {
+    width: 190px;
+    position: relative;
+    top: 55px;
+    left: 48%;
+    height: 7px; }
+  #chic3g {
+    width: 190px;
+    position: relative;
+    top: 57px;
+    left: 10%;
+    height: 7px; }
+  #chic3d {
+    width: 190px;
+    position: relative;
+    top: 55px;
+    left: 48%;
+    height: 7px; }
+  footer {
+    padding-bottom: 2%; } }
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.8em; }
+  #h3m2 {
+    font-size: 2.4em; }
+  #h4m2c {
+    font-size: 2em; }
+  .texte2, .texte2a, .texte2b {
+    font-size: 1.4em; }
+  .sp2a, .sp2b {
+    font-size: 1.4em; }
+  #h4m2, #h4m2a, #h4m2b {
+    font-size: 1.7em; }
+  #chic1g {
+    width: 270px;
+    position: relative;
+    top: 60px;
+    left: 15%;
+    height: 10px; }
+  #chic1d {
+    width: 270px;
+    position: relative;
+    top: 58px;
+    left: 45%;
+    height: 10px; }
+  #chic2g {
+    width: 270px;
+    position: relative;
+    top: 60px;
+    left: 15%;
+    height: 10px; }
+  #chic2d {
+    width: 270px;
+    position: relative;
+    top: 58px;
+    left: 45%;
+    height: 10px; }
+  #chic3g {
+    width: 270px;
+    position: relative;
+    top: 60px;
+    left: 15%;
+    height: 10px; }
+  #chic3d {
+    width: 270px;
+    position: relative;
+    top: 58px;
+    left: 45%;
+    height: 10px; }
+  footer {
+    padding-bottom: 3%; } }
+
+/*le délice des papilles*/
+@media screen and (min-width: 300px) {
+  #sec1M3 {
+    background-color: #F2F7FA;
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%; }
+  #h2m3 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+  .menu3 {
+    display: flex;
+    justify-content: space-between; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-family: 'Chilanka';
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: lighter; }
+  .texte3 {
+    /* mixin pour la mise en forme des textes des menus*/
+    font-weight: lighter;
+    font-family: "Chilanka";
+    white-space: nowrap;
+    position: relative;
+    font-size: 0.50em;
+    margin-left: 5%; }
+  .sp3 {
+    font-family: "Chilanka";
+    font-weight: bold;
+    font-weight: lighter;
+    font-size: 0.50em;
+    margin-right: 5%; }
+  #h4m3c {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 1.7em;
+    font-weight: lighter;
+    text-align: center; }
+  #h3m3 {
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #4192FF 30%, #030AD3);
+    -webkit-background-clip: text;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center; }
+  #délice1g {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 2%; }
+  #délice1d {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 47%; }
+  #délice2g {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 2%; }
+  #délice2d {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 47%; }
+  #délice3g {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 2%; }
+  #délice3d {
+    position: relative;
+    width: 70px;
+    top: 25px;
+    left: 47%; } }
+
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 500px) {
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 0.9em; }
+  .texte3 {
+    font-size: 0.6em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 0.6em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 7%; }
+  #délice1d {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 52%; }
+  #délice2g {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 7%; }
+  #délice2d {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 52%; }
+  #délice3g {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 7%; }
+  #délice3d {
+    position: relative;
+    width: 70px;
+    top: 30px;
+    left: 52%; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 809px) {
+  h1 {
+    font-size: 3.2em; }
+  #h4m3c {
+    font-size: 1.9em; }
+  #h3m3 {
+    font-size: 2.2em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1em; }
+  .texte3 {
+    font-size: 0.8em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 0.8em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 12%; }
+  #délice1d {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 45%; }
+  #délice2g {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 12%; }
+  #délice2d {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 45%; }
+  #délice3g {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 12%; }
+  #délice3d {
+    position: relative;
+    width: 120px;
+    top: 35px;
+    left: 45%; }
+  footer {
+    font-size: 1.2em; } }
+
+@media screen and (orientation: landscape) and (min-width: 810px) and (max-width: 1023px) {
+  h1 {
+    font-size: 3.2em; }
+  #h2m3 {
+    font-size: 2em; }
+  #h4m3c {
+    font-size: 2.3em; }
+  #h3m3 {
+    font-size: 2.6em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.3em; }
+  .texte3 {
+    font-size: 1em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice1d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 45%; }
+  #délice2g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice2d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 47%; }
+  #délice3g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice3d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 45%; }
+  footer {
+    font-size: 1.2em; } }
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.2em; }
+  #h2m3 {
+    font-size: 2em; }
+  #h4m3c {
+    font-size: 2.3em; }
+  #h3m3 {
+    font-size: 2.6em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.3em; }
+  .texte3 {
+    font-size: 1em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice1d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 45%; }
+  #délice2g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice2d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 45%; }
+  #délice3g {
+    position: relative;
+    width: 150px;
+    top: 44px;
+    left: 12%; }
+  #délice3d {
+    position: relative;
+    width: 150px;
+    top: 42px;
+    left: 44%; }
+  footer {
+    font-size: 1.3em; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.4em; }
+  #h2m3 {
+    font-size: 2.3em; }
+  #h4m3c {
+    font-size: 3em; }
+  #h3m3 {
+    font-size: 2.6em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.5em; }
+  .texte3 {
+    font-size: 1.2em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1.2em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice1d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  #délice2g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice2d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  #délice3g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice3d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  footer {
+    font-size: 1.7em; } }
+
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.2em; }
+  #h2m3 {
+    font-size: 2em; }
+  #h4m3c {
+    font-size: 2.5em; }
+  #h3m3 {
+    font-size: 3em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.4em; }
+  .texte3 {
+    font-size: 1.1em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1.1em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 170px;
+    top: 44px;
+    left: 15%;
+    height: 5px; }
+  #délice1d {
+    position: relative;
+    width: 170px;
+    top: 42px;
+    left: 45%;
+    height: 5px; }
+  #délice2g {
+    position: relative;
+    width: 170px;
+    top: 44px;
+    left: 15%;
+    height: 5px; }
+  #délice2d {
+    position: relative;
+    width: 170px;
+    top: 42px;
+    left: 45%;
+    height: 5px; }
+  #délice3g {
+    position: relative;
+    width: 170px;
+    top: 44px;
+    left: 15%;
+    height: 5px; }
+  #délice3d {
+    position: relative;
+    width: 170px;
+    top: 42px;
+    left: 45%;
+    height: 5px; }
+  footer {
+    font-size: 1.5em; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.4em; }
+  #h2m3 {
+    font-size: 2.3em; }
+  #h4m3c {
+    font-size: 3em; }
+  #h3m3 {
+    font-size: 3em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.5em; }
+  .texte3 {
+    font-size: 1.2em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1.2em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice1d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  #délice2g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice2d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  #délice3g {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 12%;
+    height: 6px; }
+  #délice3d {
+    position: relative;
+    width: 190px;
+    top: 49px;
+    left: 45%;
+    height: 6px; }
+  footer {
+    font-size: 1.5em; } }
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.6em; }
+  #h2m3 {
+    font-size: 2.3em; }
+  #h4m3c {
+    font-size: 3em; }
+  #h3m3 {
+    font-size: 3em; }
+  #h4m3, #h4m3a, #h4m3b {
+    font-size: 1.8em; }
+  .texte3 {
+    font-size: 1.4em;
+    margin-left: 5%; }
+  .sp3 {
+    font-size: 1.4em;
+    margin-right: 5%; }
+  #délice1g {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 12%;
+    height: 6px; }
+  #délice1d {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 43%;
+    height: 6px; }
+  #délice2g {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 12%;
+    height: 6px; }
+  #délice2d {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 43%;
+    height: 6px; }
+  #délice3g {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 12%;
+    height: 6px; }
+  #délice3d {
+    position: relative;
+    width: 280px;
+    top: 57px;
+    left: 45%;
+    height: 6px; }
+  footer {
+    font-size: 1.1em; } }
+
+/*la palette du goût*/
+@media screen and (min-width: 300px) {
+  h1 {
+    font-size: 2.7em; }
+  #sec1M4 {
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%; }
+  #h2m4 {
+    font-size: 2em; }
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #h3m4 {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .paletteg {
+    position: relative;
+    width: 60px;
+    top: 40px;
+    left: 5%; }
+  .paletted {
+    position: relative;
+    width: 60px;
+    top: 40px;
+    left: 52%; }
+  #h4m4c {
+    background: -moz-linear-gradient(right, #C7FF66, #168720);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -webkit-linear-gradient(right, #C7FF66, #168720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(right, #C7FF66, #168720);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -linear-gradient(to right, #C7FF66, #168720);
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center; }
+  .menu4 {
+    display: flex;
+    justify-content: space-between; }
+  .texte4 {
+    /* mixin pour la mise en forme des textes des menus*/
+    font-weight: lighter;
+    font-family: "Kalam";
+    white-space: nowrap;
+    position: relative;
+    font-size: 0.55em;
+    margin-left: 2%;
+    font-weight: lighter; }
+  .sp4 {
+    font-family: "Kalam";
+    font-weight: bold;
+    font-size: 0.55em;
+    margin-right: 2%;
+    font-weight: lighter; } }
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.6em; }
+  #h2m4 {
+    font-size: 2em; }
+  #h4m4, #h4m4a, #h4m4b {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: lighter;
+    font-family: 'Kalam'; }
+  #h3m4 {
+    font-size: 3em; }
+  .paletteg {
+    position: relative;
+    width: 270px;
+    top: 70px;
+    left: 15%; }
+  .paletted {
+    position: relative;
+    width: 270px;
+    top: 65px;
+    left: 45%; }
+  #h4m4c {
+    font-size: 2.5em; }
+  .menu4 {
+    display: flex;
+    justify-content: space-between; }
+  .texte4 {
+    font-size: 1.2em;
+    margin-left: 5%;
+    font-weight: lighter; }
+  .sp4 {
+    font-size: 1.2em;
+    margin-right: 5%;
+    font-weight: lighter; }
+  footer {
+    font-size: 0.9em;
+    padding-bottom: 2%; } }
