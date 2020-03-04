@@ -1668,41 +1668,187 @@
     font-weight: bold;
     font-size: 0.55em;
     margin-right: 2%;
-    font-weight: lighter; } }
+    font-weight: lighter; }
+  footer {
+    padding-bottom: 2.5%;
+    font-size: 1.4em; } }
+
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 450px) {
+  .paletteg {
+    position: relative;
+    width: 60px;
+    top: 40px;
+    left: 12%; }
+  .paletted {
+    position: relative;
+    width: 60px;
+    top: 40px;
+    left: 52%; } }
+
+@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 809px) {
+  #h4m4, #h4m4a, #h4m4b {
+    font-size: 1.4em; }
+  #h3m4 {
+    font-size: 2.4em; }
+  .paletteg {
+    position: relative;
+    width: 80px;
+    top: 55px;
+    left: 20%; }
+  .paletted {
+    position: relative;
+    width: 80px;
+    top: 52px;
+    left: 50%; }
+  #h4m4c {
+    font-size: 1.9em; }
+  .texte4 {
+    font-size: 0.9em;
+    margin-left: 5%; }
+  .sp4 {
+    font-size: 0.9em;
+    margin-right: 5%; } }
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
+  h1 {
+    font-size: 3.5em; }
+  #h4m4, #h4m4a, #h4m4b {
+    font-size: 1.6em; }
+  #h3m4 {
+    font-size: 2.8em; }
+  .paletteg {
+    position: relative;
+    width: 130px;
+    top: 62px;
+    left: 15%; }
+  .paletted {
+    position: relative;
+    width: 130px;
+    top: 60px;
+    left: 52%; }
+  #h4m4c {
+    font-size: 2.4em; }
+  .texte4 {
+    font-size: 1.1em;
+    margin-left: 5%; }
+  .sp4 {
+    font-size: 1.1em;
+    margin-right: 5%; }
+  footer {
+    font-size: 1.7em; } }
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1200px) {
+  h1 {
+    font-size: 3.5em; }
+  #h4m4, #h4m4a, #h4m4b {
+    font-size: 1.9em; }
+  #h2m4 {
+    font-size: 2.5em; }
+  #h3m4 {
+    font-size: 3.2em; }
+  .paletteg {
+    position: relative;
+    width: 150px;
+    top: 73px;
+    left: 19%; }
+  .paletted {
+    position: relative;
+    width: 150px;
+    top: 71px;
+    left: 52%; }
+  #h4m4c {
+    font-size: 2.7em; }
+  .texte4 {
+    font-size: 1.3em;
+    margin-left: 5%; }
+  .sp4 {
+    font-size: 1.3em;
+    margin-right: 5%; }
+  footer {
+    font-size: 2em; } }
+
+@media screen and (orientation: landscape) and (min-width: 810px) and (max-width: 1023px) {
+  h1 {
+    font-size: 3.1em; }
+  #h4m4, #h4m4a, #h4m4b {
+    font-size: 1.4em; }
+  #h3m4 {
+    font-size: 2.7em; }
+  .paletteg {
+    position: relative;
+    width: 110px;
+    top: 55px;
+    left: 22%; }
+  .paletted {
+    position: relative;
+    width: 110px;
+    top: 53px;
+    left: 48%; }
+  #h4m4c {
+    font-size: 1.9em; }
+  .texte4 {
+    font-size: 0.9em;
+    margin-left: 5%; }
+  .sp4 {
+    font-size: 0.9em;
+    margin-right: 5%; } }
+
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.1em; }
+  #h4m4, #h4m4a, #h4m4b {
+    font-size: 1.6em; }
+  #h3m4 {
+    font-size: 2.9em; }
+  .paletteg {
+    position: relative;
+    width: 160px;
+    top: 65px;
+    left: 20%; }
+  .paletted {
+    position: relative;
+    width: 160px;
+    top: 62px;
+    left: 45%; }
+  #h4m4c {
+    font-size: 2.3em; }
+  .texte4 {
+    font-size: 1.1em;
+    margin-left: 5%; }
+  .sp4 {
+    font-size: 1.1em;
+    margin-right: 5%; } }
 
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 3.6em; }
+    font-size: 3.9em; }
   #h2m4 {
-    font-size: 2em; }
+    font-size: 2.4em; }
   #h4m4, #h4m4a, #h4m4b {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.2em;
     font-weight: lighter;
     font-family: 'Kalam'; }
   #h3m4 {
-    font-size: 3em; }
+    font-size: 3.6em; }
   .paletteg {
     position: relative;
     width: 270px;
-    top: 70px;
+    top: 85px;
     left: 15%; }
   .paletted {
     position: relative;
     width: 270px;
-    top: 65px;
+    top: 83px;
     left: 45%; }
   #h4m4c {
-    font-size: 2.5em; }
-  .menu4 {
-    display: flex;
-    justify-content: space-between; }
+    font-size: 2.8em; }
   .texte4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left: 5%;
     font-weight: lighter; }
   .sp4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-right: 5%;
     font-weight: lighter; }
   footer {

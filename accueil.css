@@ -42,6 +42,7 @@ h1 {
   font-family: 'Hind Siliguri', sans-serif;
   text-align: center;
   vertical-align: middle;
+  bottom: 2%;
   position: relative;
   /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
   letter-spacing: -2px; }
@@ -265,6 +266,9 @@ article a {
   height: 97%;
   text-decoration: none; }
 
+#pro {
+  height: 5%; }
+
 footer {
   /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
   padding-top: 1%;
@@ -424,6 +428,7 @@ footer {
     transform: rotate(0deg); } }
 
 #btnpro {
+  height: 3%;
   font-size: 1.1em;
   border-radius: 10%;
   background-color: #559c84;
@@ -433,7 +438,9 @@ footer {
   padding-top: 2%;
   padding-right: 10%;
   padding-bottom: 2%;
-  padding-left: 10%; }
+  padding-left: 10%;
+  position: relative;
+  top: 5%; }
   #btnpro:after {
     display: inline-block;
     -webkit-animation: dotty steps(1, end) 1000ms infinite;
@@ -493,7 +500,8 @@ footer {
   #ctn {
     margin-right: 2%; }
   h1 {
-    font-size: 4em; }
+    font-size: 4.47em;
+    bottom: 2.5%; }
   #noteindex {
     height: 70px; }
   #h2a {
@@ -595,6 +603,7 @@ footer {
   #h3b, #h3c, #h3d {
     font-size: 3.5em; }
   #btnpro {
+    height: 3%;
     font-size: 2.6em;
     border-radius: 10%;
     background-color: #559c84;
@@ -603,12 +612,14 @@ footer {
     margin-right: auto;
     padding-top: 2%;
     padding-right: 10%;
-    padding-bottom: 2%;
-    padding-left: 10%; }
+    padding-bottom: 3%;
+    padding-left: 10%;
+    position: relative;
+    top: 5%; }
   footer {
-    padding-bottom: 3%; }
+    padding-bottom: 2%; }
     footer a {
-      font-size: 3em; } }
+      font-size: 2.7em; } }
 
 @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 896px) {
   #art1 {
@@ -740,6 +751,7 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
+    height: 3%;
     font-size: 1.2em;
     border-radius: 10%;
     background-color: #559c84;
@@ -749,7 +761,9 @@ footer {
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 2%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    position: relative;
+    top: 5%; }
   footer {
     padding-bottom: 3%; }
     footer a {
@@ -865,6 +879,7 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
+    height: 3%;
     font-size: 1.2em;
     border-radius: 10%;
     background-color: #559c84;
@@ -874,7 +889,9 @@ footer {
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 2%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    position: relative;
+    top: 5%; }
   footer {
     padding-bottom: 3%; }
     footer a {
@@ -1010,6 +1027,7 @@ footer {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
+    height: 3%;
     font-size: 1.7em;
     border-radius: 10%;
     background-color: #559c84;
@@ -1019,7 +1037,9 @@ footer {
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 2%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    position: relative;
+    top: 5%; }
   footer {
     padding-bottom: 2%; }
     footer a {
@@ -1259,6 +1279,7 @@ footer {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
+    height: 3%;
     font-size: 1.2em;
     border-radius: 10%;
     background-color: #559c84;
@@ -1268,7 +1289,9 @@ footer {
     padding-top: 2%;
     padding-right: 10%;
     padding-bottom: 2%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    position: relative;
+    top: 5%; }
   footer {
     padding-bottom: 2%; }
     footer a {
@@ -1276,4 +1299,18 @@ footer {
 
 @media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
   #h2b {
-    font-size: 2.2em; } }
+    font-size: 2.2em; }
+  #btnpro {
+    height: 3%;
+    font-size: 1.2em;
+    border-radius: 10%;
+    background-color: #559c84;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    position: relative;
+    top: 5%; } }
