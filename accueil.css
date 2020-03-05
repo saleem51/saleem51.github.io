@@ -73,10 +73,29 @@ header, #btnpro, footer {
   transition: transform 2000ms; }
 
 .a1:hover {
-  opacity: 0.4;
-  transition: opacity;
-  transform: scale(1.5);
-  transition: transform 2000ms; }
+  transform: scale(1.3);
+  transition: transform 2000ms;
+  animation-name: scale;
+  -webkit-animation-name: fondu;
+  animation-name: fondu;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes fondu {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fondu {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
 
 #art1 {
   background-color: #f9dfde;
@@ -262,12 +281,12 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 97%;
-  height: 97%;
+  width: 95%;
+  height: 96%;
   text-decoration: none; }
 
 #pro {
-  height: 5%; }
+  height: 250px; }
 
 footer {
   /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
@@ -428,48 +447,51 @@ footer {
     transform: rotate(0deg); } }
 
 #btnpro {
-  height: 3%;
   font-size: 1.1em;
-  border-radius: 10%;
+  border-radius: 1em;
   background-color: #559c84;
-  margin-bottom: 0%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2%;
-  padding-right: 10%;
-  padding-bottom: 2%;
-  padding-left: 10%;
   position: relative;
-  top: 5%; }
-  #btnpro:after {
-    display: inline-block;
-    -webkit-animation: dotty steps(1, end) 1000ms infinite;
-    animation: dotty steps(1, end) 1000ms infinite;
-    content: ''; }
+  margin-bottom: 20%;
+  width: 60%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 7%;
+  margin-top: 10%; }
+  #btnpro span {
+    -webkit-animation-name: wait;
+    animation-name: wait;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
 
-@-webkit-keyframes dotty {
-  0% {
-    content: ''; }
-  25% {
-    content: '.'; }
-  50% {
-    content: '..'; }
-  75% {
-    content: '...'; }
-  100% {
-    content: ''; } }
+#two {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
 
-@keyframes dotty {
+#three {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s; }
+
+@-webkit-keyframes wait {
   0% {
-    content: ''; }
-  25% {
-    content: '.'; }
+    opacity: .2; }
   50% {
-    content: '..'; }
-  75% {
-    content: '...'; }
+    opacity: 1; }
   100% {
-    content: ''; } }
+    opacity: .2; } }
+
+@keyframes wait {
+  0% {
+    opacity: .2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
 
 @media screen and (min-width: 500px) {
   #container {
@@ -603,19 +625,25 @@ footer {
   #h3b, #h3c, #h3d {
     font-size: 3.5em; }
   #btnpro {
-    height: 3%;
     font-size: 2.6em;
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 3%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; }
+    margin-bottom: 20%;
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
   footer {
     padding-bottom: 2%; }
     footer a {
@@ -751,23 +779,30 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
-    height: 3%;
     font-size: 1.2em;
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; }
+    margin-bottom: 20%;
+    width: 35%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 15%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
   footer {
     padding-bottom: 3%; }
     footer a {
-      font-size: 1em; } }
+      font-size: 1.2em; } }
 
 @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 568px) {
   #ml {
@@ -879,19 +914,25 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
-    height: 3%;
     font-size: 1.2em;
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; }
+    margin-bottom: 20%;
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
   footer {
     padding-bottom: 3%; }
     footer a {
@@ -1027,19 +1068,25 @@ footer {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
-    height: 3%;
     font-size: 1.7em;
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; }
+    margin-bottom: 20%;
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
   footer {
     padding-bottom: 2%; }
     footer a {
@@ -1279,38 +1326,52 @@ footer {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
-    height: 3%;
-    font-size: 1.2em;
-    border-radius: 10%;
+    font-size: 1.8em;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; }
+    margin-bottom: 20%;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 10%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
   footer {
     padding-bottom: 2%; }
     footer a {
       font-size: 1.7em; } }
 
-@media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
+@media screen and (orientation: landscape) and (min-width: 1281px) {
   #h2b {
     font-size: 2.2em; }
   #btnpro {
-    height: 3%;
-    font-size: 1.2em;
-    border-radius: 10%;
+    font-size: 2.8em;
+    border-radius: 1em;
     background-color: #559c84;
-    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-    padding-right: 10%;
-    padding-bottom: 4%;
-    padding-left: 10%;
     position: relative;
-    top: 5%; } }
+    margin-bottom: 20%;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 12%; }
+    #btnpro span {
+      -webkit-animation-name: wait;
+      animation-name: wait;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; } }
