@@ -35,17 +35,20 @@ html, body {
   width: 100%; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  height: 16.5%; }
 
 h1 {
-  font-size: 2.4em;
   font-family: 'Hind Siliguri', sans-serif;
   text-align: center;
   vertical-align: middle;
-  bottom: 2%;
   position: relative;
   /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
   letter-spacing: -2px; }
+
+#h1 {
+  font-size: 2.7em;
+  bottom: 7px; }
 
 a, h2, h3, #ml, #ctn {
   text-decoration: none;
@@ -66,7 +69,8 @@ header, #btnpro, footer {
 
 #noteindex {
   position: relative;
-  height: 30px; }
+  height: 30px;
+  top: 10px; }
 
 .a1 {
   transform: scale(1);
@@ -137,8 +141,7 @@ header, #btnpro, footer {
   color: black;
   font-weight: lighter;
   position: relative;
-  font-size: 1.5em;
-  /*bottom: 55%;*/ }
+  font-size: 1.5em; }
 
 article {
   border: 1px solid lightgrey;
@@ -174,7 +177,7 @@ article {
   background: -linear-gradient(to right, #995EFF, #CA7A0F);
   /*police de caractère pour "Le chic à la française"*/
   font-family: 'Croissant One', cursive;
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: lighter; }
 
 #h2b:visited {
@@ -191,7 +194,7 @@ article {
   background: -linear-gradient(to right, #995EFF, #CA7A0F);
   /*police de caractère pour "Le chic à la française"*/
   font-family: 'Croissant One', cursive;
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: lighter; }
 
 #h3b {
@@ -214,8 +217,9 @@ article {
   background: -linear-gradient(to right, #4192FF 30%, #030AD3);
   /*police de caractère de "Le délice des papilles"*/
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5em;
-  font-weight: lighter; }
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin-left: 10px; }
 
 #h2c:visited {
   background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
@@ -231,8 +235,9 @@ article {
   background: -linear-gradient(to right, #4192FF 30%, #030AD3);
   /*police de caractère de "Le délice des papilles"*/
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5em;
-  font-weight: lighter; }
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin-left: 10px; }
 
 #h3c {
   color: #4192FF; }
@@ -285,21 +290,18 @@ article a {
   height: 96%;
   text-decoration: none; }
 
-#pro {
-  height: 250px; }
-
 footer {
   /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
-  padding-top: 1%;
+  padding-top: 1.2%;
   position: fixed;
   bottom: 0;
-  padding-bottom: 1%;
+  padding-bottom: 1.5%;
   width: 100%;
-  height: 3%; }
+  height: 3.4%; }
   footer a {
     background-color: #559c84;
     color: #F7C528;
-    font-size: 1.1em; }
+    font-size: 0.98em; }
   footer div {
     display: flex;
     justify-content: space-between; }
@@ -311,76 +313,12 @@ footer {
   margin-right: 3%; }
 
 #ml:hover {
-  -webkit-animation: thing 5s;
-  animation: thing 5s; }
-
-@-webkit-keyframes thing {
-  0% {
-    transform: rotate(0deg); }
-  3% {
-    transform: rotate(-4deg); }
-  4% {
-    transform: rotate(4deg); }
-  5% {
-    transform: rotate(-4deg); }
-  6% {
-    transform: rotate(4deg); }
-  7% {
-    transform: rotate(4deg); }
-  8% {
-    transform: rotate(-4deg); }
-  9% {
-    transform: rotate(4deg); }
-  10% {
-    transform: rotate(-4deg); }
-  11% {
-    transform: rotate(4deg); }
-  12% {
-    transform: rotate(-4deg); }
-  13% {
-    transform: rotate(-4deg); }
-  14% {
-    transform: rotate(4deg); }
-  15% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(0deg); } }
-
-@keyframes thing {
-  0% {
-    transform: rotate(0deg); }
-  3% {
-    transform: rotate(-4deg); }
-  4% {
-    transform: rotate(4deg); }
-  5% {
-    transform: rotate(-4deg); }
-  6% {
-    transform: rotate(4deg); }
-  7% {
-    transform: rotate(4deg); }
-  8% {
-    transform: rotate(-4deg); }
-  9% {
-    transform: rotate(4deg); }
-  10% {
-    transform: rotate(-4deg); }
-  11% {
-    transform: rotate(4deg); }
-  12% {
-    transform: rotate(-4deg); }
-  13% {
-    transform: rotate(-4deg); }
-  14% {
-    transform: rotate(4deg); }
-  15% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(0deg); } }
+  -webkit-animation: thing 3s;
+  animation: thing 3s; }
 
 #ctn:hover {
-  -webkit-animation: thing 5s;
-  animation: thing 5s; }
+  -webkit-animation: thing 3s;
+  animation: thing 3s; }
 
 @-webkit-keyframes thing {
   0% {
@@ -469,6 +407,9 @@ footer {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
 
+#pro {
+  height: 400px; }
+
 #two {
   -webkit-animation-delay: .4s;
   animation-delay: .4s; }
@@ -492,6 +433,10 @@ footer {
     opacity: 1; }
   100% {
     opacity: .2; } }
+
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 399px) {
+  header {
+    height: 13.2%; } }
 
 @media screen and (min-width: 500px) {
   #container {
@@ -671,11 +616,13 @@ footer {
     height: 100%;
     margin: 5% auto 5% auto; }
   #ml {
-    margin-left: 2%; }
+    margin-left: 3%; }
   #ctn {
-    margin-right: 2%; }
-  h1 {
-    font-size: 3em; }
+    margin-right: 3%; }
+  header {
+    height: 34.25%; }
+  #h1 {
+    font-size: 2.7em; }
   #noteindex {
     height: 45px; }
   #h2a {
@@ -697,7 +644,8 @@ footer {
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
     font-size: 1.1em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    margin-left: 5%; }
   #h2b:visited {
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
@@ -728,8 +676,9 @@ footer {
     background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     /*police de caractère de "Le délice des papilles"*/
     font-family: 'Dancing Script', cursive;
-    font-size: 1.7em;
-    font-weight: lighter; }
+    font-size: 1.65em;
+    font-weight: lighter;
+    margin-left: 5%; }
   #h2c:visited {
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
@@ -759,7 +708,8 @@ footer {
     background: -linear-gradient(to right, #C7FF66, #168720);
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.7em; }
+    font-size: 1.65em;
+    margin-left: 5%; }
   #h2d:visited {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
@@ -800,16 +750,16 @@ footer {
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both; }
   footer {
-    padding-bottom: 3%; }
+    padding-bottom: 2.2%; }
     footer a {
-      font-size: 1.2em; } }
+      font-size: 1em; } }
 
 @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 568px) {
   #ml {
     margin-left: 2%; }
   #ctn {
     margin-right: 2%; }
-  h1 {
+  #h1 {
     font-size: 3em; }
   #noteindex {
     height: 50px; }
@@ -938,6 +888,24 @@ footer {
     footer a {
       font-size: 1em; } }
 
+@media screen and (orientation: landscape) and (min-width: 667px) and (max-width: 667px) {
+  header {
+    height: 28.5%; } }
+
+@media screen and (orientation: landscape) and (min-width: 731px) and (max-width: 736px) {
+  header {
+    height: 26%; } }
+
+footer a {
+  font-size: 1.12em; }
+
+@media screen and (orientation: landscape) and (min-width: 812px) and (max-width: 822px) {
+  header {
+    height: 32.5%; }
+  #h1 {
+    font-size: 3.1em;
+    bottom: 7%; } }
+
 @media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
   #art1 {
     background-color: #f9dfde;
@@ -959,16 +927,15 @@ footer {
     width: 45%;
     height: 50%;
     margin: 5% auto 5% auto; }
-  #ml {
-    margin-left: 2%; }
-  #ctn {
-    margin-right: 2%; }
-  h1 {
-    font-size: 3em; }
+  header {
+    height: 13.60%; }
+  #h1 {
+    font-size: 3.5em;
+    bottom: 6%; }
   #noteindex {
     height: 50px; }
   #h2a {
-    font-size: 2.2em; }
+    font-size: 2.3em; }
   #h3a {
     font-size: 1.8em; }
   #h2b {
@@ -985,7 +952,7 @@ footer {
     background: -linear-gradient(to right, #995EFF, #CA7A0F);
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: lighter; }
   #h2b:visited {
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
@@ -1001,7 +968,7 @@ footer {
     background: -linear-gradient(to right, #995EFF, #CA7A0F);
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: lighter; }
   #h2c {
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
@@ -1017,7 +984,7 @@ footer {
     background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     /*police de caractère de "Le délice des papilles"*/
     font-family: 'Dancing Script', cursive;
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-weight: lighter; }
   #h2c:visited {
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
@@ -1033,7 +1000,7 @@ footer {
     background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     /*police de caractère de "Le délice des papilles"*/
     font-family: 'Dancing Script', cursive;
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-weight: lighter; }
   #h2d {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
@@ -1048,7 +1015,7 @@ footer {
     background: -linear-gradient(to right, #C7FF66, #168720);
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 2.2em; }
+    font-size: 2.4em; }
   #h2d:visited {
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
@@ -1062,13 +1029,13 @@ footer {
     background: -linear-gradient(to right, #C7FF66, #168720);
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 2.2em; }
+    font-size: 2.4em; }
   #h3b {
     font-size: 2.2em; }
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
-    font-size: 1.7em;
+    font-size: 1.85em;
     border-radius: 1em;
     background-color: #559c84;
     margin-left: auto;
@@ -1090,11 +1057,18 @@ footer {
   footer {
     padding-bottom: 2%; }
     footer a {
-      font-size: 1.5em; } }
+      font-size: 2.04em;
+      top: 2%; }
+  #ml {
+    margin-left: 3%; }
+  #ctn {
+    margin-right: 3%; } }
 
 @media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1024px) {
   #noteindex {
     height: 50px; }
+  header {
+    height: 10.2%; }
   #h2a {
     font-size: 2.7em; }
   #h3a {
@@ -1217,12 +1191,11 @@ footer {
     width: 45%;
     height: 80%;
     margin: 5% auto 5% auto; }
-  #ml {
-    margin-left: 2%; }
-  #ctn {
-    margin-right: 2%; }
-  h1 {
-    font-size: 3em; }
+  header {
+    height: 18.1%; }
+  #h1 {
+    font-size: 3.5em;
+    bottom: 6%; }
   #noteindex {
     height: 60px; }
   #h2a {
@@ -1326,7 +1299,7 @@ footer {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
-    font-size: 1.8em;
+    font-size: 2.1em;
     border-radius: 1em;
     background-color: #559c84;
     margin-left: auto;
@@ -1349,20 +1322,29 @@ footer {
   footer {
     padding-bottom: 2%; }
     footer a {
-      font-size: 1.7em; } }
+      font-size: 2.25em; }
+  #ml {
+    margin-left: 3%; }
+  #ctn {
+    margin-right: 3%; } }
 
 @media screen and (orientation: landscape) and (min-width: 1281px) {
+  header {
+    height: 22.60%; }
+  #h1 {
+    bottom: 5%;
+    font-size: 4.32em; }
   #h2b {
     font-size: 2.2em; }
   #btnpro {
-    font-size: 2.8em;
+    font-size: 2.6em;
     border-radius: 1em;
     background-color: #559c84;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     margin-bottom: 20%;
-    width: 30%;
+    width: 35%;
     padding-top: 1%;
     padding-bottom: 1%;
     height: 12%; }
@@ -1374,4 +1356,17 @@ footer {
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
       -webkit-animation-fill-mode: both;
-      animation-fill-mode: both; } }
+      animation-fill-mode: both; }
+  footer {
+    padding-top: 1%;
+    padding-bottom: 1.8%; }
+    footer a {
+      font-size: 2.4em; } }
+
+@media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
+  header {
+    height: 16.5%; }
+  #h1 {
+    font-size: 3.9em; }
+  footer a {
+    font-size: 2.2em; } }
