@@ -12,8 +12,10 @@
 /*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
 /*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+/*affichage pour les smartphones*/
 @media screen and (min-width: 300px) {
   html, body {
+    /*margin padding et border à 0 pour le reset css*/
     margin: 0;
     padding: 0;
     border: 0;
@@ -47,12 +49,15 @@
   h1:visited {
     text-decoration: none;
     color: #F7C528; }
+  .ah1 {
+    color: #F7C528; }
   .ah1:visited {
     color: #F7C528; }
   #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
-    /*police de caratère de "footer"*/
+    /*police de caratère de "footer" et des titres h2*/
     font-family: 'Lato', sans-serif; }
   .title {
+    /*display flex pour la mise en page des h4 et des lignes de décorations entre les h4*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -99,6 +104,7 @@
     -webkit-animation: thing 3s;
     animation: thing 3s; }
   @-webkit-keyframes thing {
+    /*animation pour l'effet wiggle des bouton mentions légales et contact*/
     0% {
       transform: rotate(0deg); }
     3% {
@@ -159,7 +165,8 @@
     15% {
       transform: rotate(0deg); }
     100% {
-      transform: rotate(0deg); } } }
+      transform: rotate(0deg); } }
+  /*affichage pour les tablettes en mode portrait*/ }
 
 @media screen and (min-width: 300px) and (orientation: portrait) and (min-width: 600px) and (max-width: 1199px) {
   footer a {
@@ -169,6 +176,7 @@
   /* la note enchantée*/
   #sec1M1 {
     background-color: #f9dfde;
+    /*mixin pour la mise en forme des menus*/
     width: 90%;
     position: relative;
     list-style: none;
@@ -184,13 +192,15 @@
     top: 35px;
     margin-right: 5%; }
   .s1 {
+    /*animation "underline au survol avec la souris*/
+    /*mixin pour l'animation des titres h4 qui se soulignent de gauche à droite au survol avec la souris*/
     position: relative; }
     .s1:hover:before {
       width: 100%; }
     .s1:before {
       background-color: black;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -228,6 +238,7 @@
     font-size: 0.55em;
     margin-left: 2%; }
   .sp1 {
+    /*mixin pour les prix*/
     font-family: "Annie Use Your Telescope";
     font-weight: bold;
     font-size: 0.55em;
@@ -275,6 +286,7 @@ footer a {
     font-size: 0.7em;
     margin-right: 5%; } }
 
+/*affichage en mode paysage des smartphones*/
 @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 800px) {
   #noteh2 {
     top: 35px;
@@ -355,12 +367,17 @@ footer a {
     padding-bottom: 3%;
     font-size: 1.4em; } }
 
+@media screen and (orientation: landscape) and (min-width: 959px) and (max-width: 961px) {
+  #noteh4 {
+    margin-right: 100px; } }
+
 @media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 602px) {
   #noteh4 {
     height: 30px;
     top: 60px;
     right: 14%; } }
 
+/*affichage pour tablettes en mode portrait*/
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
   #noteh2 {
     top: 35px;
@@ -387,8 +404,11 @@ footer a {
     margin-right: 5%; }
   footer {
     font-size: 1.4em;
-    padding-bottom: 1%; } }
+    padding-bottom: 1%; }
+    footer a {
+      font-size: 1.2em; } }
 
+/*affichage pour tablettes en mode paysage*/
 @media screen and (orientation: landscape) and (min-width: 901px) and (max-width: 1279px) {
   h1 {
     font-size: 3.5em; }
@@ -416,7 +436,9 @@ footer a {
     margin-right: 5%; }
   footer {
     padding-bottom: 3%;
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+    footer a {
+      font-size: 1.2em; } }
 
 @media screen and (orientation: landscape) and (min-width: 1280px) {
   #noteh2 {
@@ -435,6 +457,7 @@ footer a {
     font-size: 1em;
     margin-right: 5%; } }
 
+/*ajustement pour tablettes de 12 pouces*/
 @media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1279px) {
   h1 {
     font-size: 3.5em; }
@@ -467,6 +490,7 @@ footer a {
     footer a {
       font-size: 1.02em; } }
 
+/*affichage pour les ordinateurs et grands écrans*/
 @media screen and (min-width: 1280px) {
   h1 {
     font-size: 3.8em;
@@ -544,9 +568,9 @@ footer a {
     .s2:hover:before {
       width: 100%; }
     .s2:before {
-      background-color: red;
+      background-color: #CA7A0F;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -560,7 +584,7 @@ footer a {
     .s2a:before {
       background-color: #A165AF;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -572,9 +596,9 @@ footer a {
     .s2b:hover:before {
       width: 100%; }
     .s2b:before {
-      background-color: #A378AD;
+      background-color: #6F39B8;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -778,9 +802,9 @@ footer a {
     .s3:hover:before {
       width: 100%; }
     .s3:before {
-      background-color: blue;
+      background-color: #0228DD;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -792,9 +816,9 @@ footer a {
     .s3a:hover:before {
       width: 100%; }
     .s3a:before {
-      background-color: blue;
+      background-color: #0670F3;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -806,9 +830,9 @@ footer a {
     .s3b:hover:before {
       width: 100%; }
     .s3b:before {
-      background-color: blue;
+      background-color: #229DF9;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -1039,9 +1063,9 @@ footer a {
     .s4:hover:before {
       width: 100%; }
     .s4:before {
-      background-color: #168720;
+      background-color: #4A9D40;
       content: "";
-      bottom: 3px;
+      bottom: 2px;
       position: absolute;
       width: 0;
       left: auto;
@@ -1130,7 +1154,9 @@ footer a {
     font-size: 1.1em;
     margin-right: 5%; }
   footer {
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+    footer a {
+      font-size: 1.1em; } }
 
 @media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1200px) {
   h1 {
@@ -1150,7 +1176,9 @@ footer a {
     font-size: 1.3em;
     margin-right: 5%; }
   footer {
-    font-size: 2em; } }
+    font-size: 2em; }
+    footer a {
+      font-size: 1.2em; } }
 
 @media screen and (orientation: landscape) and (min-width: 810px) and (max-width: 1023px) {
   h1 {

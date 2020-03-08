@@ -11,6 +11,7 @@
 /*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
 /*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+/*affichage pour les smartphones*/
 @media screen and (min-width: 300px) {
   #container {
     display: flex;
@@ -26,6 +27,7 @@ html, body {
   height: 100%; }
 
 #container {
+  /* utilisation du display flex sur le bloc "container" pour la mise en page de tous les éléments*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -67,16 +69,13 @@ article div {
 header, #btnpro, footer {
   background-color: #559c84; }
 
-#noteindex {
-  position: relative;
-  height: 30px;
-  top: 10px; }
-
 .a1 {
+  /* animation des titres de chaque menu avec l'effet zoom et l'effet fondu*/
   transform: scale(1);
   transition: transform 2000ms; }
 
 .a1:hover {
+  /*déclenchement de l'animation au passage de la souris*/
   transform: scale(1.3);
   transition: transform 2000ms;
   animation-name: scale;
@@ -90,6 +89,7 @@ header, #btnpro, footer {
   animation-duration: 2s; }
 
 @-webkit-keyframes fondu {
+  /*utilisation de keyframes et de la propriété opacity pour obtenir l'effet de fondu*/
   0% {
     opacity: 0.1; }
   100% {
@@ -102,24 +102,32 @@ header, #btnpro, footer {
     opacity: 1; } }
 
 #art1 {
+  /*Menu "la note enchantée"*/
+  /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
   background-color: #f9dfde;
   width: 60%;
   height: 50%;
   margin: 5% auto 5% auto; }
 
 #art2 {
+  /*Menu "le chic à la française"*/
+  /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
   background-color: #faf2fa;
   width: 60%;
   height: 50%;
   margin: 5% auto 5% auto; }
 
 #art3 {
+  /*Menu "le délice des papilles"*/
+  /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
   background-color: #FCFAFA;
   width: 60%;
   height: 50%;
   margin: 5% auto 5% auto; }
 
 #art4 {
+  /*Menu la palette du goût"*/
+  /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
   background-color: #FFF;
   width: 60%;
   height: 50%;
@@ -164,6 +172,7 @@ article {
   color: black; }
 
 #h2b {
+  /*mixin pour le titre du "chic à ma française"*/
   /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
   background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
   -moz-background-clip: text;
@@ -181,6 +190,7 @@ article {
   font-weight: lighter; }
 
 #h2b:visited {
+  /*mixin pour le titre du "chic à ma française"*/
   /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
   background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
   -moz-background-clip: text;
@@ -204,6 +214,7 @@ article {
   color: #CA7A0F; }
 
 #h2c {
+  /*mixin du "délice des papilles"*/
   background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -222,6 +233,7 @@ article {
   margin-left: 10px; }
 
 #h2c:visited {
+  /*mixin du "délice des papilles"*/
   background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -246,6 +258,7 @@ article {
   color: #4192FF; }
 
 #h2d {
+  /* mixin de "la palette du goût"*/
   background: -moz-linear-gradient(right, #C7FF66, #168720);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -261,6 +274,7 @@ article {
   font-size: 1.5em; }
 
 #h2d:visited {
+  /* mixin de "la palette du goût"*/
   background: -moz-linear-gradient(right, #C7FF66, #168720);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -321,6 +335,7 @@ footer {
   animation: thing 3s; }
 
 @-webkit-keyframes thing {
+  /*animation pour l'effet wiggle sur les boutons mentions légales et prochainement*/
   0% {
     transform: rotate(0deg); }
   3% {
@@ -385,6 +400,7 @@ footer {
     transform: rotate(0deg); } }
 
 #btnpro {
+  /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
   font-size: 1.1em;
   border-radius: 1em;
   background-color: #559c84;
@@ -410,6 +426,7 @@ footer {
 #pro {
   height: 400px; }
 
+/*animation des trois points de suspensions qui apparaissent et disparaissent à tour de rôle en utilisant "opacity"*/
 #two {
   -webkit-animation-delay: .4s;
   animation-delay: .4s; }
@@ -434,6 +451,7 @@ footer {
   100% {
     opacity: .2; } }
 
+/*affichage pour les smartphones avec un écran plus large*/
 @media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 399px) {
   header {
     height: 13.2%; } }
@@ -443,21 +461,25 @@ footer {
     flex-direction: row;
     flex-wrap: wrap; }
   #art1 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
     width: 36%;
     height: 95%;
     margin: 5% auto 5% auto; }
   #art2 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #faf2fa;
     width: 36%;
     height: 95%;
     margin: 5% auto 5% auto; }
   #art3 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FCFAFA;
     width: 36%;
     height: 95%;
     margin: 5% auto 5% auto; }
   #art4 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FFF;
     width: 36%;
     height: 95%;
@@ -476,6 +498,7 @@ footer {
   #h3a {
     font-size: 3.8em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -492,6 +515,7 @@ footer {
     font-size: 2.6em;
     font-weight: lighter; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -508,6 +532,7 @@ footer {
     font-size: 2.6em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -524,6 +549,7 @@ footer {
     font-size: 3.5em;
     font-weight: lighter; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -540,6 +566,7 @@ footer {
     font-size: 3.5em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -554,6 +581,7 @@ footer {
     font-family: 'Kaushan Script', cursive;
     font-size: 3em; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -570,6 +598,7 @@ footer {
   #h3b, #h3c, #h3d {
     font-size: 3.5em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 2.6em;
     border-radius: 1em;
     background-color: #559c84;
@@ -594,23 +623,28 @@ footer {
     footer a {
       font-size: 2.7em; } }
 
+/*affichage pour les smartphone en mode paysage*/
 @media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 896px) {
   #art1 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
     width: 34%;
     height: 100%;
     margin: 5% auto 5% auto; }
   #art2 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #faf2fa;
     width: 34%;
     height: 100%;
     margin: 5% auto 5% auto; }
   #art3 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FCFAFA;
     width: 34%;
     height: 100%;
     margin: 5% auto 5% auto; }
   #art4 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FFF;
     width: 34%;
     height: 100%;
@@ -630,6 +664,7 @@ footer {
   #h3a {
     font-size: 1.3em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -647,6 +682,7 @@ footer {
     font-weight: lighter;
     margin-left: 5%; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -663,6 +699,7 @@ footer {
     font-size: 1.1em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -680,6 +717,7 @@ footer {
     font-weight: lighter;
     margin-left: 5%; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -696,6 +734,7 @@ footer {
     font-size: 1.7em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -711,6 +750,7 @@ footer {
     font-size: 1.65em;
     margin-left: 5%; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -729,6 +769,7 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 1.2em;
     border-radius: 1em;
     background-color: #559c84;
@@ -754,7 +795,8 @@ footer {
     footer a {
       font-size: 1em; } }
 
-@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 568px) {
+/*ajustement pout écran de 568px en mode paysage*/
+@media screen and (orientation: landscape) and (min-width: 567px) and (max-width: 569px) {
   #ml {
     margin-left: 2%; }
   #ctn {
@@ -768,6 +810,7 @@ footer {
   #h3a {
     font-size: 1.3em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -784,6 +827,7 @@ footer {
     font-size: 0.9em;
     font-weight: lighter; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -800,6 +844,7 @@ footer {
     font-size: 0.9em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -816,6 +861,7 @@ footer {
     font-size: 1.5em;
     font-weight: lighter; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -832,6 +878,7 @@ footer {
     font-size: 1.5em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -846,6 +893,7 @@ footer {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.45em; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -864,6 +912,7 @@ footer {
   #h3c, #h3d {
     font-size: 1.5em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 1.2em;
     border-radius: 1em;
     background-color: #559c84;
@@ -899,6 +948,7 @@ footer {
 footer a {
   font-size: 1.12em; }
 
+/*ajustement pour les smartphone avec taille de 800px à 822px en mode paysage*/
 @media screen and (orientation: landscape) and (min-width: 812px) and (max-width: 822px) {
   header {
     height: 32.5%; }
@@ -906,23 +956,28 @@ footer a {
     font-size: 3.1em;
     bottom: 7%; } }
 
+/*Affichage pour les tablettes en mode portrait*/
 @media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
   #art1 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
     width: 45%;
     height: 50%;
     margin: 5% auto 5% auto; }
   #art2 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #faf2fa;
     width: 45%;
     height: 50%;
     margin: 5% auto 5% auto; }
   #art3 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FCFAFA;
     width: 45%;
     height: 50%;
     margin: 5% auto 5% auto; }
   #art4 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FFF;
     width: 45%;
     height: 50%;
@@ -939,6 +994,7 @@ footer a {
   #h3a {
     font-size: 1.8em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -955,6 +1011,7 @@ footer a {
     font-size: 1.5em;
     font-weight: lighter; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -971,6 +1028,7 @@ footer a {
     font-size: 1.5em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -987,6 +1045,7 @@ footer a {
     font-size: 2.4em;
     font-weight: lighter; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1003,6 +1062,7 @@ footer a {
     font-size: 2.4em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1017,6 +1077,7 @@ footer a {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.4em; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1035,6 +1096,7 @@ footer a {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 1.85em;
     border-radius: 1em;
     background-color: #559c84;
@@ -1064,6 +1126,7 @@ footer a {
   #ctn {
     margin-right: 3%; } }
 
+/*ajustement pour les tablettes avec écran plus large*/
 @media screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1024px) {
   #noteindex {
     height: 50px; }
@@ -1074,6 +1137,7 @@ footer a {
   #h3a {
     font-size: 2.2em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -1090,6 +1154,7 @@ footer a {
     font-size: 1.8em;
     font-weight: lighter; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -1106,6 +1171,7 @@ footer a {
     font-size: 1.8em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1122,6 +1188,7 @@ footer a {
     font-size: 2.6em;
     font-weight: lighter; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1138,6 +1205,7 @@ footer a {
     font-size: 2.6em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1152,6 +1220,7 @@ footer a {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.6em; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1170,23 +1239,28 @@ footer a {
   #h3c, #h3d {
     font-size: 2.7em; } }
 
+/*affichage pour les tablettes en mode paysage*/
 @media screen and (orientation: landscape) and (min-width: 900px) and (max-width: 1280px) {
   #art1 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
     width: 45%;
     height: 80%;
     margin: 5% auto 5% auto; }
   #art2 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #faf2fa;
     width: 45%;
     height: 80%;
     margin: 5% auto 5% auto; }
   #art3 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FCFAFA;
     width: 45%;
     height: 80%;
     margin: 5% auto 5% auto; }
   #art4 {
+    /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #FFF;
     width: 45%;
     height: 80%;
@@ -1203,6 +1277,7 @@ footer a {
   #h3a {
     font-size: 2em; }
   #h2b {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -1219,6 +1294,7 @@ footer a {
     font-size: 2em;
     font-weight: lighter; }
   #h2b:visited {
+    /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
     background: -moz-linear-gradient(right, #995EFF, #CA7A0F);
     -moz-background-clip: text;
@@ -1235,6 +1311,7 @@ footer a {
     font-size: 2em;
     font-weight: lighter; }
   #h2c {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1251,6 +1328,7 @@ footer a {
     font-size: 2.8em;
     font-weight: lighter; }
   #h2c:visited {
+    /*mixin du "délice des papilles"*/
     background: -moz-linear-gradient(right, #4192FF 30%, #030AD3);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1267,6 +1345,7 @@ footer a {
     font-size: 2.8em;
     font-weight: lighter; }
   #h2d {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1281,6 +1360,7 @@ footer a {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.6em; }
   #h2d:visited {
+    /* mixin de "la palette du goût"*/
     background: -moz-linear-gradient(right, #C7FF66, #168720);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
@@ -1299,6 +1379,7 @@ footer a {
   #h3c, #h3d {
     font-size: 2.5em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 2.1em;
     border-radius: 1em;
     background-color: #559c84;
@@ -1328,6 +1409,7 @@ footer a {
   #ctn {
     margin-right: 3%; } }
 
+/*ajustemnent pour les tablettes avec écran de 12 pouces*/
 @media screen and (orientation: landscape) and (min-width: 1281px) {
   header {
     height: 22.60%; }
@@ -1337,6 +1419,7 @@ footer a {
   #h2b {
     font-size: 2.2em; }
   #btnpro {
+    /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 2.6em;
     border-radius: 1em;
     background-color: #559c84;
@@ -1363,6 +1446,7 @@ footer a {
     footer a {
       font-size: 2.4em; } }
 
+/*ajustement pour affichage sur ordianteurs et grands écrans*/
 @media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
   header {
     height: 16.5%; }
