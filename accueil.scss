@@ -1,0 +1,1064 @@
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+$color-primary: #559c84;/*background vert du header, du button et du footer $color-primary: #529180;*/
+$text-color1: #F7C528;/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/ 
+$section1-color: #f9dfde; /*background color du menu la note enchantée $section1-color: #FADBD6;*/
+$section2-color: #faf2fa;/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+$section3-color: #FCFAFA;/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+$h21-color:#CA7A0F;/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+$h22-color:#995EFF;/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+$h2e1-color:#168720;/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+$h2e2-color:#C7FF66;/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+$h2d1-color:#030AD3;/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+$h2d2-color:#4192FF;/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+
+/*affichage pour les smartphones*/
+
+@media screen and (min-width:300px) and (min-height:321px){
+ 
+ #container{
+  display: flex;
+  flex-direction: column;
+ flex-wrap: nowrap;
+ }
+}
+
+    html, body{
+ /* margin, padding et border à 0 pour le reset css*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+@mixin menu ($section-color,$width,$height){/*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
+    background-color: $section-color;
+    width: $width;
+    height: $height;
+    margin: 5% auto 5% auto;
+}
+
+ @mixin h2b($font-size){/*mixin pour le titre du "chic à ma française"*/
+  /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+ background: -moz-linear-gradient(right, $h22-color, $h21-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h22-color , $h21-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h22-color, $h21-color);
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h22-color, $h21-color);
+ /*police de caractère pour "Le chic à la française"*/
+ font-family: 'Croissant One', cursive;
+  font-size: $font-size;
+ font-weight: lighter;
+}
+
+@mixin h2c($font-size) {/*mixin du "délice des papilles"*/
+  background: -moz-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -webkit-background-clip: text;
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h2d2-color 30%, $h2d1-color);
+  /*police de caractère de "Le délice des papilles"*/
+ font-family: 'Dancing Script', cursive;
+ font-size: $font-size;
+ font-weight: lighter;
+}
+
+@mixin h2d($font-size){/* mixin de "la palette du goût"*/
+ background: -moz-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h2e2-color, $h2e1-color);
+   /*police de caractère de "La palette du goût"*/
+ font-family: 'Kaushan Script', cursive;
+ font-size: $font-size;
+}
+
+@mixin btn ($font-size,$width){/*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
+  font-size:$font-size;
+  border-radius: 1em;
+  background-color: $color-primary;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 20%;
+  width: $width;
+  padding-top: 1%;
+  padding-bottom: 1%;
+      & span {
+    -webkit-animation-name: wait;
+    animation-name: wait;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+}
+
+ #container {/* utilisation du display flex sur le bloc "container" pour la mise en page de tous les éléments*/
+   display: flex ;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+ }
+   
+   header{
+    width: 100%;
+    height: 16.5%;
+   }
+   
+      h1{
+ font-family: 'Hind Siliguri', sans-serif;
+ text-align: center;
+ vertical-align: middle;
+ position: relative;
+ /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+ letter-spacing: -2px;
+}
+
+#h1{
+ font-size: 2.7em;
+  bottom: 7px;
+}
+
+a,h2, h3, #ml, #ctn{
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#h2a, img, h3{
+    line-height: 0.1;
+}
+
+h1, #btnpro, #ml, #ctn{
+    color: $text-color1;
+}
+
+article div {
+    text-align: center;
+    vertical-align: middle;
+}
+   
+   header, #btnpro, footer{
+    background-color: $color-primary;
+}
+
+.a1{/* animation des titres de chaque menu avec l'effet zoom et l'effet fondu*/
+    transform: scale(1);
+    transition: transform 2000ms;
+}
+
+.a1:hover{/*déclenchement de l'animation au passage de la souris*/
+    transform: scale(1.3);
+    transition: transform 2000ms;
+    animation-name: scale;
+	-webkit-animation-name: fondu;
+	        animation-name: fondu;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+}
+
+@-webkit-keyframes fondu{/*utilisation de keyframes et de la propriété opacity pour obtenir l'effet de fondu*/
+	0% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fondu {
+	0% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#art1{/*Menu "la note enchantée"*/
+    @include menu($section1-color,60%,50%);
+}
+
+#art2{/*Menu "le chic à la française"*/
+    @include menu($section2-color,60%,50%);
+}
+
+#art3{/*Menu "le délice des papilles"*/
+    @include menu($section3-color,60%,50%);
+}
+
+#art4{/*Menu la palette du goût"*/
+    @include menu(#FFF,60%,50%);
+}
+
+#noteindex{
+  height: 30px;
+ }
+ 
+
+#h2a, #h3a { 
+    color: black;
+    }
+    
+#h2a{
+ /*police de caractère pour "la note enchantée"*/
+ font-family:'Devonshire', cursive;
+ font-weight: lighter;
+ position: relative;
+ font-size: 1.5em
+}
+
+
+#h3a{
+ /*police de caractère de "MENU" de "la note enchantée"*/
+ font-family: 'Kalam', cursive;
+ color: black;
+ font-weight: lighter;
+ position: relative;
+ font-size: 1.5em;
+}
+
+article {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC;
+}
+
+#h3b{
+ font-size: 1.5em;
+}
+
+#h3c, #h3d{
+  /*police de caractère de "Menu" de "Le délice des papilles" et de "La palette du goût"*/
+ font-family: 'Shadows Into Light', cursive;
+ font-size: 1.5em;
+}
+
+#ml, #ctn, #btnpro{
+ /*police de caratère de "button" et de "footer"*/
+ font-family: 'Lato', sans-serif;
+ font-weight: lighter;
+}
+    
+#h2a, #h3a:visited { 
+    color: black;
+    }
+
+#h2b {
+   @include h2b(0.95em);
+}
+
+#h2b:visited{
+    @include h2b(0.95em);
+}
+ #h3b{
+ color: $h21-color;
+}    
+    
+#h3b:visited{
+ color: $h21-color;
+}
+
+#h2c{
+    @include h2c(1.40em);
+    margin-left: 10px;
+}
+
+#h2c:visited{
+    @include h2c(1.40em);
+    margin-left: 10px;
+}
+
+#h3c{
+  color: $h2d2-color;  
+}
+  #h3c:visited{
+ color: $h2d2-color;
+}
+
+#h2d{
+    @include h2d (1.5em);
+}
+
+#h2d:visited{
+    @include h2d (1.5em);
+}
+
+#h3d{
+  color: $h2e1-color;  
+}
+
+ #h3d:visited{
+ color: $h2e1-color;
+}
+
+article a{
+ /*display flex pour les liens afin que toute la surface des différents menus soit cliquable et renvoient vers les liens*/
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    width: 95%;
+    height: 96%;
+    text-decoration: none;
+}
+
+footer{
+ /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+ padding-top: 1.2%;
+ position:fixed;
+ bottom: 0;
+ padding-bottom: 1.5%;
+ width: 100%;
+ height: 3.4%;
+   & a{
+     background-color: $color-primary;
+     color: $text-color1;
+     font-size: 0.98em;
+     }
+     & div{
+           display: flex;
+           justify-content: space-between;
+    }  
+}
+
+#ml{
+    margin-left: 3%;
+}
+
+#ctn{
+    margin-right: 3%;
+}
+
+#ml:hover{
+ -webkit-animation: thing 3s ;
+ animation: thing 3s ;
+}
+
+#ctn:hover{
+-webkit-animation: thing 3s ;
+ animation: thing 3s ;
+}
+
+@-webkit-keyframes thing{/*animation pour l'effet wiggle sur les boutons mentions légales et prochainement*/
+    0%{transform: rotate(0deg)}
+    3%{transform: rotate(-4deg)}
+    4%{transform: rotate(4deg)}
+    5%{transform: rotate(-4deg)}
+    6%{transform: rotate(4deg)}
+    7%{transform: rotate(4deg)}
+    8%{transform: rotate(-4deg)}
+    9%{transform: rotate(4deg)}
+    10%{transform: rotate(-4deg)}
+    11%{transform: rotate(4deg)}
+    12%{transform: rotate(-4deg)}
+    13%{transform: rotate(-4deg)}
+    14%{transform: rotate(4deg)}
+    15%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+      }
+      
+@keyframes thing{
+    0%{transform: rotate(0deg)}
+    3%{transform: rotate(-4deg)}
+    4%{transform: rotate(4deg)}
+    5%{transform: rotate(-4deg)}
+    6%{transform: rotate(4deg)}
+    7%{transform: rotate(4deg)}
+    8%{transform: rotate(-4deg)}
+    9%{transform: rotate(4deg)}
+    10%{transform: rotate(-4deg)}
+    11%{transform: rotate(4deg)}
+    12%{transform: rotate(-4deg)}
+    13%{transform: rotate(-4deg)}
+    14%{transform: rotate(4deg)}
+    15%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+#btnpro{
+ @include btn(1.1em,60%);
+ height: 7%;
+ margin-top: 10%;
+}
+
+#pro{
+ height: 400px;
+}
+/*animation des trois points de suspensions qui apparaissent et disparaissent à tour de rôle en utilisant "opacity"*/
+#two {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+#three {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+
+@-webkit-keyframes wait {
+0% {
+    opacity:.2
+   }
+50% {
+     opacity:1
+    }
+100% {
+     opacity:.2
+    }
+}
+
+@keyframes wait {
+0% {
+     opacity:.2
+   }
+50% {
+     opacity:1
+    }
+100% {
+     opacity:.2
+    }
+}
+
+/*affichage pour les smartphones avec un écran plus large*/
+
+@media screen and (orientation:portrait) and (min-width: 375px) and (max-width: 568px){
+ 
+ header{
+  height: 13.2%;
+ }
+}
+
+@media screen and (min-width:569px){
+ 
+ #container{
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ 
+ #art1{
+    @include menu($section1-color,36%,95%);
+}
+
+#art2{
+    @include menu($section2-color,36%,95%);
+}
+
+#art3{
+    @include menu($section3-color,36%,95%);
+}
+
+#art4{
+    @include menu(#FFF,36%,95%);
+}
+
+#ml{
+    margin-left: 2%;
+}
+
+#ctn{
+    margin-right: 2%;
+}
+
+ h1{
+ font-size: 4.47em;
+ bottom: 2.5%;
+ }
+ 
+ #noteindex{
+  height: 70px;
+ }
+ 
+ #h2a{
+ font-size: 3.8em
+}
+
+
+#h3a{
+ font-size: 3.8em;
+}
+
+#h2b {
+   @include h2b(2.6em);
+}
+
+#h2b:visited{
+    @include h2b(2.6em);
+}
+
+#h2c{
+    @include h2c(3.5em);
+}
+
+#h2c:visited{
+    @include h2c(3.5em);
+}
+
+
+#h2d{
+    @include h2d (3em);
+}
+
+#h2d:visited{
+    @include h2d (3em);
+}
+
+#h3b,#h3c,#h3d{
+ font-size: 3.5em;
+}
+
+#btnpro{
+ @include btn(2.6em,40%); 
+}
+
+footer{
+ padding-bottom: 2%;
+    & a{
+     font-size: 2.7em;
+    }
+}
+
+}
+
+/*affichage pour les smartphone en mode paysage*/
+
+@media screen and (orientation:landscape) and (min-width:567px) and (max-width:896px) and (min-height: 319px){
+ 
+  #art1{
+    @include menu($section1-color,34%,100%);
+}
+
+#art2{
+    @include menu($section2-color,34%,100%);
+}
+
+#art3{
+    @include menu($section3-color,34%,100%);
+}
+
+#art4{
+    @include menu(#FFF,34%,100%);
+}
+
+#ml{
+    margin-left: 3%;
+}
+
+#ctn{
+    margin-right: 3%;
+}
+
+header{
+ height: 34.25%;
+}
+
+ #h1{
+ font-size: 2.7em;
+ }
+ 
+ #noteindex{
+  height: 45px;
+ }
+ 
+ #h2a{
+ font-size: 1.8em
+}
+
+
+#h3a{
+ font-size: 1.3em;
+}
+
+#h2b {
+   @include h2b(1.1em);
+   margin-left: 5%;
+}
+
+#h2b:visited{
+    @include h2b(1.1em);
+}
+
+#h2c{
+    @include h2c(1.65em);
+    margin-left: 5%;
+    
+}
+
+#h2c:visited{
+    @include h2c(1.7em);
+    
+}
+
+
+#h2d{
+    @include h2d (1.65em);
+    margin-left: 5%;
+    
+}
+
+#h2d:visited{
+    @include h2d (1.7em);
+}
+
+#h3b{
+ font-size: 1.3em;
+}
+
+#h3c,#h3d{
+ font-size: 1.5em;
+}
+
+#btnpro{
+ @include btn(1.2em,35%);
+ height: 15%;
+}
+
+footer{
+ padding-bottom: 2.2%;
+    & a{
+     font-size: 1em;
+    }
+}
+
+}
+
+/*ajustement pout écran de 568px en mode paysage*/
+
+@media screen and (orientation:landscape) and (min-width:566px) and (max-width:570px) {
+
+#ml{
+    margin-left: 2%;
+}
+
+#ctn{
+    margin-right: 2%;
+}
+
+ #h1{
+ font-size: 3em;
+ }
+ 
+ #noteindex{
+  height: 50px;
+ }
+ 
+ #h2a{
+ font-size: 1.6em;
+}
+
+
+#h3a{
+ font-size: 1.3em;
+}
+
+#h2b {
+   @include h2b(0.9em);
+}
+
+#h2b:visited{
+    @include h2b(0.9em);
+}
+
+#h2c{
+    @include h2c(1.5em);
+}
+
+#h2c:visited{
+    @include h2c(1.5em);
+}
+
+
+#h2d{
+    @include h2d (1.45em);
+}
+
+#h2d:visited{
+    @include h2d (1.45em);
+}
+
+#h3b{
+ font-size: 1.3em;
+}
+
+#h3c,#h3d{
+ font-size: 1.5em;
+}
+
+#btnpro{
+ @include btn(1.2em,40%); 
+}
+
+footer{
+ padding-bottom: 3%;
+    & a{
+     font-size: 1em;
+    }
+}
+ 
+}
+
+@media screen and (orientation:landscape) and (min-width:667px) and (max-width:667px){
+ 
+ header{
+  height: 28.5%;
+ }
+ 
+}
+
+
+@media screen and (orientation:landscape) and (min-width:731px) and (max-width:736px){
+ 
+ header{
+  height: 26%;
+ }
+ 
+}
+
+footer a{
+ font-size: 1.12em;
+}
+
+/*ajustement pour les smartphone avec taille de 800px à 822px en mode paysage*/
+
+@media screen and (orientation:landscape) and (min-width:812px) and (max-width:822px){
+ 
+ header{
+  height: 32.5%;
+ }
+ 
+ #h1{
+  font-size: 3.1em;
+  bottom: 7%;
+ }
+ 
+}
+
+/*Affichage pour les tablettes en mode portrait*/
+
+@media screen and (orientation:portrait) and (min-width:600px) and (max-width:1200px){
+ 
+   #art1{
+    @include menu($section1-color,45%,50%);
+}
+
+#art2{
+    @include menu($section2-color,45%,50%);
+}
+
+#art3{
+    @include menu($section3-color,45%,50%);
+}
+
+#art4{
+    @include menu(#FFF,45%,50%);
+}
+
+header{
+ height: 13.60%;
+}
+
+ #h1{
+ font-size: 3.5em;
+ bottom: 6%;
+ }
+ 
+ #noteindex{
+  height: 50px;
+ }
+ 
+ #h2a{
+ font-size: 2.3em;
+}
+
+
+#h3a{
+ font-size: 1.8em;
+}
+
+#h2b {
+   @include h2b(1.5em);
+}
+
+#h2b:visited{
+    @include h2b(1.5em);
+}
+
+#h2c{
+    @include h2c(2.4em);
+}
+
+#h2c:visited{
+    @include h2c(2.4em);
+}
+
+
+#h2d{
+    @include h2d (2.4em);
+}
+
+#h2d:visited{
+    @include h2d (2.4em);
+}
+
+#h3b{
+ font-size: 2.2em;
+}
+
+#h3c,#h3d{
+ font-size: 2.5em;
+}
+
+#btnpro{
+ @include btn(1.85em,40%); 
+}
+
+footer{
+ padding-bottom: 2%;
+    & a{
+     font-size: 2.04em;
+     top: 2%;
+    }
+}
+
+
+#ml{
+    margin-left: 3%;
+}
+
+#ctn{
+    margin-right: 3%;
+}
+
+ 
+}
+
+/*ajustement pour les tablettes avec écran plus large*/
+
+@media screen and (orientation:portrait) and (min-width:1024px) and (max-width:1024px){
+ 
+ #noteindex{
+  height: 50px;
+ }
+ 
+ header{
+  height: 10.2%;
+ }
+ 
+ #h2a{
+ font-size: 2.7em
+}
+
+
+#h3a{
+ font-size: 2.2em;
+}
+
+#h2b {
+   @include h2b(1.8em);
+}
+
+#h2b:visited{
+    @include h2b(1.8em);
+}
+
+#h2c{
+    @include h2c(2.6em);
+}
+
+#h2c:visited{
+    @include h2c(2.6em);
+}
+
+
+#h2d{
+    @include h2d (2.6em);
+}
+
+#h2d:visited{
+    @include h2d (2.6em);
+}
+
+#h3b{
+ font-size: 2.4em;
+}
+
+#h3c,#h3d{
+ font-size: 2.7em;
+}
+ 
+}
+
+/*affichage pour les tablettes en mode paysage*/
+
+@media screen and (orientation:landscape) and (min-width:900px) and (max-width:1280px){
+ 
+  #art1{
+    @include menu($section1-color,45%,80%);
+}
+
+#art2{
+    @include menu($section2-color,45%,80%);
+}
+
+#art3{
+    @include menu($section3-color,45%,80%);
+}
+
+#art4{
+    @include menu(#FFF,45%,80%);
+}
+
+header{
+ height: 18.1%;
+}
+
+ #h1{
+ font-size: 3.5em;
+ bottom: 6%;
+ }
+ 
+ #noteindex{
+  height: 60px;
+ }
+ 
+ #h2a{
+ font-size: 3em;
+}
+
+
+#h3a{
+ font-size: 2em;
+}
+
+#h2b {
+   @include h2b(2em);
+}
+
+#h2b:visited{
+    @include h2b(2em);
+}
+
+#h2c{
+    @include h2c(2.8em);
+}
+
+#h2c:visited{
+    @include h2c(2.8em);
+}
+
+
+#h2d{
+    @include h2d (2.6em);
+}
+
+#h2d:visited{
+    @include h2d (2.6em);
+}
+
+#h3b{
+ font-size:2.5em;
+}
+
+#h3c,#h3d{
+ font-size: 2.5em;
+}
+
+#btnpro{
+ @include btn(2.1em,30%);
+ height: 10%;
+}
+
+footer{
+ padding-bottom: 2%;
+    & a{
+     font-size: 2.25em;
+     
+    }
+}
+
+
+#ml{
+    margin-left: 3%;
+}
+
+#ctn{
+    margin-right: 3%;
+}
+
+}
+
+/*ajustemnent pour les tablettes avec écran de 12 pouces*/
+
+@media screen and (orientation:landscape) and (min-width:1281px) {
+ 
+ header{
+  height: 22.60%;
+ }
+ 
+ #h1{
+  bottom: 5%;
+  font-size:4.32em;
+ }
+ 
+ #h2b{
+  font-size: 2.2em;
+ }
+ 
+ #btnpro{
+ @include btn(2.6em,35%);
+ height: 12%;
+}
+
+footer{
+ padding-top: 1%;
+ padding-bottom: 1.8%;
+    & a{
+     font-size: 2.4em;
+    }
+}
+
+
+}
+
+
+/*ajustement pour affichage sur ordianteurs et grands écrans*/
+
+@media screen and (orientation:landscape) and (min-width: 1366px) and (max-width:1366px){
+ 
+ header{
+  height: 16.5%;
+ }
+ 
+ #h1{
+  font-size: 3.9em;
+ }
+ 
+ footer a{
+  font-size: 2.2em;
+ }
+}
+

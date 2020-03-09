@@ -1,0 +1,1955 @@
+/*variables avec toutes les couleurs en héxadécimales utilisées pour le site*/
+$color-primary: #559c84;/*background vert du header, du button et du footer $color-primary: #529180;*/
+$text-color1: #F7C528;/*couleur jaune des textes header, button, et footer $text-color1: #F7C528;*/ 
+$section1-color: #f9dfde; /*background color du menu la note enchantée $section1-color: #FADBD6;*/
+$section2-color: #faf2fa;/*background color du menu le chic à la française $section2-color: #FEF6FF;*/
+$section3-color: #F2F7FA;/*background color du menu le délice des papilles $section3-color: #FCFAFA;*/
+$section4-color: #F8FBF8;/*background color du menu la palette du goût $section4-color: #F0FFF2;*/
+$h21-color:#CA7A0F;/*couleur du texte h2b et h3b $h21-color:#CA7A0F;*/
+$h22-color:#995EFF;/*deuxiéme couleur du texte h2b $h22-color:#995EFF;*/
+$h2e1-color:#168720;/*couleur du texte h2d et h3d $h2e1-color:#168720;*/
+$h2e2-color:#C7FF66;/*deuxième couleur du texte h2b $h2e2-color:#B9FF00;*/
+$h2d1-color:#030AD3;/*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
+$h2d2-color:#4192FF;/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
+
+/*affichage pour les smartphones*/
+
+@media screen and (min-width:300px){
+    
+    @mixin menu{/*mixin pour la mise en forme des menus*/
+        width: 90%;
+        position: relative;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20%;
+    }
+
+@mixin h4 ($font-fam3)
+/*mixin pour la mise ne forme des tittres h4 des menus*/{
+ font-family: $font-fam3;
+ position: relative;
+ font-weight: bolder;
+ text-decoration: none;
+ font-size: 0.9em;
+}
+
+@mixin underline ($colorline){/*mixin pour l'animation des titres h4 qui se soulignent de gauche à droite au survol avec la souris*/
+  position: relative;
+     &:hover:before{
+        width:100%;
+      }
+        &:before {
+            background-color: $colorline;
+            content: "";
+            bottom: 2px;
+            position: absolute;
+            width: 0;
+            left:auto;
+            height: 4px;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+         }
+}
+
+ @mixin textesize ($font-fam){
+ /* mixin pour la mise en forme des textes des menus*/
+ font-weight: lighter;
+ font-family: $font-fam;
+ white-space: nowrap;
+ position: relative;
+}
+
+@mixin spsize ($font-fam2) {/*mixin pour les prix*/
+font-family: $font-fam2 ;
+font-weight: bold;
+}
+    
+html, body{/*margin padding et border à 0 pour le reset css*/
+    margin:  0;
+    padding: 0;
+    border: 0;
+    width:  100%;
+    height: 100%;
+}
+
+ #container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ flex-wrap: wrap;
+ }
+    
+    header, footer{
+    background-color: $color-primary;
+    width: 100%;
+}
+
+section {
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px 1px #ECECEC;
+}
+
+      h1{
+ font-size: 2.4em;
+ font-family: 'Hind Siliguri', sans-serif;
+ text-align: center;
+ vertical-align: middle;
+ position: relative;
+ text-decoration: none;
+ /*valeur négative de letter spacing pour le h1 pour reproduire l'écart entre les lettres à l'identique de la maquette*/
+ letter-spacing: -2px;
+}
+
+
+
+a,h2, h3, #ml, #ctn{
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+h1, #ml, #ctn{
+    color: $text-color1;
+}
+
+h1:visited{
+ text-decoration: none;
+ color: $text-color1;
+}
+
+.ah1{
+ color: $text-color1;
+}
+
+.ah1:visited{
+ color: $text-color1;
+}
+
+ #h2m1, #h2m2, #h2m3, #h2m4, #ml, #ctn {
+ /*police de caratère de "footer" et des titres h2*/
+ font-family: 'Lato', sans-serif;
+ }
+ 
+ .title{ /*display flex pour la mise en page des h4 et des lignes de décorations entre les h4*/
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-around;
+ align-items: center;
+ margin-right: 2%;
+}
+
+div img{
+ width: 20%;
+}
+
+div h4{
+ white-space: nowrap;
+}
+
+.gauche{
+ margin-left: 10%;
+}
+
+.droit{
+ margin-right: 10%;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+#ml, #ctn{
+ /*police de caratère de "button" et de "footer"*/
+ font-family: 'Lato', sans-serif;
+ font-weight: lighter;
+}
+
+footer{
+ /*position fixed pour le footer afin qu'il reste au même endroit de l'écran malgré le scrolling vertical*/
+ padding-top: 1%;
+ position:fixed;
+ bottom: 0;
+ padding-bottom: 1%;
+ width: 100%;
+ height: 3%;
+   & a{
+     background-color: $color-primary;
+     color: $text-color1;
+     font-size: 0.7em;
+     }
+     & div{
+           display: flex;
+           justify-content: space-between;
+    }  
+}
+
+#ml{
+    margin-left: 3%;
+}
+
+#ctn{
+    margin-right: 3%;
+}
+
+#ml:hover{
+ -webkit-animation: thing 3s ;
+ animation: thing 3s ;
+}
+
+
+#ctn:hover{
+-webkit-animation: thing 3s ;
+ animation: thing 3s ;
+}
+
+@-webkit-keyframes thing{/*animation pour l'effet wiggle des bouton mentions légales et contact*/
+     0%{transform: rotate(0deg)}
+    3%{transform: rotate(-4deg)}
+    4%{transform: rotate(4deg)}
+    5%{transform: rotate(-4deg)}
+    6%{transform: rotate(4deg)}
+    7%{transform: rotate(4deg)}
+    8%{transform: rotate(-4deg)}
+    9%{transform: rotate(4deg)}
+    10%{transform: rotate(-4deg)}
+    11%{transform: rotate(4deg)}
+    12%{transform: rotate(-4deg)}
+    13%{transform: rotate(-4deg)}
+    14%{transform: rotate(4deg)}
+    15%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+      }
+      
+@keyframes thing{
+    0%{transform: rotate(0deg)}
+    3%{transform: rotate(-4deg)}
+    4%{transform: rotate(4deg)}
+    5%{transform: rotate(-4deg)}
+    6%{transform: rotate(4deg)}
+    7%{transform: rotate(4deg)}
+    8%{transform: rotate(-4deg)}
+    9%{transform: rotate(4deg)}
+    10%{transform: rotate(-4deg)}
+    11%{transform: rotate(4deg)}
+    12%{transform: rotate(-4deg)}
+    13%{transform: rotate(-4deg)}
+    14%{transform: rotate(4deg)}
+    15%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+/*affichage pour les tablettes en mode portrait*/
+
+@media screen and (orientation:portrait) and (min-width:600px) and (max-width: 1199px){
+ 
+ footer a {
+  font-size: 1.2em;
+ }
+}
+
+/* la note enchantée*/
+
+#sec1M1 {
+ background-color: $section1-color;
+ @include menu;
+}
+
+#img{
+ display: flex;
+ justify-content: center;
+}
+
+ #noteh2{
+ position: relative;
+ height: 35px;
+ top: 35px;
+ margin-right: 5%;
+}
+
+.s1{/*animation "underline au survol avec la souris*/
+ @include underline (black);
+}
+
+#h2m1{
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+ font-size: 2em;
+}
+
+#h3m1{
+ font-family:'Devonshire', cursive;
+ font-weight: lighter;
+ font-size: 1.9em;
+}
+
+ #h4m1c{
+ font-family:'Devonshire', cursive;
+ font-weight: lighter;
+ font-size: 1.3em;
+ position: relative;
+}
+
+
+#img2{
+ display: flex;
+ justify-content: center;
+}
+
+#noteh4{
+ position: relative;
+ height: 20px;
+ top: 50px;
+ margin-right: 50%;
+}
+
+
+.texte{
+ @include textesize('Kalam');
+ font-size: 0.55em;
+ margin-left: 2%;
+}
+
+.sp1{
+@include spsize('Annie Use Your Telescope');
+font-size: 0.55em;
+margin-right: 2%;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ @include h4 ('Kalam');
+}
+
+.menu1{
+ display: flex;
+ justify-content: space-between;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width: 375px) and (max-width:399px){
+ 
+#noteh4{
+ height: 25px;
+ top: 50px;
+ left: 2%;
+}
+
+#h2m1,#h2m2,#h2m3,#h2m4{
+ font-size: 1.4em;
+}
+.texte{
+ font-size: 0.65em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 0.65em;
+margin-right: 5%;
+}
+
+}
+
+footer a{
+ font-size: .8em;
+}
+
+@media screen and (orientation:portrait) and (min-width: 400px) {
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.2em;
+}
+
+#h4m1c{
+ font-size: 1.5em
+}
+
+#noteh4{
+ height: 25px;
+ top: 60px;
+ left: 2%;
+}
+
+
+.texte{
+ font-size: 0.7em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 0.7em;
+margin-right: 5%;
+}
+
+}
+
+/*affichage en mode paysage des smartphones*/
+
+@media screen and (orientation:landscape) and (min-width:568px) and (max-width: 800px){
+ 
+ #noteh2{
+ top: 35px;
+ margin-right: 3%;
+ height: 35px;
+}
+
+#h2m1{
+ font-size: 1.4em;
+}
+
+#h3m1{
+ font-size: 2.1em;
+}
+
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.3em;
+}
+
+#h4m1c{
+ font-size: 1.5em
+}
+
+#noteh4{
+ margin-right: 2%;
+ height: 25px;
+ top: 60px;
+ right: 12.5%;
+}
+
+
+.texte{
+ font-size: 0.95em;
+ margin-left: 2%;
+}
+
+.sp1{
+font-size: 1em;
+margin-right: 2%;
+}
+
+footer{
+ padding-bottom: 2%;
+}
+
+}
+
+@media screen and  (orientation:landscape) and (min-width:801px) and (max-width:900px){
+ 
+ #noteh2{
+ top: 35px;
+ margin-right: 3%;
+ height: 35px;
+}
+
+#h2m1{
+ font-size: 1.4em;
+}
+
+#h3m1{
+ font-size: 1.8em;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.6em;
+}
+
+#h4m1c{
+ font-size: 1.9em
+}
+
+#noteh4{
+ height: 25px;
+ top: 73px;
+ right: 11.5%;
+}
+
+
+.texte{
+ font-size: 1.1em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1.1em;
+margin-right: 5%;
+}
+
+footer{
+ padding-bottom: 3%;
+}
+
+}
+ 
+ @media screen and  (orientation:landscape) and (min-width:801px) and (max-width:900px){
+  
+ 
+ #noteh2{
+ top: 35px;
+ margin-right: 3%;
+ height: 35px;
+}
+
+#h3m1{
+ font-size: 1.8em;
+}
+
+#h3m1{
+ font-size: 2em;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.6em;
+}
+
+#h4m1c{
+ font-size: 1.9em
+}
+
+#noteh4{
+ height: 25px;
+ top: 73px;
+ right: 11.5%;
+}
+
+
+.texte{
+ font-size: 1.2em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1.2em;
+margin-right: 5%;
+}
+
+footer{
+ padding-bottom: 3%;
+ font-size: 1.4em;
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:959px) and (max-width:961px){
+ 
+ #noteh4{
+  margin-right: 100px;
+ }
+ 
+}
+
+@media screen and (orientation:portrait) and (min-width: 600px) and (max-width:602px){
+
+#noteh4{
+ height: 30px;
+ top: 60px;
+ right: 14%;
+}
+}
+
+/*affichage pour tablettes en mode portrait*/
+
+@media screen and (orientation:portrait) and (min-width:768px) and (max-width: 1023px){
+ 
+ #noteh2{
+ top: 35px;
+ margin-right: 3%;
+ height: 40px;
+}
+
+#h3m1{
+ font-size: 2.3em;
+}
+
+#h2m1{
+ font-size: 1.4em; 
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.5em;
+}
+
+#h4m1c{
+ font-size: 1.9em
+}
+
+#noteh4{
+ margin-right: 34%;
+ height: 30px;
+ top: 75px;
+ right: 14%;
+}
+
+.texte{
+ font-size: 1.1em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1.2em;
+margin-right: 5%;
+}
+
+footer{
+ font-size:1.4em;
+ padding-bottom: 1%;
+    & a{
+     font-size: 1.2em;
+    }
+}
+
+}
+
+/*affichage pour tablettes en mode paysage*/
+
+@media screen and  (orientation:landscape) and (min-width:901px) and (max-width:1279px){
+
+h1{
+ font-size: 3.5em;
+}
+
+h2{
+ font-size:2.6em;
+}
+  
+ 
+ #noteh2{
+ top: 55px;
+ margin-right: 3%;
+ height: 55px;
+}
+
+#h3m1{
+ font-size: 3em;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.8em;
+}
+
+#h4m1c{
+ font-size: 2.2em
+}
+
+#noteh4{
+ height: 35px;
+ top: 85px;
+ left: 12%;
+}
+
+
+.texte{
+ font-size: 1.4em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1.4em;
+margin-right: 5%;
+}
+
+footer{
+ padding-bottom: 3%;
+ font-size: 1.7em;
+    & a {
+     font-size: 1.2em;
+    }
+}
+
+}
+
+
+@media screen and (orientation: landscape) and (min-width:1280px){
+ 
+ #noteh2{
+ margin-right: 3%;
+}
+
+#h3m1{
+ font-size: 1.9em;
+}
+
+ #noteh4{
+ top: 50px;
+ margin-left: 4%;
+}
+
+#h4m1,#h4m1a,#h4m1b{
+ font-size: 1.4em;
+}
+
+.texte{
+ font-size: 1em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1em;
+margin-right: 5%;
+}
+
+}
+
+/*ajustement pour tablettes de 12 pouces*/
+
+@media screen and (orientation:portrait) and (min-width:1024px) and (max-width:1279px){
+ 
+ h1{
+  font-size: 3.5em;
+ }
+ 
+ #h2m1{
+  font-size: 2em;
+ }
+ 
+ #noteh2{
+ top: 50px;
+ margin-right: 3%;
+ height: 40px;
+}
+
+#h3m1{
+ font-size: 2.7em;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+ font-size: 1.7em;
+}
+
+#h4m1c{
+ font-size: 2.1em
+}
+
+#noteh4{
+ margin-right: 29%;
+ height: 30px;
+ top: 80px;
+ right: 12%;
+}
+
+.texte{
+ font-size: 1.3em;
+ margin-left: 5%;
+}
+
+.sp1{
+font-size: 1.3em;
+margin-right: 5%;
+}
+
+footer{
+ font-size:1.8em;
+ padding-bottom: 1%;
+    & a{
+     font-size: 1.02em;
+    }
+}
+
+}
+
+/*affichage pour les ordinateurs et grands écrans*/
+
+@media screen and (min-width: 1280px){
+     
+    h1{
+        font-size: 3.8em;
+        padding-bottom: 0.9%;
+        margin-top: 3%;
+    }
+    
+    
+    footer{
+ padding-bottom: 3%;
+    & a{
+     font-size: 2.4em;
+    }
+}
+
+#ml{
+    margin-left: 2%;
+}
+
+#ctn{
+    margin-right: 2%;
+}
+
+#sec1M1{
+ background-color: $section1-color;
+}
+
+#img{
+ display: flex;
+ justify-content: center;
+}
+
+#noteh2{
+ position: relative;
+ height: 70px;
+ margin-top: 2%;
+ line-height: 0.1;
+ top: 50px;
+}
+
+#h3m1{
+ font-size: 3em;
+}
+
+#h2M1{
+ font-size: 2.4em;
+}
+
+#h4m1, #h4m1a, #h4m1b{
+font-size: 2.4em;
+}
+
+#h4m1{
+ margin-bottom: 3%;
+}
+
+#h4m1c{
+ font-size: 3.5em;
+ padding-bottom: 2%;
+}
+
+#img2{
+ display: flex;
+ justify-content: center;
+ margin-right: 30%;
+}
+
+#noteh4{
+ height: 60px;
+ line-height: 0.1;
+ top: 140px;
+ margin-left: 47%;
+}
+
+.texte{
+ font-size: 1.7em;
+ margin-left: 5%;
+}
+
+.sp1{
+ font-size: 1.7em;
+ margin-right: 5%;
+}
+
+.menu1{
+ display: flex;
+ justify-content: space-between;
+}
+
+}
+
+/* Le chic à la française*/
+
+@media screen and (min-width:300px){
+    
+ @mixin menu{
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    }
+
+@mixin h4 ($font-fam3)
+/*mixin pour la mise ne forme des tittres h4 des menus*/{
+ font-family: $font-fam3;
+ position: relative;
+ font-weight: bolder;
+ text-decoration: none;
+}
+
+ @mixin textesize ($font-fam){
+ /* mixin pour la mise en forme des textes des menus*/
+ font-weight: lighter;
+ font-family: $font-fam;
+ white-space: nowrap;
+ position: relative;
+}
+
+@mixin spsize ($font-fam2) {
+font-family: $font-fam2 ;
+font-weight: bold;
+}
+
+@mixin chic ($chicsize){
+  /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
+ font-family: 'Croissant One', cursive;
+ font-weight: lighter;
+ margin-top: 10%;
+ font-size: $chicsize;
+ background: -moz-linear-gradient(right, $h22-color, $h21-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h22-color , $h21-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h22-color, $h21-color);
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h22-color, $h21-color); 
+}
+
+@mixin underline ($colorline){
+  position: relative;
+     &:hover:before{
+        width:100%;
+      }
+        &:before {
+            background-color: $colorline;
+            content: "";
+            bottom: 2px;
+            position: absolute;
+            width: 0;
+            left:auto;
+            height: 4px;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+         }
+}
+
+#sec1M2 {
+ background-color: $section2-color;
+ @include menu;
+}
+
+#h2m2{
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+ font-size: 1.4em;
+}
+
+.menu2{
+ display: flex;
+ justify-content: space-between;
+}
+
+.s2{
+ @include underline ($h21-color);
+}
+
+.s2a{
+ @include underline (#A165AF);
+}
+
+.s2b{
+ @include underline (#6F39B8);
+}
+
+#h3m2{
+   @include chic (1.3em);
+}
+
+#h4m2c{
+   @include chic (0.8em);
+   text-align: center;
+}
+
+.texte2, .texte2a, .texte2b{
+ @include textesize('Playfair Display:400');
+ font-weight: lighter;
+  font-size: 0.55em;
+  margin-left: 5%;
+}
+
+.texte2{
+ color: $h21-color;
+}
+
+.texte2a{
+ color: #A165AF;
+}
+
+.texte2b{
+ color: #6F39B8;
+}
+
+.sp2a, .sp2b{
+@include spsize('Playfair Display:400');
+font-weight: lighter;
+font-size: 0.55em;
+margin-right: 5%;
+}
+
+.sp2a{
+ color: $h21-color;
+}
+
+.sp2b{
+ color: #A378AD;
+}
+
+#h4m2{
+  color:$h21-color;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+#h4m2a{
+ color: #A165AF;
+ text-align: center;
+ font-size: 0.7em;
+}
+
+#h4m2b{
+ color: #6F39B8;
+ text-align: center;
+ font-size: 0.7em;
+}
+
+}
+
+
+@media screen and (orientation:landscape) and (min-width:568px) and (max-width:809px){
+  
+ #h3m2{
+  font-size: 1.6em;
+  margin-top: 5%;
+ }
+ 
+ #h4m2c{
+   font-size: 1.1em;
+}
+
+.texte2, .texte2a, .texte2b{;
+  font-size: 0.8em;
+}
+
+.sp2a, .sp2b{
+font-size: 0.8em;
+}
+
+#h4m2, #h4m2a, #h4m2b{
+  font-size: 1.1em;
+}
+
+footer{
+ padding-bottom: 3%;
+ & a{
+  margin-top: .1%;
+  font-size: .8em;
+ }
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:810px) and (max-width:1023px){
+ 
+h1{
+ font-size: 3.1em;
+}
+ 
+ #h3m2{
+  font-size: 1.8em;
+ }
+ 
+ #h4m2c{
+   font-size: 1.4em;
+}
+
+.texte2, .texte2a, .texte2b{;
+  font-size: 1em;
+}
+
+.sp2a, .sp2b{
+font-size: 1em;
+}
+
+#h4m2, #h4m2a, #h4m2b{
+  font-size: 1.3em;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:600px) and (max-width:1024px){
+ 
+ #h3m2{
+   font-size:1.9em;
+}
+
+#h4m2c{
+   font-size:1.4em;
+}
+
+.texte2, .texte2a, .texte2b{
+  font-size: 1.1em;
+}
+
+.sp2a, .sp2b{
+font-size: 1.1em;
+}
+
+#h4m2,#h4m2a,#h4m2b{
+  font-size: 1.3em;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:1024px) and (max-width:1199px){
+ 
+h1{
+ font-size: 3.7em;
+}
+
+#h2m2{
+ font-size: 2em;
+}
+
+#h3m2{
+   font-size:2.1em;
+}
+
+#h4m2c{
+   font-size:1.7em;
+}
+
+.texte2, .texte2a, .texte2b{
+  font-size: 1.2em;
+}
+
+.sp2a, .sp2b{
+font-size: 1.2em;
+}
+
+#h4m2,#h4m2a,#h4m2b{
+  font-size: 1.4em;
+}
+ 
+footer{
+ padding-bottom: 2%;
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:1024px) and (max-width:1199px){
+
+#h1{
+ font-size: 3.5em;
+}
+
+#h3m2{
+   font-size:2.3em;
+}
+
+#h4m2c{
+   font-size:1.9em;
+}
+
+.texte2, .texte2a, .texte2b{
+  font-size: 1.3em;
+}
+
+.sp2a, .sp2b{
+font-size: 1.3em;
+}
+
+#h4m2,#h4m2a,#h4m2b{
+  font-size: 1.6em;
+}
+ 
+footer{
+ padding-bottom: 2%;
+   & a{
+    font-size: 1.61em;
+    margin-top: 0.2%;
+   }
+}
+
+}
+
+@media screen and (min-width: 1200px){
+
+h1{
+ font-size: 3.8em;
+}
+
+#h2m2{
+ font-size: 2em;
+}
+
+#h3m2{
+   font-size:2.7em;
+}
+
+#h4m2c{
+   font-size:2em;
+}
+
+.texte2, .texte2a, .texte2b{
+  font-size: 1.4em;
+}
+
+.sp2a, .sp2b{
+font-size: 1.4em;
+}
+
+#h4m2,#h4m2a,#h4m2b{
+  font-size: 1.9em;
+}
+ 
+footer{
+ padding-bottom: 3%;
+}
+
+}
+
+/*le délice des papilles*/
+
+@media screen and (min-width:300px){
+ 
+ @mixin menu{
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    }
+
+@mixin h4 ($font-fam3)
+/*mixin pour la mise ne forme des tittres h4 des menus*/{
+ font-family: $font-fam3;
+ position: relative;
+ font-weight: bolder;
+ text-decoration: none;
+}
+
+ @mixin textesize ($font-fam){
+ /* mixin pour la mise en forme des textes des menus*/
+ font-weight: lighter;
+ font-family: $font-fam;
+ white-space: nowrap;
+ position: relative;
+}
+
+@mixin spsize ($font-fam2) {
+font-family: $font-fam2 ;
+font-weight: bold;
+}
+
+ 
+ @mixin délice ($sizem3){
+ font-family: 'Dancing Script', cursive;
+  background: -moz-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h2d2-color 30%, $h2d1-color);
+ -webkit-background-clip: text;
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h2d2-color 30%, $h2d1-color);
+ -webkit-background-clip: text;
+ font-size: $sizem3;
+ font-weight: lighter;
+ text-align: center;
+}
+
+@mixin underline ($colorline){
+  position: relative;
+     &:hover:before{
+        width:100%;
+      }
+        &:before {
+            background-color: $colorline;
+            content: "";
+            bottom: 2px;
+            position: absolute;
+            width: 0;
+            left:auto;
+            height: 4px;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+         }
+}
+
+#sec1M3 {
+ background-color: $section3-color;
+ @include menu;
+}
+
+#h2m3{
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+}
+
+.menu3{
+ display: flex;
+ justify-content: space-between;
+}
+
+#h4m3, #h4m3a, #h4m3b{
+ font-family: 'Chilanka';
+ text-align: center;
+ font-size: 0.6em;
+ font-weight: lighter;
+}
+
+.s3{
+ @include underline (#0228DD);
+}
+ .s3a{
+ @include underline (#0670F3);
+ }
+ .s3b{
+ @include underline (#229DF9);
+ }
+
+.texte3{
+ @include textesize ('Chilanka');
+ font-size: 0.1em;
+ margin-left: 5%;
+}
+
+.sp3{
+@include spsize ('Chilanka');
+font-weight: lighter;
+ font-size: 0.50em;
+ margin-right: 5%;
+}
+
+#h4m3c{
+ @include délice(1.7em);
+}
+
+#h3m3{
+ @include délice(2em);
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:375px) and (max-width:500px){
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 0.8em;
+}
+
+.texte3{
+ font-size: 0.6em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 0.6em;
+ margin-right: 5%;
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:568px) and (max-width:809px){
+ 
+h1{
+ font-size: 3.2em;
+}
+
+#h2m3{
+ font-size: 1.4em;
+}
+
+#h4m3c{
+ font-size:1.9em;
+}
+
+#h3m3{
+ font-size:2.2em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1em;
+}
+
+.texte3{
+ font-size: 0.8em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 8em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.2em;
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:810px) and (max-width:1023px){
+  
+h1{
+ font-size: 3.2em;
+}
+
+#h2m3{
+ font-size: 1.4em;
+}
+
+#h4m3c{
+ font-size:2.3em;
+}
+
+#h3m3{
+ font-size:2.6em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.3em;
+}
+
+.texte3{
+ font-size: 1em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1em;
+ margin-right: 5%;
+}
+
+#noteh4{
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.2em;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:600px) and (max-width:1024px){
+ 
+h1{
+ font-size: 3.2em;
+}
+
+#h2m3{
+ font-size: 1.4em;
+}
+
+#h4m3c{
+ font-size:2.3em;
+}
+
+#h3m3{
+ font-size:2.6em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.3em;
+}
+
+.texte3{
+ font-size: 1em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.3em;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:1024px) and (max-width:1199px){
+ 
+h1{
+ font-size: 3.4em;
+}
+
+#h2m3{
+ font-size: 2em;
+}
+
+#h4m3c{
+ font-size:3em;
+}
+
+#h3m3{
+ font-size:2.6em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.5em;
+}
+
+.texte3{
+ font-size: 1.2em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1.2em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.7em;
+}
+
+}
+
+@media screen and (orientation:landscape) and (min-width:1024px) and (max-width:1199px){
+ 
+h1{
+ font-size: 3.2em;
+}
+
+#h2m3{
+ font-size: 2em;
+}
+
+#h4m3c{
+ font-size:2.5em;
+}
+
+#h3m3{
+ font-size:3em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.4em;
+}
+
+.texte3{
+ font-size: 1.1em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1.1em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.5em;
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:1024px) and (max-width:1199px){
+ 
+h1{
+ font-size: 3.4em;
+}
+
+#h2m3{
+ font-size: 2em;
+}
+
+#h4m3c{
+ font-size:3em;
+}
+
+#h3m3{
+ font-size:3em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.5em;
+}
+
+.texte3{
+ font-size: 1.2em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1.2em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.5em;
+}
+
+}
+
+@media screen and (min-width: 1200px){
+ 
+h1{
+ font-size: 3.6em;
+}
+
+#h2m3{
+ font-size: 2em;
+}
+
+#h4m3c{
+ font-size:3em;
+}
+
+#h3m3{
+ font-size:3em;
+}
+ 
+ #h4m3, #h4m3a, #h4m3b{
+ font-size: 1.8em;
+ }
+ 
+ #h4m1c{
+  margin-right:5%;
+ }
+
+#noteh4{
+ width: 80px;
+ margin-left:45%;
+}
+
+.texte3{
+ font-size: 1.4em;
+ margin-left: 5%;
+}
+
+.sp3{
+ font-size: 1.4em;
+ margin-right: 5%;
+}
+
+footer{
+ font-size: 1.1em;
+}
+
+}
+
+/*la palette du goût*/
+
+@media screen and (min-width:300px){
+ 
+ @mixin menu{
+    width: 90%;
+    position: relative;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    }
+
+ @mixin textesize ($font-fam){
+ /* mixin pour la mise en forme des textes des menus*/
+ font-weight: lighter;
+ font-family: $font-fam;
+ white-space: nowrap;
+ position: relative;
+}
+
+@mixin spsize ($font-fam2) {
+font-family: $font-fam2 ;
+font-weight: bold;
+}
+
+@mixin palette ($psize){
+ background: -moz-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ background: -webkit-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background: -o-linear-gradient(right, $h2e2-color, $h2e1-color);
+ -o-background-clip: text;
+ -o-text-fill-color: transparent;
+ background: -linear-gradient(to right, $h2e2-color, $h2e1-color);
+ font-size: $psize;
+ font-weight: lighter;
+ font-family: 'Kaushan Script', cursive;
+ text-align: center;
+}
+
+@mixin underline ($colorline){
+  position: relative;
+     &:hover:before{
+        width:100%;
+      }
+        &:before {
+            background-color: $colorline;
+            content: "";
+            bottom: 2px;
+            position: absolute;
+            width: 0;
+            left:auto;
+            height: 4px;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+         }
+}
+
+h1{
+ font-size: 2.7em;
+}
+
+#sec1M4{
+ @include menu;
+}
+
+#h2m4{
+ font-size: 1.4em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ text-align: center;
+ font-size: 0.8em;
+ font-weight: lighter;
+ font-family: 'Kalam';
+}
+
+.s4{
+ @include underline (#4A9D40);
+}
+
+#h3m4{
+ @include palette (2em);
+}
+
+#h4m4c{
+  @include palette (1.5em);
+}
+
+.menu4{
+ display: flex;
+ justify-content: space-between;
+}
+
+.texte4{
+ @include textesize ('Kalam');
+ font-size: 0.53em;
+ margin-left: 2%;
+ font-weight: lighter;
+}
+
+.sp4{
+@include spsize ('Kalam');
+font-size: 0.55em;
+margin-right: 2%;
+font-weight: lighter;
+}
+
+footer{
+ padding-bottom: 2.5%;
+ font-size: 1.4em;
+}
+
+}
+
+@media screen and  (orientation:landscape) and (min-width:568px) and (max-width:809px) {
+ 
+#h4m4, #h4m4a, #h4m4b{
+ font-size: 1.4em;
+}
+
+#h3m4{
+ font-size: 2.4em;
+}
+
+#h4m4c{
+  font-size: 1.9em;
+}
+
+.texte4{
+ font-size: 0.9em;
+ margin-left: 5%;
+}
+
+.sp4{
+font-size: 0.9em;
+margin-right: 5%;
+
+}
+
+}
+
+@media screen and (orientation:portrait) and (min-width:600px) and (max-width:1200px){
+ 
+h1{
+ font-size: 3.5em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ font-size: 1.6em;
+}
+
+#h3m4{
+ font-size: 2.8em;
+}
+
+#h4m4c{
+  font-size: 2.4em;
+}
+
+.texte4{
+ font-size: 1.1em;
+ margin-left: 5%;
+}
+
+.sp4{
+font-size: 1.1em;
+margin-right: 5%;
+
+}
+
+footer{
+ font-size: 1.7em;
+    & a{
+     font-size: 1.1em;
+    }
+}
+ 
+}
+
+@media screen and (orientation:portrait) and (min-width: 1024px) and (max-width:1200px){
+
+h1{
+ font-size: 3.5em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ font-size: 1.9em;
+}
+
+#h2m4{
+ font-size: 2.1em;
+}
+
+#h3m4{
+ font-size: 3.2em;
+}
+
+#h4m4c{
+  font-size: 2.7em;
+}
+
+.texte4{
+ font-size: 1.3em;
+ margin-left: 5%;
+}
+
+.sp4{
+font-size: 1.3em;
+margin-right: 5%;
+
+}
+
+footer{
+ font-size: 2em;
+    & a {
+     font-size: 1.2em;
+    }
+}
+ 
+}
+
+@media screen and  (orientation:landscape) and (min-width:810px) and (max-width:1023px) {
+ 
+h1{
+ font-size: 3.1em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ font-size: 1.4em;
+}
+
+#h3m4{
+ font-size: 2.7em;
+}
+
+#h4m4c{
+  font-size: 1.9em;
+}
+
+.texte4{
+ font-size: 0.9em;
+ margin-left: 5%;
+}
+
+.sp4{
+font-size: 0.9em;
+margin-right: 5%;
+
+}
+
+}
+
+@media screen and  (orientation:landscape) and (min-width:1024px) and (max-width:1199px) {
+
+h1{
+ font-size: 3.1em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ font-size: 1.6em;
+}
+
+#h3m4{
+ font-size: 2.9em;
+}
+
+#h4m4c{
+  font-size: 2.3em;
+}
+
+.texte4{
+ font-size: 1.1em;
+ margin-left: 5%;
+}
+
+.sp4{
+font-size: 1.1em;
+margin-right: 5%;
+
+}
+
+}
+
+@media screen and (min-width:1200px){
+
+h1{
+ font-size: 3.9em;
+}
+
+#h2m4{
+ font-size: 2em;
+}
+
+#h4m4, #h4m4a, #h4m4b{
+ text-align: center;
+ font-size: 2.2em;
+ font-weight: lighter;
+ font-family: 'Kalam';
+}
+
+#h3m4{
+font-size:3.6em;
+}
+
+#h4m4c{
+  font-size:2.8em;
+}
+
+.texte4{
+ font-size: 1.4em;
+ margin-left: 5%;
+ font-weight: lighter;
+}
+
+.sp4{
+font-size: 1.4em;
+margin-right: 5%;
+font-weight: lighter;
+}
+
+footer{
+ font-size: 0.9em;
+ padding-bottom:2%;
+}
+
+}

@@ -12,7 +12,7 @@
 /*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
 /*affichage pour les smartphones*/
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px) and (min-height: 321px) {
   #container {
     display: flex;
     flex-direction: column;
@@ -132,6 +132,9 @@ header, #btnpro, footer {
   width: 60%;
   height: 50%;
   margin: 5% auto 5% auto; }
+
+#noteindex {
+  height: 30px; }
 
 #h2a, #h3a {
   color: black; }
@@ -452,11 +455,11 @@ footer {
     opacity: .2; } }
 
 /*affichage pour les smartphones avec un écran plus large*/
-@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 399px) {
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 568px) {
   header {
     height: 13.2%; } }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 569px) {
   #container {
     flex-direction: row;
     flex-wrap: wrap; }
@@ -624,7 +627,7 @@ footer {
       font-size: 2.7em; } }
 
 /*affichage pour les smartphone en mode paysage*/
-@media screen and (orientation: landscape) and (min-width: 568px) and (max-width: 896px) {
+@media screen and (orientation: landscape) and (min-width: 567px) and (max-width: 896px) and (min-height: 319px) {
   #art1 {
     /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
@@ -796,7 +799,7 @@ footer {
       font-size: 1em; } }
 
 /*ajustement pout écran de 568px en mode paysage*/
-@media screen and (orientation: landscape) and (min-width: 567px) and (max-width: 569px) {
+@media screen and (orientation: landscape) and (min-width: 566px) and (max-width: 570px) {
   #ml {
     margin-left: 2%; }
   #ctn {
