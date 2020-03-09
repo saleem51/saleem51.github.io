@@ -13,7 +13,7 @@ $h2d2-color:#4192FF;/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
 
 /*affichage pour les smartphones*/
 
-@media screen and (min-width:300px) and (min-height:321px){
+@media screen and (min-width:300px) {
  
  #container{
   display: flex;
@@ -129,7 +129,7 @@ $h2d2-color:#4192FF;/*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
    }
    
       h1{
- font-family: 'Hind Siliguri', sans-serif;
+ font-family: sans-serif;
  text-align: center;
  vertical-align: middle;
  position: relative;
@@ -546,7 +546,7 @@ footer{
 
 /*affichage pour les smartphone en mode paysage*/
 
-@media screen and (orientation:landscape) and (min-width:567px) and (max-width:896px) and (min-height: 319px){
+@media screen and (orientation:landscape) and (min-width:567px) and (max-width:896px) {
  
   #art1{
     @include menu($section1-color,34%,100%);

@@ -12,7 +12,7 @@
 /*couleur du texte h2c et h3c $h2d1-color:#2025B6;*/
 /*deuxième couleur du texte h2c $h2d2-color:#2E89FE;*/
 /*affichage pour les smartphones*/
-@media screen and (min-width: 300px) and (min-height: 321px) {
+@media screen and (min-width: 300px) {
   #container {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ header {
   height: 16.5%; }
 
 h1 {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: sans-serif;
   text-align: center;
   vertical-align: middle;
   position: relative;
@@ -627,7 +627,7 @@ footer {
       font-size: 2.7em; } }
 
 /*affichage pour les smartphone en mode paysage*/
-@media screen and (orientation: landscape) and (min-width: 567px) and (max-width: 896px) and (min-height: 319px) {
+@media screen and (orientation: landscape) and (min-width: 567px) and (max-width: 896px) {
   #art1 {
     /*mixin pour la mise en forme des différents menus, utilisation des arguments pour pouvoir modifié certaines valeur propres à chaque menu*/
     background-color: #f9dfde;
