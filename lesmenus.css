@@ -845,7 +845,7 @@ footer a {
     font-family: "Chilanka";
     white-space: nowrap;
     position: relative;
-    font-size: 0.1em;
+    font-size: 0.50em;
     margin-left: 5%; }
   .sp3 {
     font-family: "Chilanka";
@@ -913,7 +913,7 @@ footer a {
     font-size: 0.8em;
     margin-left: 5%; }
   .sp3 {
-    font-size: 8em;
+    font-size: 0.8em;
     margin-right: 5%; }
   footer {
     font-size: 1.2em; } }
