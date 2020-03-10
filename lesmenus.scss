@@ -205,13 +205,13 @@ footer{
 
 @-webkit-keyframes thing{/*animation pour l'effet wiggle des bouton mentions légales et contact*/
      0%{transform: rotate(0deg)}
-    3%{transform: rotate(-4deg)}
-    4%{transform: rotate(4deg)}
-    5%{transform: rotate(-4deg)}
-    6%{transform: rotate(4deg)}
-    7%{transform: rotate(4deg)}
-    8%{transform: rotate(-4deg)}
-    9%{transform: rotate(4deg)}
+     3%{transform: rotate(-4deg)}
+     4%{transform: rotate(4deg)}
+     5%{transform: rotate(-4deg)}
+     6%{transform: rotate(4deg)}
+     7%{transform: rotate(4deg)}
+     8%{transform: rotate(-4deg)}
+     9%{transform: rotate(4deg)}
     10%{transform: rotate(-4deg)}
     11%{transform: rotate(4deg)}
     12%{transform: rotate(-4deg)}
@@ -222,14 +222,14 @@ footer{
       }
       
 @keyframes thing{
-    0%{transform: rotate(0deg)}
-    3%{transform: rotate(-4deg)}
-    4%{transform: rotate(4deg)}
-    5%{transform: rotate(-4deg)}
-    6%{transform: rotate(4deg)}
-    7%{transform: rotate(4deg)}
-    8%{transform: rotate(-4deg)}
-    9%{transform: rotate(4deg)}
+     0%{transform: rotate(0deg)}
+     3%{transform: rotate(-4deg)}
+     4%{transform: rotate(4deg)}
+     5%{transform: rotate(-4deg)}
+     6%{transform: rotate(4deg)}
+     7%{transform: rotate(4deg)}
+     8%{transform: rotate(-4deg)}
+     9%{transform: rotate(4deg)}
     10%{transform: rotate(-4deg)}
     11%{transform: rotate(4deg)}
     12%{transform: rotate(-4deg)}
@@ -822,7 +822,6 @@ font-size: 2.4em;
  height: 60px;
  line-height: 0.1;
  top: 140px;
- /*margin-left: 47%;*/
 }
 
 .texte{
