@@ -222,3 +222,14 @@ footer {
     font-size: 1.8em; }
     
 }
+
+
+@media screen and (min-width: 1200px){
+ 
+ footer{
+  height: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: 3%;
+ }
+ 
+}
