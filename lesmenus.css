@@ -216,19 +216,19 @@
     font-family: 'Devonshire', cursive;
     font-weight: lighter;
     font-size: 1.9em; }
+  #space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
   #h4m1c {
     font-family: 'Devonshire', cursive;
     font-weight: lighter;
     font-size: 1.3em;
-    position: relative; }
-  #img2 {
-    display: flex;
-    justify-content: center; }
+    margin-right: 10%; }
   #noteh4 {
-    position: relative;
     height: 20px;
-    top: 50px;
-    margin-right: 50.5%; }
+    width: 12%; }
   .texte {
     /* mixin pour la mise en forme des textes des menus*/
     font-weight: lighter;
@@ -253,11 +253,9 @@
     display: flex;
     justify-content: space-between; } }
 
-@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 399px) {
+@media screen and (orientation: portrait) and (min-width: 360px) and (max-width: 399px) {
   #noteh4 {
-    height: 25px;
-    top: 50px;
-    left: 2%; }
+    height: 25px; }
   #h2m1, #h2m2, #h2m3, #h2m4 {
     font-size: 1.4em; }
   .texte {
@@ -276,9 +274,7 @@ footer a {
   #h4m1c {
     font-size: 1.5em; }
   #noteh4 {
-    height: 25px;
-    top: 60px;
-    left: 2%; }
+    height: 25px; }
   .texte {
     font-size: 0.7em;
     margin-left: 5%; }
@@ -301,10 +297,8 @@ footer a {
   #h4m1c {
     font-size: 1.5em; }
   #noteh4 {
-    margin-right: 2%;
     height: 25px;
-    top: 60px;
-    right: 12.5%; }
+    width: 7%; }
   .texte {
     font-size: 0.95em;
     margin-left: 2%; }
@@ -319,32 +313,6 @@ footer a {
     top: 35px;
     margin-right: 3%;
     height: 35px; }
-  #h2m1 {
-    font-size: 1.4em; }
-  #h3m1 {
-    font-size: 1.8em; }
-  #h4m1, #h4m1a, #h4m1b {
-    font-size: 1.6em; }
-  #h4m1c {
-    font-size: 1.9em; }
-  #noteh4 {
-    height: 25px;
-    top: 73px;
-    right: 11.5%; }
-  .texte {
-    font-size: 1.1em;
-    margin-left: 5%; }
-  .sp1 {
-    font-size: 1.1em;
-    margin-right: 5%; }
-  footer {
-    padding-bottom: 3%; } }
-
-@media screen and (orientation: landscape) and (min-width: 801px) and (max-width: 900px) {
-  #noteh2 {
-    top: 35px;
-    margin-right: 3%;
-    height: 35px; }
   #h3m1 {
     font-size: 1.8em; }
   #h3m1 {
@@ -353,10 +321,6 @@ footer a {
     font-size: 1.6em; }
   #h4m1c {
     font-size: 1.9em; }
-  #noteh4 {
-    height: 25px;
-    top: 73px;
-    right: 11.5%; }
   .texte {
     font-size: 1.2em;
     margin-left: 5%; }
@@ -367,15 +331,17 @@ footer a {
     padding-bottom: 3%;
     font-size: 1.4em; } }
 
-@media screen and (orientation: landscape) and (min-width: 959px) and (max-width: 961px) {
+@media screen and (orientation: landscape) and (min-width: 567px) {
   #noteh4 {
-    margin-right: 100px; } }
+    height: 0.5%;
+    width: 4%;
+    margin-right: 1%; } }
 
-@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 602px) {
+@media screen and (orientation: portrait) and (min-width: 567px) {
   #noteh4 {
-    height: 30px;
-    top: 60px;
-    right: 14%; } }
+    height: 0.5%;
+    width: 4%;
+    margin-right: 1%; } }
 
 /*affichage pour tablettes en mode portrait*/
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
@@ -392,10 +358,7 @@ footer a {
   #h4m1c {
     font-size: 1.9em; }
   #noteh4 {
-    margin-right: 34%;
-    height: 30px;
-    top: 75px;
-    right: 14%; }
+    height: 30px; }
   .texte {
     font-size: 1.1em;
     margin-left: 5%; }
@@ -425,9 +388,7 @@ footer a {
   #h4m1c {
     font-size: 2.2em; }
   #noteh4 {
-    height: 35px;
-    top: 85px;
-    left: 12%; }
+    height: 35px; }
   .texte {
     font-size: 1.4em;
     margin-left: 5%; }
@@ -445,9 +406,6 @@ footer a {
     margin-right: 3%; }
   #h3m1 {
     font-size: 1.9em; }
-  #noteh4 {
-    top: 50px;
-    margin-left: 4%; }
   #h4m1, #h4m1a, #h4m1b {
     font-size: 1.4em; }
   .texte {
@@ -474,10 +432,7 @@ footer a {
   #h4m1c {
     font-size: 2.1em; }
   #noteh4 {
-    margin-right: 29%;
-    height: 30px;
-    top: 80px;
-    right: 12%; }
+    height: 30px; }
   .texte {
     font-size: 1.3em;
     margin-left: 5%; }
@@ -513,7 +468,6 @@ footer a {
     position: relative;
     height: 70px;
     margin-top: 2%;
-    line-height: 0.1;
     top: 50px; }
   #h3m1 {
     font-size: 3em; }
@@ -523,17 +477,17 @@ footer a {
     font-size: 2.4em; }
   #h4m1 {
     margin-bottom: 3%; }
+  #space {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
   #h4m1c {
     font-size: 3.5em;
     padding-bottom: 2%; }
-  #img2 {
-    display: flex;
-    justify-content: center;
-    margin-right: 30%; }
   #noteh4 {
     height: 60px;
-    line-height: 0.1;
-    top: 140px; }
+    margin-bottom: 3%; }
   .texte {
     font-size: 1.7em;
     margin-left: 5%; }
@@ -934,8 +888,6 @@ footer a {
   .sp3 {
     font-size: 1em;
     margin-right: 5%; }
-  #noteh4 {
-    margin-right: 5%; }
   footer {
     font-size: 1.2em; } }
 
@@ -1032,9 +984,6 @@ footer a {
     font-size: 1.8em; }
   #h4m1c {
     margin-right: 5%; }
-  #noteh4 {
-    width: 80px;
-    margin-left: 45%; }
   .texte3 {
     font-size: 1.4em;
     margin-left: 5%; }
