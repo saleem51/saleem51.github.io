@@ -1415,10 +1415,10 @@ footer a {
 /*ajustemnent pour les tablettes avec écran de 12 pouces*/
 @media screen and (orientation: landscape) and (min-width: 1281px) {
   header {
-    height: 22.60%; }
+    height: 24.5%; }
   #h1 {
-    bottom: 5%;
-    font-size: 4.32em; }
+    bottom: 8.7%;
+    font-size: 4.4em; }
   #h2b {
     font-size: 2.2em; }
   #btnpro {
@@ -1447,7 +1447,7 @@ footer a {
     padding-top: 1%;
     padding-bottom: 1.8%; }
     footer a {
-      font-size: 2.4em; } }
+      font-size: 2.16em; } }
 
 /*ajustement pour affichage sur ordianteurs et grands écrans*/
 @media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1366px) {
