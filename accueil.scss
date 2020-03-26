@@ -401,7 +401,7 @@ footer{
 }
 
 #btnpro{
- @include btn(1.1em,60%);
+ @include btn(1.1em,55%);
  height: 7%;
  margin-top: 10%;
 }
@@ -582,47 +582,47 @@ header{
  }
  
  #noteindex{
-  height: 45px;
+  height: 35px;
  }
  
  #h2a{
- font-size: 1.8em
+ font-size: 1.6em
 }
 
 
 #h3a{
- font-size: 1.3em;
+ font-size: 1.1em;
 }
 
 #h2b {
-   @include h2b(1.1em);
+   @include h2b(0.97em);
    margin-left: 5%;
 }
 
 #h2b:visited{
-    @include h2b(1.1em);
+    @include h2b(0.97em);
 }
 
 #h2c{
-    @include h2c(1.65em);
+    @include h2c(1.45em);
     margin-left: 5%;
     
 }
 
 #h2c:visited{
-    @include h2c(1.7em);
+    @include h2c(1.45em);
     
 }
 
 
 #h2d{
-    @include h2d (1.65em);
+    @include h2d (1.45em);
     margin-left: 5%;
     
 }
 
 #h2d:visited{
-    @include h2d (1.7em);
+    @include h2d (1.45em);
 }
 
 #h3b{

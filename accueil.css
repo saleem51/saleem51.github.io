@@ -411,7 +411,7 @@ footer {
   margin-right: auto;
   position: relative;
   margin-bottom: 20%;
-  width: 60%;
+  width: 55%;
   padding-top: 1%;
   padding-bottom: 1%;
   height: 7%;
@@ -661,11 +661,11 @@ footer {
   #h1 {
     font-size: 2.7em; }
   #noteindex {
-    height: 45px; }
+    height: 35px; }
   #h2a {
-    font-size: 1.8em; }
+    font-size: 1.6em; }
   #h3a {
-    font-size: 1.3em; }
+    font-size: 1.1em; }
   #h2b {
     /*mixin pour le titre du "chic à ma française"*/
     /*utilisation des préfixes vendeurs pour que l'affichage de l'effet linéar gradient s'affiche de la même manière sur tous les navigateurs*/
@@ -681,7 +681,7 @@ footer {
     background: -linear-gradient(to right, #995EFF, #CA7A0F);
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
-    font-size: 1.1em;
+    font-size: 0.97em;
     font-weight: lighter;
     margin-left: 5%; }
   #h2b:visited {
@@ -699,7 +699,7 @@ footer {
     background: -linear-gradient(to right, #995EFF, #CA7A0F);
     /*police de caractère pour "Le chic à la française"*/
     font-family: 'Croissant One', cursive;
-    font-size: 1.1em;
+    font-size: 0.97em;
     font-weight: lighter; }
   #h2c {
     /*mixin du "délice des papilles"*/
@@ -716,7 +716,7 @@ footer {
     background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     /*police de caractère de "Le délice des papilles"*/
     font-family: 'Dancing Script', cursive;
-    font-size: 1.65em;
+    font-size: 1.45em;
     font-weight: lighter;
     margin-left: 5%; }
   #h2c:visited {
@@ -734,7 +734,7 @@ footer {
     background: -linear-gradient(to right, #4192FF 30%, #030AD3);
     /*police de caractère de "Le délice des papilles"*/
     font-family: 'Dancing Script', cursive;
-    font-size: 1.7em;
+    font-size: 1.45em;
     font-weight: lighter; }
   #h2d {
     /* mixin de "la palette du goût"*/
@@ -750,7 +750,7 @@ footer {
     background: -linear-gradient(to right, #C7FF66, #168720);
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.65em;
+    font-size: 1.45em;
     margin-left: 5%; }
   #h2d:visited {
     /* mixin de "la palette du goût"*/
@@ -766,7 +766,7 @@ footer {
     background: -linear-gradient(to right, #C7FF66, #168720);
     /*police de caractère de "La palette du goût"*/
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.7em; }
+    font-size: 1.45em; }
   #h3b {
     font-size: 1.3em; }
   #h3c, #h3d {
