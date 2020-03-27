@@ -155,7 +155,8 @@ header, #btnpro, footer {
 
 article {
   border: 1px solid lightgrey;
-  box-shadow: 1px 1px 1px 1px #ECECEC; }
+  box-shadow: 1px 1px 1px 1px #ECECEC;
+  overflow: hidden; }
 
 #h3b {
   font-size: 1.5em; }
@@ -302,7 +303,7 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 95%;
+  width: 100%;
   height: 96%;
   text-decoration: none; }
 
@@ -1419,7 +1420,9 @@ footer a {
     bottom: 8.7%;
     font-size: 4.4em; }
   #h2b {
-    font-size: 2.2em; }
+    font-size: 2.1em; }
+  #h2c {
+    font-size: 3.1em; }
   #btnpro {
     /*mixin pour le bouton prochainement avec l'animation des trois points de suspentions*/
     font-size: 2.6em;
